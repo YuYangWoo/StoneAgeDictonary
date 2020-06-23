@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+<item android:title="메인 메뉴">
+    <menu>
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/menu_tools" />
+    </menu>
+</item>
+
+
+    <item android:title="스톤에이지 홈페이지">
+        <menu>
+            <item
+                android:id="@+id/stoneMain"
+                android:icon="@drawable/ic_menu_send"
+                android:title="스톤에이지 공식 사이트" />
+            <item
+                android:id="@+id/stoneCommunity"
+                android:icon="@drawable/ic_menu_send"
+                android:title="스톤에이지 커뮤니티" />
+            <item
+                android:id="@+id/stoneNotice"
+                android:icon="@drawable/ic_menu_send"
+                android:title="공지사항" />
+            <item
+                android:id="@+id/stoneGuide"
+                android:icon="@drawable/ic_menu_send"
+                android:title="신규유저가이드" />
+            <item
+            android:id="@+id/stoneEvent"
+            android:icon="@drawable/ic_menu_send"
+            android:title="진행 중인 이벤트" />
+            <item
+                android:id="@+id/stoneFreeBoard"
+                android:icon="@drawable/ic_menu_send"
+                android:title="자유게시판" />
+            <item
+                android:id="@+id/stoneFriend"
+                android:icon="@drawable/ic_menu_send"
+                android:title="친구모집" />
+            <item
+                android:id="@+id/stoneKnowledge"
+                android:icon="@drawable/ic_menu_send"
+                android:title="공략" />
+        </menu>
+    </item>
+
+</menu>
+
+
