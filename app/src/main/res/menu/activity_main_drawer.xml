@@ -2,6 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
+  <item
+      android:id="@+id/introduceMovie"
+      android:icon="@drawable/ic_menu_send"
+      android:title="소개영상" />
 
 <item android:title="메인 메뉴">
     <menu>
@@ -64,6 +68,11 @@
                   android:id="@+id/stoneDeveloperInfo"
                   android:icon="@drawable/ic_menu_send"
                   android:title="개발자 정보"></item>
+              <item
+                  android:id="@+id/inquire"
+                  android:icon="@drawable/ic_menu_send"
+                  android:title="앱 문의 글쓰기"
+                  ></item>
           </menu>
 
       </item>

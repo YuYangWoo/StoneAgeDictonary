@@ -25,6 +25,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -46,19 +47,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         });
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-      //  getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-     //   getSupportActionBar().setHomeAsUpIndicator(R.id.);
-        /*
-        mAppBarConfiguration = new AppBarConfiguration.Builder(
-              R.id.stoneMain,R.id.stoneCommunity
-        ,R.id.stoneEvent,R.id.stoneFreeBoard,R.id.stoneFriend,R.id.stoneGuide,R.id.stoneKnowledge,R.id.stoneNotice)
-                .setDrawerLayout(drawer)
-                .build();
-
-         */
-
+       //왼쪽 상단에 네비게이션바 만들기
         ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(
                 this,drawer,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close
         );
@@ -66,16 +55,25 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
        actionBarDrawerToggle.syncState();
 
 
-
+     //아이템 선택 이벤트 호출
         navigationView.setNavigationItemSelectedListener(this);
     }
-
+   public void patchClick(View v){
+       Uri patchuri =Uri.parse("http://forum.netmarble.com/stone_kr/view/6/10493");
+       Intent patchintent = new Intent(Intent.ACTION_VIEW,patchuri);
+       startActivity(patchintent);
+   }
+   public void manClick(View v){
+       Uri manuri =Uri.parse("https://youtu.be/-g2JRMqPabY");
+       Intent manintent = new Intent(Intent.ACTION_VIEW,manuri);
+       startActivity(manintent);
+   }
 
 
 
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
+
         int id = item.getItemId();
 
         if (id == R.id.stoneMain) {
@@ -145,6 +143,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         {
             Intent moneyActivity = new Intent(getApplicationContext(),moneyActivity.class);
             startActivity(moneyActivity);
+        }
+        else if(id==R.id.inquire)
+        {
+            Intent inquireActivity = new Intent(getApplicationContext(),inquireActivity.class);
+            startActivity(inquireActivity);
+        }
+        else if(id==R.id.introduceMovie)
+        {
+            Uri uri = Uri.parse("https://www.youtube.com/watch?v=wV-_QnGJoDI");
+            Intent knowledgeIntent = new Intent(Intent.ACTION_VIEW,uri);
+            startActivity(knowledgeIntent);
         }
         DrawerLayout drawer =  findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

@@ -21,11 +21,13 @@
         tools:layout_editor_absoluteX="161dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/vPet"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="필수 펫 종류"
+        android:onClick="vPetClick"
+        android:text="초반 필수 킹북이 킹큐이 잡는법"
+        android:textColor="#E91E63"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,15 +36,36 @@
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <Button
+        android:id="@+id/sharebtn1"
+        android:layout_width="28dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_menu_share"
+        android:onClick="shareBtnClick1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vPet" />
+
+    <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="펫 능력치 및 스킬 "
+        android:text="알찾기 1분팁 ! "
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/vPet" />
+
+    <Button
+        android:id="@+id/sharebtn3"
+        android:layout_width="28dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_menu_share"
+        android:onClick="shareBtnClick2"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <Button
         android:id="@+id/button3"
@@ -54,5 +77,29 @@
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/button2"
         tools:layout_editor_absoluteX="162dp" />
+
+    <Button
+        android:id="@+id/manBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:onClick="manClick"
+        android:text="★중요★ 아직도 사기인 만모 얻기"
+        android:textColor="#F44336"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/sharebtn"
+        android:layout_width="28dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="shareBtnClick"
+        android:background="@drawable/ic_menu_share"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
