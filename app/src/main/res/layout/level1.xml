@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bababa">
+
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="372dp"
+        android:layout_height="547dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="메인퀘스트를 하는 이유는 경험치입니다. 퀘스트를 진행하면서 왔다 갔다만하면 70렙 기준 10만경험치를 주지만, 사냥을하게 되면 한판에 5000경험치를 줍니다. 초반에 50까지는 퀘스트 진행하시는게 가장 진행이 빠르구요. 60부터는 사냥 2일 정도 해서 레벨을 어느수준 까지 올린 후에 메인퀘스트를 진행 할 수 있으니 천천히 퀘스트를 하면서 올려보세요 ! (저는 사실 퀘스트 하고싶음 ㅠㅠ 80렙 찍어서 얀기로 얻으려구 하는데 겁내 힘들어요)"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="89dp"
+        android:text="메인퀘스트가 질려요 해야할까요?"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sharebtn4"
+        android:layout_width="28dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="557dp"
+        android:background="@drawable/ic_menu_share"
+        android:onClick="shareBtnClick3"
+        app:layout_constraintBottom_toBottomOf="@+id/textView20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

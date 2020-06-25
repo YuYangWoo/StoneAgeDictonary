@@ -1,4 +1,4 @@
-package com.cookandroid.stoneagedc;
+package com.cookandroid.stoneagedc.level;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -7,6 +7,8 @@ import android.view.MenuItem;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.cookandroid.stoneagedc.R;
 
 public class levelActivity extends AppCompatActivity {
      protected void onCreate(Bundle savedInstanceState)
@@ -26,9 +28,8 @@ public class levelActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
     public void expMainClick(View v){
-        Uri uri = Uri.parse("https://youtu.be/SqC9bIo0wCk");
-        Intent expMainIntent = new Intent(Intent.ACTION_VIEW,uri);
-        startActivity(expMainIntent);
+        Intent intent = new Intent(getApplicationContext(),levelActivity1.class);
+                startActivity(intent);
     }
     public void expContent(View v){
         Uri uri = Uri.parse("https://youtu.be/SqC9bIo0wCk");
