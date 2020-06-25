@@ -5,10 +5,10 @@ import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class developerInfoActivity extends AppCompatActivity {
-    protected void onCreate(Bundle savedInstanceState) {
+public class petActivity extends AppCompatActivity {
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.developer_info);
+        setContentView(R.layout.pet);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
     public boolean onOptionsItemSelected(MenuItem item) {

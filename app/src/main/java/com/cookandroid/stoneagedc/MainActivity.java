@@ -131,6 +131,21 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent developerInfoActivity = new Intent(getApplicationContext(),developerInfoActivity.class);
             startActivity(developerInfoActivity);
         }
+        else if(id==R.id.stonePet)
+        {
+            Intent petActivity = new Intent(getApplicationContext(),petActivity.class);
+            startActivity(petActivity);
+        }
+        else if(id==R.id.stoneLevel)
+        {
+            Intent levelActivity = new Intent(getApplicationContext(),levelActivity.class);
+            startActivity(levelActivity);
+        }
+        else if(id==R.id.stoneMoney)
+        {
+            Intent moneyActivity = new Intent(getApplicationContext(),moneyActivity.class);
+            startActivity(moneyActivity);
+        }
         DrawerLayout drawer =  findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;

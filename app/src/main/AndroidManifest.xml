@@ -21,6 +21,12 @@
         </activity>
         <activity android:name=".developerInfoActivity"
          />
+        <activity android:name=".petActivity"
+            />
+        <activity android:name=".moneyActivity"
+            />
+        <activity android:name=".levelActivity"
+            />
     </application>
 
 </manifest>

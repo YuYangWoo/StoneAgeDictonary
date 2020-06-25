@@ -2,11 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/linearLayout2"
+    android:id="@+id/linearLayout3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bababa">
+    android:background="@drawable/bababa"
+    >
 
     <TextView
         android:id="@+id/textView7"
@@ -14,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:gravity="center_horizontal"
-        android:text="펫 꿀팁"
+        android:text="재화 꿀팁"
         android:textSize="28dp"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
@@ -25,7 +26,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="필수 펫 종류"
+        android:text="스톤"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="펫 능력치 및 스킬 "
+        android:text="조개"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,10 +50,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="좋은 펫 얻는 방법"
+        android:text="블루젬"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/button2"
         tools:layout_editor_absoluteX="162dp" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
