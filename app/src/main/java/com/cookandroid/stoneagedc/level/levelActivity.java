@@ -32,7 +32,7 @@ public class levelActivity extends AppCompatActivity {
                 startActivity(intent);
     }
     public void expContent(View v){
-        Uri uri = Uri.parse("https://youtu.be/SqC9bIo0wCk");
+        Uri uri = Uri.parse("https://youtu.be/w6zmsSnt9SE");
         Intent expContentIntent = new Intent(Intent.ACTION_VIEW,uri);
         startActivity(expContentIntent);
     }

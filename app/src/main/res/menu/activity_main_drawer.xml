@@ -24,7 +24,15 @@
 
     </menu>
 </item>
-
+    <item android:title="유용한 기능">
+        <menu>
+    <item
+        android:id="@+id/alram"
+        android:icon="@drawable/ic_menu_send"
+        android:title="알찾기 알람 맞추기"
+        ></item>
+        </menu>
+    </item>
 
     <item android:title="스톤에이지 홈페이지 바로가기">
         <menu>
@@ -68,11 +76,7 @@
                   android:id="@+id/stoneDeveloperInfo"
                   android:icon="@drawable/ic_menu_send"
                   android:title="개발자 정보"></item>
-              <item
-                  android:id="@+id/inquire"
-                  android:icon="@drawable/ic_menu_send"
-                  android:title="앱 문의 글쓰기"
-                  ></item>
+
           </menu>
 
       </item>

@@ -137,10 +137,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent moneyActivity = new Intent(getApplicationContext(),moneyActivity.class);
             startActivity(moneyActivity);
         }
-        else if(id==R.id.inquire)
+        else if(id==R.id.alram)
         {
-            Intent inquireActivity = new Intent(getApplicationContext(),inquireActivity.class);
-            startActivity(inquireActivity);
+            Intent alramActivity = new Intent(getApplicationContext(), recoActivity.class);
+            startActivity(alramActivity);
         }
         else if(id==R.id.introduceMovie)
         {
@@ -148,6 +148,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent knowledgeIntent = new Intent(Intent.ACTION_VIEW,uri);
             startActivity(knowledgeIntent);
         }
+
         DrawerLayout drawer =  findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
