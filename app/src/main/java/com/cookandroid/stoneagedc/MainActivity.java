@@ -32,14 +32,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
        //왼쪽 상단에 네비게이션바 만들기
@@ -134,11 +126,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent levelActivity = new Intent(getApplicationContext(), com.cookandroid.stoneagedc.level.levelActivity.class);
             startActivity(levelActivity);
         }
+        /*
         else if(id==R.id.stoneMoney)
         {
             Intent moneyActivity = new Intent(getApplicationContext(),moneyActivity.class);
             startActivity(moneyActivity);
         }
+        */
+
         else if(id==R.id.reco)
         {
 

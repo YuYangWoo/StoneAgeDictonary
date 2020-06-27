@@ -68,15 +68,28 @@
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/angiro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="좋은 펫 얻는 방법"
+        android:onClick="angiro"
+        android:text="얀기로 포획 영상"
+        android:textColor="#F44336"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/button2"
         tools:layout_editor_absoluteX="162dp" />
+
+    <Button
+        android:id="@+id/sharebtn4"
+        android:layout_width="28dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_menu_share"
+        android:onClick="shareBtnClick3"
+        app:layout_constraintBottom_toTopOf="@+id/manBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/angiro" />
 
     <Button
         android:id="@+id/manBtn"
@@ -89,7 +102,7 @@
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/angiro" />
 
     <Button
         android:id="@+id/sharebtn"
@@ -113,5 +126,16 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="289dp"
+        android:layout_height="76dp"
+        android:text="유익하게 보셨다면 좋아요와 구독부탁드려요 !!"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

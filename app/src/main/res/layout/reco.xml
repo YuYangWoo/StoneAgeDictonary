@@ -111,29 +111,33 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scorePet" />
 
-    <LinearLayout
-        android:layout_width="417dp"
-        android:layout_height="508dp"
-        android:layout_marginTop="13dp"
-        android:layout_weight="1"
-        android:gravity="center_vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerButton">
 
-        <EditText
-            android:id="@+id/edtName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
 
-        <EditText
-            android:id="@+id/edtResult"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
+        <LinearLayout
+            android:layout_width="417dp"
+            android:layout_height="508dp"
+            android:layout_marginTop="13dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registerButton">
 
-    </LinearLayout>
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                android:layout_weight="1" />
 
+            <EditText
+                android:id="@+id/edtResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                android:layout_weight="1"
+                android:textSize="20dp" />
+
+        </LinearLayout>
 
 
 

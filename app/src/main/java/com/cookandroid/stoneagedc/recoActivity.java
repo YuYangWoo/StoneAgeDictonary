@@ -145,19 +145,18 @@ public class recoActivity extends AppCompatActivity {
         Cursor cursor;
         cursor = sqlDB.rawQuery("SELECT * FROM petTBL;", null);
 
-        //그룹이름과 인원을 나타내 줄 문자열 선언
+
         String strNames = "추천 펫 리스트" + "\r\n" + "--------------" + "\r\n";
         String strNumbers = "점수(중요도 100점만점)" + "\r\n" + "----------------" + "\r\n";
 
 
-        //커서가 움직이면서  현재 커서의 열 번호 데이터값을 반환해서 문자열 변수에 계속 누적한다.
-        //0은 0번째열(그룹이름) , 1은 1번째열(인원)이 된다.
+
         while(cursor.moveToNext()){
             strNames += cursor.getString(0) + "\r\n";
             strNumbers += cursor.getString(1) + "\r\n";
         }
 
-        //이름 출력해주기
+
         edtNameResult.setText(strNames);
         edtNumberResult.setText(strNumbers);
 

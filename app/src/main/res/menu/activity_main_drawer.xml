@@ -17,10 +17,7 @@
             android:id="@+id/stonePet"
             android:icon="@drawable/ic_menu_send"
             android:title="펫 관련 팁" />
-        <item
-            android:id="@+id/stoneMoney"
-            android:icon="@drawable/ic_menu_send"
-            android:title="재화 얻기 팁" />
+
 
     </menu>
 </item>

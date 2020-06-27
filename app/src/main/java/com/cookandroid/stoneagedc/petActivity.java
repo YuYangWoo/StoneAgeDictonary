@@ -28,6 +28,13 @@ public class petActivity extends AppCompatActivity {
         startActivity(manIntent);
 
     }
+    public void angiro(View v)
+    {
+        Uri uri = Uri.parse("https://youtu.be/z86iZeYn6-Y");
+        Intent angiroIntent = new Intent(Intent.ACTION_VIEW,uri);
+        startActivity(angiroIntent);
+
+    }
     public void shareBtnClick1(View v)
     {
         Intent Sharing_intent = new Intent(Intent.ACTION_SEND);
@@ -51,6 +58,15 @@ public class petActivity extends AppCompatActivity {
         Intent Sharing_intent = new Intent(Intent.ACTION_SEND);
         Sharing_intent.setType("text/plain");
         String Test_Message = "https://www.youtube.com/watch?v=-g2JRMqPabY";
+        Sharing_intent.putExtra(Intent.EXTRA_TEXT, Test_Message);
+        Intent Sharing = Intent.createChooser(Sharing_intent, "공유하기");
+        startActivity(Sharing);
+    }
+    public void shareBtnClick3(View v)
+    {
+        Intent Sharing_intent = new Intent(Intent.ACTION_SEND);
+        Sharing_intent.setType("text/plain");
+        String Test_Message = "https://youtu.be/z86iZeYn6-Y";
         Sharing_intent.putExtra(Intent.EXTRA_TEXT, Test_Message);
         Intent Sharing = Intent.createChooser(Sharing_intent, "공유하기");
         startActivity(Sharing);
