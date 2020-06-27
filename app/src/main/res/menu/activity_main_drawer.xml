@@ -29,7 +29,7 @@
     <item
         android:id="@+id/alram"
         android:icon="@drawable/ic_menu_send"
-        android:title="알찾기 알람 맞추기"
+        android:title="가장 인기있는 펫 투표"
         ></item>
         </menu>
     </item>
