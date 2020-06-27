@@ -1,6 +1,8 @@
 package com.cookandroid.stoneagedc;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -137,8 +139,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent moneyActivity = new Intent(getApplicationContext(),moneyActivity.class);
             startActivity(moneyActivity);
         }
-        else if(id==R.id.alram)
+        else if(id==R.id.reco)
         {
+
             Intent alramActivity = new Intent(getApplicationContext(), recoActivity.class);
             startActivity(alramActivity);
         }

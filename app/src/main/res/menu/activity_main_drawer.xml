@@ -27,9 +27,9 @@
     <item android:title="유용한 기능">
         <menu>
     <item
-        android:id="@+id/alram"
+        android:id="@+id/reco"
         android:icon="@drawable/ic_menu_send"
-        android:title="가장 인기있는 펫 투표"
+        android:title="가장 뽑아야 할 펫은?"
         ></item>
         </menu>
     </item>

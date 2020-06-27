@@ -25,7 +25,6 @@
         android:layout_height="48dp"
         android:layout_marginTop="30dp"
         android:ems="10"
-        android:hint="좋아하는 펫 이름을 적어주세요"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.866"
@@ -43,6 +42,7 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/makeName" />
+
     <EditText
         android:id="@+id/scorePet"
         android:layout_width="284dp"
@@ -50,7 +50,6 @@
         android:layout_marginStart="18dp"
         android:layout_marginTop="21dp"
         android:ems="10"
-        android:hint="자신이 생각하는 점수를 적어주세요."
         android:inputType="textPersonName"
         app:layout_constraintStart_toEndOf="@+id/textView23"
         app:layout_constraintTop_toBottomOf="@+id/petEdit" />
@@ -59,10 +58,11 @@
         android:id="@+id/clearButton"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="32dp"
         android:onClick="ClearButtonClick"
         android:text="초기화"
         app:layout_constraintEnd_toStartOf="@+id/registerButton"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
@@ -84,6 +84,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="2dp"
+        android:onClick="deleteButtonClick"
         android:text="삭제"
         app:layout_constraintEnd_toStartOf="@+id/updateButton"
         app:layout_constraintTop_toBottomOf="@+id/scorePet" />
@@ -94,6 +95,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="2dp"
+        android:onClick="updateButtonClick"
         android:text="수정"
         app:layout_constraintEnd_toStartOf="@+id/appearButton"
         app:layout_constraintTop_toBottomOf="@+id/scorePet" />
