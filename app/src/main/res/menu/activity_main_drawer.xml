@@ -26,7 +26,7 @@
     <item
         android:id="@+id/reco"
         android:icon="@drawable/ic_menu_send"
-        android:title="가장 뽑아야 할 펫은?"
+        android:title="펫 순위(주관 생각)"
         ></item>
         </menu>
     </item>
@@ -74,6 +74,10 @@
                   android:icon="@drawable/ic_menu_send"
                   android:title="개발자 정보"></item>
 
+              <item
+                  android:id="@+id/stoneYoutube"
+                  android:icon="@drawable/ic_menu_send"
+                  android:title="유튜브 채널"></item>
           </menu>
 
       </item>

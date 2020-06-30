@@ -38,13 +38,14 @@ public class recoActivity extends AppCompatActivity {
         updateButton = findViewById(R.id.registerButton);
         appearButton = findViewById(R.id.registerButton);
         petHelper = new petDBhelper(this);
-
+        appearButtonClick();
         // 시작할때 먼저 조회
+        /*
         sqlDB = petHelper.getReadableDatabase();
         Cursor cursor;
         cursor = sqlDB.rawQuery("SELECT * FROM petTBL;", null);
-        String strNames = "추천 펫 리스트" + "\r\n" + "--------------" + "\r\n";
-        String strNumbers = "점수(중요도 100점만점)" + "\r\n" + "----------------" + "\r\n";
+        String strNames = "펫 이름" + "\r\n" + "----------------" + "\r\n";
+        String strNumbers = "펫 순위" + "\r\n" + "----------------" + "\r\n";
         while (cursor.moveToNext()) {
             strNames += cursor.getString(0) + "\r\n";
             strNumbers += cursor.getString(1) + "\r\n";
@@ -54,7 +55,9 @@ public class recoActivity extends AppCompatActivity {
         edtNumberResult.setText(strNumbers);
         cursor.close();
         sqlDB.close();
+         */
     }
+    //초기화 버튼
     public void ClearButtonClick(View v)
     {
 
@@ -63,9 +66,11 @@ public class recoActivity extends AppCompatActivity {
         sqlDB.close();
         Toast.makeText(getApplicationContext(), "초기화 완료", Toast.LENGTH_SHORT).show();
     }
+    //등록 버튼
     public void registerButtonClick(View v){
         InputMethodManager im = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         im.hideSoftInputFromWindow(edtNumber.getWindowToken(), 0);
+        //아무 것도 없이 등록 하면 꺼지기 때문에 예외처리
         try {
             sqlDB = petHelper.getWritableDatabase();
             sqlDB.execSQL("INSERT INTO petTBL VALUES (" + "'" + edtName.getText().toString() + "' ,"
@@ -76,20 +81,9 @@ public class recoActivity extends AppCompatActivity {
         }
         Toast.makeText(getApplicationContext(), "입력됨", Toast.LENGTH_SHORT).show();
         //바로바로 나타내기
-        sqlDB = petHelper.getReadableDatabase();
-        Cursor cursor;
-        cursor = sqlDB.rawQuery("SELECT * FROM petTBL;", null);
-        String strNames = "추천 펫 리스트" + "\r\n" + "--------------" + "\r\n";
-        String strNumbers = "점수(중요도 100점만점)" + "\r\n" + "----------------" + "\r\n";
-        while (cursor.moveToNext()) {
-            strNames += cursor.getString(0) + "\r\n";
-            strNumbers += cursor.getString(1) + "\r\n";
-        }
-        edtNameResult.setText(strNames);
-        edtNumberResult.setText(strNumbers);
-        cursor.close();
-        sqlDB.close();
+        appearButtonClick();
     }
+    //삭제 버튼
     public void deleteButtonClick(View v){
         InputMethodManager im = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         im.hideSoftInputFromWindow(edtNumber.getWindowToken(), 0);
@@ -99,20 +93,9 @@ public class recoActivity extends AppCompatActivity {
         sqlDB.close();
         Toast.makeText(getApplicationContext(), "삭제 완료", Toast.LENGTH_SHORT).show();
         //바로바로 나타내기
-        sqlDB = petHelper.getReadableDatabase();
-        Cursor cursor;
-        cursor = sqlDB.rawQuery("SELECT * FROM petTBL;", null);
-        String strNames = "추천 펫 리스트" + "\r\n" + "--------------" + "\r\n";
-        String strNumbers = "점수(중요도 100점만점)" + "\r\n" + "----------------" + "\r\n";
-        while (cursor.moveToNext()) {
-            strNames += cursor.getString(0) + "\r\n";
-            strNumbers += cursor.getString(1) + "\r\n";
-        }
-        edtNameResult.setText(strNames);
-        edtNumberResult.setText(strNumbers);
-        cursor.close();
-        sqlDB.close();
+        appearButtonClick();
     }
+    //수정 버튼
     public void updateButtonClick(View v)
     {
         InputMethodManager im = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
@@ -125,41 +108,21 @@ public class recoActivity extends AppCompatActivity {
         sqlDB.close();
         Toast.makeText(getApplicationContext(), "수정 완료", Toast.LENGTH_SHORT).show();
         //나타내기
-        sqlDB = petHelper.getReadableDatabase();
-        Cursor cursor;
-        cursor = sqlDB.rawQuery("SELECT * FROM petTBL;", null);
-        String strNames = "추천 펫 리스트" + "\r\n" + "--------------" + "\r\n";
-        String strNumbers = "점수(중요도 100점만점)" + "\r\n" + "----------------" + "\r\n";
-        while (cursor.moveToNext()) {
-            strNames += cursor.getString(0) + "\r\n";
-            strNumbers += cursor.getString(1) + "\r\n";
-        }
-        edtNameResult.setText(strNames);
-        edtNumberResult.setText(strNumbers);
-        cursor.close();
-        sqlDB.close();
+        appearButtonClick();
     }
-    public void appearButtonClick(View v){
+    public void appearButtonClick(){
 
         sqlDB = petHelper.getReadableDatabase();
         Cursor cursor;
         cursor = sqlDB.rawQuery("SELECT * FROM petTBL;", null);
-
-
-        String strNames = "추천 펫 리스트" + "\r\n" + "--------------" + "\r\n";
-        String strNumbers = "점수(중요도 100점만점)" + "\r\n" + "----------------" + "\r\n";
-
-
-
+        String strNames = "펫 이름" + "\r\n" + "----------------" + "\r\n";
+        String strNumbers = "펫 순위" + "\r\n" + "----------------" + "\r\n";
         while(cursor.moveToNext()){
             strNames += cursor.getString(0) + "\r\n";
             strNumbers += cursor.getString(1) + "\r\n";
         }
-
-
         edtNameResult.setText(strNames);
         edtNumberResult.setText(strNumbers);
-
         cursor.close();
         sqlDB.close();
     }
@@ -178,19 +141,7 @@ public class recoActivity extends AppCompatActivity {
       public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
           db.execSQL("DROP TABLE IF EXISTS petTBL");
           onCreate(db);
-          sqlDB = petHelper.getReadableDatabase();
-          Cursor cursor;
-          cursor = sqlDB.rawQuery("SELECT * FROM petTBL;", null);
-          String strNames = "추천 펫 리스트" + "\r\n" + "--------------" + "\r\n";
-          String strNumbers = "점수(중요도 100점만점)" + "\r\n" + "----------------" + "\r\n";
-          while (cursor.moveToNext()) {
-              strNames += cursor.getString(0) + "\r\n";
-              strNumbers += cursor.getString(1) + "\r\n";
-          }
-          edtNameResult.setText(strNames);
-          edtNumberResult.setText(strNumbers);
-          cursor.close();
-          sqlDB.close();
+          appearButtonClick();
       }
 
   }

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -13,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginTop="30dp"
-        android:text="이름 : "
+        android:text="펫이름 : "
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginTop="28dp"
-        android:text="점수 : "
+        android:text="순위 : "
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,7 +59,8 @@
         android:id="@+id/clearButton"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/gul"
         android:onClick="ClearButtonClick"
         android:text="초기화"
         app:layout_constraintEnd_toStartOf="@+id/registerButton"
@@ -72,6 +74,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:onClick="registerButtonClick"
+        android:background="@drawable/gul"
         android:text="등록"
         app:layout_constraintEnd_toStartOf="@+id/deleteButton"
         app:layout_constraintHorizontal_bias="1.0"
@@ -84,6 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="2dp"
+        android:background="@drawable/gul"
         android:onClick="deleteButtonClick"
         android:text="삭제"
         app:layout_constraintEnd_toStartOf="@+id/updateButton"
@@ -95,6 +99,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="2dp"
+        android:background="@drawable/gul"
         android:onClick="updateButtonClick"
         android:text="수정"
         app:layout_constraintEnd_toStartOf="@+id/appearButton"
@@ -106,6 +111,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="10dp"
+        android:background="@drawable/gul"
         android:onClick="appearButtonClick"
         android:text="조회"
         app:layout_constraintEnd_toEndOf="parent"
@@ -114,9 +120,9 @@
 
 
         <LinearLayout
-            android:layout_width="417dp"
-            android:layout_height="508dp"
-            android:layout_marginTop="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="250dp"
             android:layout_weight="1"
             android:gravity="center_vertical"
             app:layout_constraintStart_toStartOf="parent"
@@ -126,14 +132,14 @@
                 android:id="@+id/edtName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="100dp"
+                android:layout_marginBottom="20dp"
                 android:layout_weight="1" />
 
             <EditText
                 android:id="@+id/edtResult"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="100dp"
+                android:layout_marginBottom="20dp"
                 android:layout_weight="1"
                 android:textSize="20dp" />
 

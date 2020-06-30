@@ -108,6 +108,7 @@
         android:layout_marginStart="27dp"
         android:onClick="patchClick"
         android:text="!!클릭!!"
+        android:background="@drawable/gul"
         app:layout_constraintStart_toEndOf="@+id/textView16"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
@@ -145,6 +146,7 @@
         android:layout_marginTop="23dp"
         android:onClick="manClick"
         android:text="클릭해서 확인!"
+        android:background="@drawable/gul"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView18" />

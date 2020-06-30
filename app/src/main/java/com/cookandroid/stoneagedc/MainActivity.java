@@ -146,6 +146,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent knowledgeIntent = new Intent(Intent.ACTION_VIEW,uri);
             startActivity(knowledgeIntent);
         }
+        else if(id==R.id.stoneYoutube)
+        {
+            Uri uri = Uri.parse("https://www.youtube.com/channel/UClTxh9tyedXmKcNIQybpagQ?view_as=subscriber");
+            Intent youTubeIntent = new Intent(Intent.ACTION_VIEW,uri);
+            startActivity(youTubeIntent);
+        }
 
         DrawerLayout drawer =  findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
