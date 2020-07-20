@@ -70,7 +70,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="일부 계열 펫 밸런스 이상 현상 수정"
+        android:text="신규 콘텐츠 : 도적의 아지트"
         android:textColor="#E91E63"
         android:textSize="18dp"
         android:textStyle="bold"
@@ -83,7 +83,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:text="만모 계열 스킬 관련      · ‘무차별 공격’ 액티브 스킬 데미지 이상 현상 수정       · 궁극기 : 고대의 힘 사용 시 적에게 받는 피해 감소가 스킬 설명과 상이한 현상 수정 "
+        android:text="4성 펫들이 포획처에 추가/최대 레벨이 109레벨로 확장 / 신규 던전 '도적의 아지트' 오픈 / 신규 펫 추가"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -106,9 +106,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
+        android:background="@drawable/gul"
         android:onClick="patchClick"
         android:text="!!클릭!!"
-        android:background="@drawable/gul"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/textView16"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
@@ -131,7 +132,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="40dp"
-        android:text="현재상황 만모 과연 필수 일까?"
+        android:text="얀기로의 카운터 꼬미를 소개합니다."
         android:textColor="#E91E63"
         android:textSize="22dp"
         android:textStyle="bold"
@@ -144,12 +145,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="23dp"
+        android:background="@drawable/gul"
         android:onClick="manClick"
         android:text="클릭해서 확인!"
-        android:background="@drawable/gul"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="357dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="SMART_BANNER"
+        app:adUnitId="ca-app-pub-6308948435596230/6884718456"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manbt"></com.google.android.gms.ads.AdView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

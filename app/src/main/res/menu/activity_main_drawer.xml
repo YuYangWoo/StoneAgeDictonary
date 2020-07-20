@@ -28,6 +28,11 @@
         android:icon="@drawable/ic_menu_send"
         android:title="펫 순위(주관 생각)"
         ></item>
+            <item
+                android:id="@+id/setPet"
+                android:icon="@drawable/ic_menu_send"
+                android:title="펫 육성 정리"
+                ></item>
         </menu>
     </item>
 

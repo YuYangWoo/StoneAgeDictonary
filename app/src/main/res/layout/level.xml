@@ -12,7 +12,7 @@
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="40dp"
         android:text="레벨업 꿀팁"
         android:textSize="24dp"
         android:textStyle="bold"
@@ -34,17 +34,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
-    <Button
-        android:id="@+id/sharebtn1"
-        android:layout_width="28dp"
-        android:layout_height="26dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="49dp"
-        android:background="@drawable/ic_menu_share"
-        android:onClick="shareBtnClick1"
-        app:layout_constraintBottom_toBottomOf="@+id/expContent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/expMain" />
+
 
     <Button
         android:id="@+id/expContent"

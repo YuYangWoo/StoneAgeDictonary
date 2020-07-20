@@ -6,9 +6,13 @@ import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.os.Bundle;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -21,9 +25,11 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-
+    private AdView mAdView;
 
 
     @Override
@@ -41,17 +47,26 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
        drawer.addDrawerListener(actionBarDrawerToggle);
        actionBarDrawerToggle.syncState();
 
-
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
      //아이템 선택 이벤트 호출
         navigationView.setNavigationItemSelectedListener(this);
+
     }
+
    public void patchClick(View v){
-       Uri patchuri =Uri.parse("http://forum.netmarble.com/stone_kr/view/6/10493");
+       Uri patchuri =Uri.parse("http://forum.netmarble.com/stone_kr/view/42/28287");
        Intent patchintent = new Intent(Intent.ACTION_VIEW,patchuri);
        startActivity(patchintent);
    }
    public void manClick(View v){
-       Uri manuri =Uri.parse("https://youtu.be/-g2JRMqPabY");
+       Uri manuri =Uri.parse("https://www.youtube.com/watch?v=dDh7f7J4d5E&t=404s");
        Intent manintent = new Intent(Intent.ACTION_VIEW,manuri);
        startActivity(manintent);
    }
@@ -126,14 +141,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent levelActivity = new Intent(getApplicationContext(), com.cookandroid.stoneagedc.level.levelActivity.class);
             startActivity(levelActivity);
         }
-        /*
-        else if(id==R.id.stoneMoney)
-        {
-            Intent moneyActivity = new Intent(getApplicationContext(),moneyActivity.class);
-            startActivity(moneyActivity);
-        }
-        */
 
+      else if(id==R.id.setPet)
+        {
+            Intent setPetActivity= new Intent(getApplicationContext(), setPetActivity.class);
+            startActivity(setPetActivity);
+        }
         else if(id==R.id.reco)
         {
 
@@ -165,4 +178,5 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             super.onBackPressed();
         }
     }
+
 }
