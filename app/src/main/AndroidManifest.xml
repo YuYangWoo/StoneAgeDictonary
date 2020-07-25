@@ -37,6 +37,7 @@
             />
         <activity android:name=".setPetActivity"
             />
+        <activity android:name=".attackfragment.attackFragment1" />
     </application>
 
 </manifest>

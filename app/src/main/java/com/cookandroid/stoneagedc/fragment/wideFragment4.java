@@ -1,4 +1,4 @@
-package com.cookandroid.stoneagedc;
+package com.cookandroid.stoneagedc.fragment;
 
 
 import android.os.Bundle;
@@ -9,14 +9,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.cookandroid.stoneagedc.R;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class attackFragment1 extends Fragment {
+public class wideFragment4 extends Fragment {
 
 
-    public attackFragment1() {
+    public wideFragment4() {
         // Required empty public constructor
     }
 
@@ -25,7 +27,7 @@ public class attackFragment1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_attack_fragment1, container, false);
+        return inflater.inflate(R.layout.fragment_wide_fragment4, container, false);
     }
 
 }

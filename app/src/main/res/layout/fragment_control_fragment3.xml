@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".controlFragment3"
+    tools:context=".fragment.controlFragment3"
     android:background="#ffff00">
 
     <!-- TODO: Update blank fragment layout -->
