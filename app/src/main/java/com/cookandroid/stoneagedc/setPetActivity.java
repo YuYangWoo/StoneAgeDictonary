@@ -21,7 +21,7 @@ public class setPetActivity extends AppCompatActivity {
         //탭과 뷰페이저 연동
         TabLayout tab = findViewById(R.id.tabLayout);
         tab.setupWithViewPager(vp);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
     }
 }

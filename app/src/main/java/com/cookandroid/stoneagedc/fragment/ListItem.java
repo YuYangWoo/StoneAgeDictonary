@@ -1,13 +1,13 @@
-package com.cookandroid.stoneagedc.attackfragment;
+package com.cookandroid.stoneagedc.fragment;
 
 public class ListItem {
     private int poster;
-    private String movieName;
+    private String petName;
     private String grade;
 
-    public ListItem(int poster, String movieName, String grade){
+    public ListItem(int poster, String petName, String grade){
         this.poster = poster;
-        this.movieName = movieName;
+        this.petName = petName;
         this.grade = grade;
     }
 
@@ -16,9 +16,9 @@ public class ListItem {
         return this.poster;
     }
 
-    public String getMovieName()
+    public String getPetName()
     {
-        return this.movieName;
+        return this.petName;
     }
 
     public String getGrade()

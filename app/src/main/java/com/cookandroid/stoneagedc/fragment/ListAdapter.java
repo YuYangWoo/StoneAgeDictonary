@@ -1,4 +1,4 @@
-package com.cookandroid.stoneagedc.attackfragment;
+package com.cookandroid.stoneagedc.fragment;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -42,11 +42,11 @@ public class ListAdapter extends BaseAdapter {
         View view = mLayoutInflater.inflate(R.layout.listview, null);
 
         ImageView imageView = (ImageView)view.findViewById(R.id.poster);
-        TextView movieName = (TextView)view.findViewById(R.id.movieName);
+        TextView movieName = (TextView)view.findViewById(R.id.petName);
         TextView grade = (TextView)view.findViewById(R.id.grade);
 
         imageView.setImageResource(sample.get(position).getPoster());
-        movieName.setText(sample.get(position).getMovieName());
+        movieName.setText(sample.get(position).getPetName());
         grade.setText(sample.get(position).getGrade());
 
         return view;

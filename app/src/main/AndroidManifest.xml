@@ -37,7 +37,46 @@
             />
         <activity android:name=".setPetActivity"
             />
-        <activity android:name=".attackfragment.attackFragment1" />
+        <activity android:name=".attackPetSet.Angiro"
+        />
+        <activity android:name=".attackPetSet.Babo"
+            />
+        <activity android:name=".attackPetSet.Berfus"
+            />
+        <activity android:name=".attackPetSet.Berga"
+            />
+        <activity android:name=".attackPetSet.Beron"
+            />
+        <activity android:name=".attackPetSet.Crab"
+            />
+        <activity android:name=".attackPetSet.Cucuro"
+            />
+        <activity android:name=".attackPetSet.Cue"
+            />
+        <activity android:name=".attackPetSet.Falcaon"
+            />
+        <activity android:name=".attackPetSet.Fino"
+            />
+        <activity android:name=".attackPetSet.GgoMi"
+            />
+        <activity android:name=".attackPetSet.Gordon"
+            />
+        <activity android:name=".attackPetSet.Gotecus"
+            />
+        <activity android:name=".attackPetSet.Gurumaru"
+            />
+        <activity android:name=".attackPetSet.Jag"
+            />
+        <activity android:name=".attackPetSet.Moga"
+            />
+        <activity android:name=".attackPetSet.Trarofo"
+            />
+
+        <activity android:name=".fragment.attackFragment1" />
+        <activity android:name=".fragment.defensiveFragment2" />
+        <activity android:name=".fragment.controlFragment3" />
+        <activity android:name=".fragment.wideFragment4" />
+        <activity android:name=".fragment.cureFragment5" />
     </application>
 
 </manifest>

@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.cookandroid.stoneagedc.attackfragment.attackFragment1;
+import com.cookandroid.stoneagedc.fragment.attackFragment1;
 import com.cookandroid.stoneagedc.fragment.controlFragment3;
 import com.cookandroid.stoneagedc.fragment.cureFragment5;
 import com.cookandroid.stoneagedc.fragment.defensiveFragment2;
