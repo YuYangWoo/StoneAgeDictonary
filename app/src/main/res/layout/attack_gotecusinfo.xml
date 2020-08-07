@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="150dp"
+
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="173dp"
+        android:layout_height="61dp"
+        android:text="획득불가!"
+        android:textColor="#E91E63"
+        android:textSize="30dp" />
+</LinearLayout>

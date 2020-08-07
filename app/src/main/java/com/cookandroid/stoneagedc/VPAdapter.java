@@ -5,11 +5,11 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.cookandroid.stoneagedc.fragment.attackFragment1;
-import com.cookandroid.stoneagedc.fragment.controlFragment3;
-import com.cookandroid.stoneagedc.fragment.cureFragment5;
-import com.cookandroid.stoneagedc.fragment.defensiveFragment2;
-import com.cookandroid.stoneagedc.fragment.wideFragment4;
+import com.cookandroid.stoneagedc.kindOfPet.attackFragment1;
+import com.cookandroid.stoneagedc.kindOfPet.controlFragment3;
+import com.cookandroid.stoneagedc.kindOfPet.cureFragment5;
+import com.cookandroid.stoneagedc.kindOfPet.defensiveFragment2;
+import com.cookandroid.stoneagedc.kindOfPet.wideFragment4;
 
 import java.util.ArrayList;
 //정해져 있을 때 pager adapter 정해져있지 않을 때 statepageradapter

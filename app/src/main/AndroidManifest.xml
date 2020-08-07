@@ -72,11 +72,45 @@
         <activity android:name=".attackPetSet.Trarofo"
             />
 
-        <activity android:name=".fragment.attackFragment1" />
-        <activity android:name=".fragment.defensiveFragment2" />
-        <activity android:name=".fragment.controlFragment3" />
-        <activity android:name=".fragment.wideFragment4" />
-        <activity android:name=".fragment.cureFragment5" />
+     <activity android:name="control.agoa"></activity>
+        <activity android:name="control.bakseulrabbit"></activity>
+        <activity android:name="control.baroroks"></activity>
+        <activity android:name="control.bongbong"></activity>
+        <activity android:name="control.fentas"></activity>
+        <activity android:name="control.fingki"></activity>
+        <activity android:name="control.fingko"></activity>
+        <activity android:name="control.firenosdon"></activity>
+        <activity android:name="control.kamare"></activity>
+        <activity android:name="control.mui"></activity>
+        <activity android:name="control.otutu"></activity>
+        <activity android:name="control.ragogo"></activity>
+
+        <activity android:name="cure.dorabis"></activity>
+        <activity android:name="cure.kaku"></activity>
+        <activity android:name="cure.monasif"></activity>
+
+        <activity android:name="defensive.bubi"></activity>
+        <activity android:name="defensive.buke"></activity>
+        <activity android:name="defensive.duri"></activity>
+        <activity android:name="defensive.frakitos"></activity>
+        <activity android:name="defensive.katarkas"></activity>
+        <activity android:name="defensive.manmo"></activity>
+        <activity android:name="defensive.sillingka"></activity>
+        <activity android:name="defensive.stolarge"></activity>
+
+        <activity android:name="wide.gigaros"></activity>
+        <activity android:name="wide.hubo"></activity>
+        <activity android:name="wide.kaki"></activity>
+        <activity android:name="wide.magaros"></activity>
+        <activity android:name="wide.sandizard"></activity>
+
+
+
+        <activity android:name=".kindOfPet.attackFragment1" />
+        <activity android:name=".kindOfPet.defensiveFragment2" />
+        <activity android:name=".kindOfPet.controlFragment3" />
+        <activity android:name=".kindOfPet.wideFragment4" />
+        <activity android:name=".kindOfPet.cureFragment5" />
     </application>
 
 </manifest>

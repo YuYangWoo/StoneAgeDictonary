@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.cureFragment5"
+    tools:context=".kindOfPet.cureFragment5"
     android:background="#ffffff">
 
     <!-- TODO: Update blank fragment layout -->
