@@ -48,11 +48,9 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.75"
         app:layout_constraintStart_toStartOf="parent"
@@ -143,10 +141,10 @@
                 android:id="@+id/textView41"
                 android:layout_width="match_parent"
                 android:layout_height="58dp"
-                android:fontFamily="@font/maplestory_light"
                 android:layout_marginBottom="10dp"
-                android:gravity="center"
                 android:background="@drawable/edge_ellipse"
+                android:fontFamily="@font/maplestory_light"
+                android:gravity="center"
                 android:text="연구"
                 android:textColor="#000000"
                 android:textSize="30dp" />
@@ -155,10 +153,10 @@
                 android:id="@+id/textView44"
                 android:layout_width="match_parent"
                 android:layout_height="54dp"
-                android:background="@drawable/edge_ellipse"
                 android:layout_marginBottom="10dp"
-                android:gravity="center"
+                android:background="@drawable/edge_ellipse"
                 android:fontFamily="@font/maplestory_light"
+                android:gravity="center"
                 android:text="부적"
                 android:textColor="#000000"
                 android:textSize="30dp" />
@@ -167,14 +165,15 @@
                 android:id="@+id/textView45"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:gravity="center"
-                android:fontFamily="@font/maplestory_light"
                 android:background="@drawable/edge_ellipse"
+                android:fontFamily="@font/maplestory_light"
+                android:gravity="center"
                 android:text="토템"
                 android:textColor="#000000"
                 android:textSize="30dp" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -277,8 +276,30 @@
                 android:textColor="#000000"
                 android:textSize="30dp" />
         </LinearLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:adSize="SMART_BANNER"
+            app:adUnitId="ca-app-pub-6308948435596230/6884718456"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></com.google.android.gms.ads.AdView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!--

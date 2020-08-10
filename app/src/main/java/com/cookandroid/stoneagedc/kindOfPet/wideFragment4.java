@@ -68,6 +68,11 @@ public class wideFragment4 extends Fragment {
                     Intent intent = new Intent(getActivity(), wide.magaros.class);
                     startActivity(intent);
                 }
+                else if(petDataList.get(position).getPetName()=="모가로스(탑승)")
+                {
+                    Intent intent = new Intent(getActivity(), wide.mogarosRide.class);
+                    startActivity(intent);
+                }
                 else if(petDataList.get(position).getPetName()=="샌디자드")
                 {
                     Intent intent = new Intent(getActivity(), wide.sandizard.class);

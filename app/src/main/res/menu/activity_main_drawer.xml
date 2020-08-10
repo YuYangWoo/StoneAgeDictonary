@@ -23,16 +23,28 @@
 </item>
     <item android:title="유용한 기능">
         <menu>
-    <item
-        android:id="@+id/reco"
-        android:icon="@drawable/ic_menu_send"
-        android:title="펫 순위(주관 생각)"
-        ></item>
             <item
                 android:id="@+id/setPet"
                 android:icon="@drawable/ic_menu_send"
                 android:title="펫 육성 정리"
                 ></item>
+            <item
+                android:id="@+id/recodeck"
+                android:icon="@drawable/ic_menu_send"
+                android:title="티어별 진형 추천덱"
+                ></item>
+            <item
+                android:id="@+id/gogohakCountry"
+                android:icon="@drawable/ic_menu_send"
+                android:title="고고학(마을별정리)"></item>
+            <item
+                android:id="@+id/gogohakBest"
+                android:icon="@drawable/ic_menu_send"
+                android:title="고고학(BEST정리)"></item>
+            <item
+                android:id="@+id/seokkibackgwa"
+                android:icon="@drawable/ic_menu_send"
+                android:title="석기백과"></item>
         </menu>
     </item>
 

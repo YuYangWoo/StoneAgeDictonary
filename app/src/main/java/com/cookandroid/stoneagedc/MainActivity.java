@@ -1,18 +1,12 @@
 package com.cookandroid.stoneagedc;
 
 import android.content.Intent;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.os.Bundle;
 
-import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -28,6 +22,9 @@ import androidx.appcompat.widget.Toolbar;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+
+import recomendDeck.recodeck;
+
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private AdView mAdView;
 
@@ -61,12 +58,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
    public void patchClick(View v){
-       Uri patchuri =Uri.parse("http://forum.netmarble.com/stone_kr/view/42/28287");
+       Uri patchuri =Uri.parse("http://forum.netmarble.com/stone_kr/view/6/35953");
        Intent patchintent = new Intent(Intent.ACTION_VIEW,patchuri);
        startActivity(patchintent);
    }
    public void manClick(View v){
-       Uri manuri =Uri.parse("https://www.youtube.com/watch?v=dDh7f7J4d5E&t=404s");
+       Uri manuri =Uri.parse("https://www.youtube.com/watch?v=Js0xHovyafg");
        Intent manintent = new Intent(Intent.ACTION_VIEW,manuri);
        startActivity(manintent);
    }
@@ -141,17 +138,35 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent levelActivity = new Intent(getApplicationContext(), com.cookandroid.stoneagedc.level.levelActivity.class);
             startActivity(levelActivity);
         }
+        else if(id==R.id.recodeck)
+        {
+            Intent recoActivity = new Intent(getApplicationContext(), recodeck.class);
+            startActivity(recoActivity);
+        }
+        else if(id==R.id.gogohakBest)
+        {
+            Uri uri = Uri.parse("http://forum.netmarble.com/stone_kr/view/44/27181");
+            Intent guideIntent = new Intent(Intent.ACTION_VIEW,uri);
+            startActivity(guideIntent);
+        }
+        else if(id==R.id.gogohakCountry)
+        {
+            Uri uri = Uri.parse("http:/blog.naver.com/leesi5040/222026644338");
+            Intent guideIntent = new Intent(Intent.ACTION_VIEW,uri);
+            startActivity(guideIntent);
+        }
+        else if(id==R.id.seokkibackgwa)
+        {
+            Uri uri = Uri.parse("http://forum.netmarble.com/stone_kr/view/26/2792");
+            Intent guideIntent = new Intent(Intent.ACTION_VIEW,uri);
+            startActivity(guideIntent);
+        }
+
 
       else if(id==R.id.setPet)
         {
             Intent setPetActivity= new Intent(getApplicationContext(), setPetActivity.class);
             startActivity(setPetActivity);
-        }
-        else if(id==R.id.reco)
-        {
-
-            Intent alramActivity = new Intent(getApplicationContext(), recoActivity.class);
-            startActivity(alramActivity);
         }
         else if(id==R.id.introduceMovie)
         {

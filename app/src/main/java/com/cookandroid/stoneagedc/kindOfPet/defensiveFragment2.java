@@ -70,7 +70,7 @@ public class defensiveFragment2 extends Fragment {
                     Intent intent = new Intent(getActivity(), defensive.bubi.class);
                     startActivity(intent);
                 }
-                else if(petDataList.get(position).getPetName()=="북이")
+                else if(petDataList.get(position).getPetName()=="북이(고순)")
                 {
                     Intent intent = new Intent(getActivity(), defensive.buke.class);
                     startActivity(intent);
@@ -85,12 +85,27 @@ public class defensiveFragment2 extends Fragment {
                     Intent intent = new Intent(getActivity(), defensive.frakitos.class);
                     startActivity(intent);
                 }
+                else if(petDataList.get(position).getPetName()=="프라키토스(탑승)")
+                {
+                    Intent intent = new Intent(getActivity(), defensive.frakitosRide.class);
+                    startActivity(intent);
+                }
+                else if(petDataList.get(position).getPetName()=="카타르카스")
+                {
+                    Intent intent = new Intent(getActivity(), defensive.katarkas.class);
+                    startActivity(intent);
+                }
                 else if(petDataList.get(position).getPetName()=="만모")
                 {
                     Intent intent = new Intent(getActivity(), defensive.manmo.class);
                     startActivity(intent);
                 }
-                else if(petDataList.get(position).getPetName()=="살랑카")
+                else if(petDataList.get(position).getPetName()=="만모(탑승)")
+                {
+                    Intent intent = new Intent(getActivity(), defensive.manmoRide.class);
+                    startActivity(intent);
+                }
+                else if(petDataList.get(position).getPetName()=="살링카")
                 {
                     Intent intent = new Intent(getActivity(), defensive.sillingka.class);
                     startActivity(intent);
@@ -113,15 +128,15 @@ public class defensiveFragment2 extends Fragment {
         petDataList = new ArrayList<ListItem>();
 
         petDataList.add(new ListItem(R.drawable.manmo, "만모","1티어"));
-        petDataList.add(new ListItem(R.drawable.manmo, "만모(탑승)"," "));
+        petDataList.add(new ListItem(R.drawable.manmo, "만모(탑승)","1.5티어"));
         petDataList.add(new ListItem(R.drawable.frakitos,"프라키토스","1티어"));
-        petDataList.add(new ListItem(R.drawable.frakitos,"프라키토스(탑승)"," "));
+        petDataList.add(new ListItem(R.drawable.frakitos,"프라키토스(탑승)","3티어"));
         petDataList.add(new ListItem(R.drawable.buke,"북이","1.5티어"));
         petDataList.add(new ListItem(R.drawable.bubi,"부비","2티어"));
         petDataList.add(new ListItem(R.drawable.duri,"두리","2티어"));
         petDataList.add(new ListItem(R.drawable.katarkas,"카타르카스","3티어"));
         petDataList.add(new ListItem(R.drawable.stolarge,"스토라지","3티어"));
-        petDataList.add(new ListItem(R.drawable.sillingka,"살랑카","4티어"));
+        petDataList.add(new ListItem(R.drawable.sillingka,"살링카","4티어"));
     }
 
 

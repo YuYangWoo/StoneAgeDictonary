@@ -53,6 +53,11 @@ public class controlFragment3 extends Fragment {
                     Intent intent = new Intent(getActivity(), control.agoa.class);
                     startActivity(intent);
                 }
+                else if(petDataList.get(position).getPetName()=="아고아(탑승)")
+                {
+                    Intent intent = new Intent(getActivity(), control.agoaride.class);
+                    startActivity(intent);
+                }
                 else if(petDataList.get(position).getPetName()=="백설토끼")
                 {
                     Intent intent = new Intent(getActivity(), control.bakseulrabbit.class);
@@ -115,13 +120,13 @@ public class controlFragment3 extends Fragment {
 
         petDataList.add(new ListItem(R.drawable.fingko, "핑코","1티어"));
         petDataList.add(new ListItem(R.drawable.ragogo,"라고고","1티어"));
-        petDataList.add(new ListItem(R.drawable.agoa,"아고아","1티어"));
-        petDataList.add(new ListItem(R.drawable.agoa,"아고아(탑승)"," "));
+        petDataList.add(new ListItem(R.drawable.agoa,"아고아(탑승)","탑승1티어"));
         petDataList.add(new ListItem(R.drawable.otutu,"오투투","1.5티어"));
         petDataList.add(new ListItem(R.drawable.bakseulrabbit,"백설토끼","1.5티어"));
         petDataList.add(new ListItem(R.drawable.fingki,"핑키","2티어"));
+        petDataList.add(new ListItem(R.drawable.agoa,"아고아","2티어"));
+        petDataList.add(new ListItem(R.drawable.mui,"무이","2티어"));
         petDataList.add(new ListItem(R.drawable.kamare,"카미르","3티어"));
-        petDataList.add(new ListItem(R.drawable.mui,"무이","3티어"));
         petDataList.add(new ListItem(R.drawable.fentas,"펜타스","4티어"));
         petDataList.add(new ListItem(R.drawable.firenosdon,"파이너노스돈","4티어"));
         petDataList.add(new ListItem(R.drawable.baroroks,"바로로크스","4티어"));

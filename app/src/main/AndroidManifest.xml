@@ -31,9 +31,9 @@
             />
         <activity android:name=".level.levelActivity"
             />
-        <activity android:name=".level.levelActivity1"
+        <activity android:name="recomendDeck.recodeck"
             />
-        <activity android:name=".recoActivity"
+        <activity android:name=".level.levelActivity1"
             />
         <activity android:name=".setPetActivity"
             />
@@ -71,8 +71,12 @@
             />
         <activity android:name=".attackPetSet.Trarofo"
             />
+        <activity android:name=".attackPetSet.angiroRide"
+            />
+        <activity android:name=".attackPetSet.crabRide"/>
 
      <activity android:name="control.agoa"></activity>
+        <activity android:name="control.agoaride"></activity>
         <activity android:name="control.bakseulrabbit"></activity>
         <activity android:name="control.baroroks"></activity>
         <activity android:name="control.bongbong"></activity>
@@ -97,12 +101,15 @@
         <activity android:name="defensive.manmo"></activity>
         <activity android:name="defensive.sillingka"></activity>
         <activity android:name="defensive.stolarge"></activity>
+        <activity android:name="defensive.manmoRide"></activity>
+        <activity android:name="defensive.frakitosRide"></activity>
 
         <activity android:name="wide.gigaros"></activity>
         <activity android:name="wide.hubo"></activity>
         <activity android:name="wide.kaki"></activity>
         <activity android:name="wide.magaros"></activity>
         <activity android:name="wide.sandizard"></activity>
+        <activity android:name="wide.mogarosRide"></activity>
 
 
 

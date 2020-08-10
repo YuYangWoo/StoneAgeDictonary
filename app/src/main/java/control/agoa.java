@@ -9,15 +9,27 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import com.cookandroid.stoneagedc.R;
 import com.cookandroid.stoneagedc.VPAdapter;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.tabs.TabLayout;
 
-public class agoa extends AppCompatActivity {
+public class agoa extends AppCompatActivity { private AdView mAdView;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.control_agoa);
         setTitle("아고아");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 /*
             //펫의 공략 종류 어댑터 연결.
             ViewPager viewPager = findViewById(R.id.kindViewPager);

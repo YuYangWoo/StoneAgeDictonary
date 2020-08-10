@@ -30,6 +30,8 @@ import com.cookandroid.stoneagedc.attackPetSet.Gurumaru;
 import com.cookandroid.stoneagedc.attackPetSet.Jag;
 import com.cookandroid.stoneagedc.attackPetSet.Moga;
 import com.cookandroid.stoneagedc.attackPetSet.Trarofo;
+import com.cookandroid.stoneagedc.attackPetSet.angiroRide;
+import com.cookandroid.stoneagedc.attackPetSet.crabRide;
 
 import java.util.ArrayList;
 
@@ -67,6 +69,16 @@ public class attackFragment1 extends Fragment  {
                 if(petDataList.get(position).getPetName()=="얀기로")
                 {
                     Intent intent = new Intent(getActivity(), Angiro.class);
+                    startActivity(intent);
+                }
+                else if(petDataList.get(position).getPetName()=="얀기로(탑승)")
+                {
+                    Intent intent = new Intent(getActivity(), angiroRide.class);
+                    startActivity(intent);
+                }
+                else if(petDataList.get(position).getPetName()=="크랩(탑승)")
+                {
+                    Intent intent = new Intent(getActivity(), crabRide.class);
                     startActivity(intent);
                 }
               else if(petDataList.get(position).getPetName()=="꼬미")
@@ -161,14 +173,14 @@ public class attackFragment1 extends Fragment  {
         petDataList = new ArrayList<ListItem>();
 
         petDataList.add(new ListItem(R.drawable.angiro, "얀기로","1티어"));
-        petDataList.add(new ListItem(R.drawable.angiro, "얀기로(탑승)"," "));
+        petDataList.add(new ListItem(R.drawable.angiro, "얀기로(탑승)","탑승2티어"));
       petDataList.add(new ListItem(R.drawable.ggomi,"꼬미","1.5티어"));
         petDataList.add(new ListItem(R.drawable.cue,"큐이","1.5티어"));
         petDataList.add(new ListItem(R.drawable.trarofo,"트라로포","1.5티어"));
         petDataList.add(new ListItem(R.drawable.berga,"베르가","2티어"));
         petDataList.add(new ListItem(R.drawable.cucuro,"쿠쿠르","2티어"));
         petDataList.add(new ListItem(R.drawable.crab,"크랩","2티어"));
-        petDataList.add(new ListItem(R.drawable.crab,"크랩(탑승)"," "));
+        petDataList.add(new ListItem(R.drawable.crab,"크랩(탑승)","탑승1티어"));
         petDataList.add(new ListItem(R.drawable.baebo,"베이보","3티어"));
         petDataList.add(new ListItem(R.drawable.falteon,"팔케온","3티어"));
         petDataList.add(new ListItem(R.drawable.jag,"쟈그","3티어"));
@@ -177,7 +189,7 @@ public class attackFragment1 extends Fragment  {
         petDataList.add(new ListItem(R.drawable.moga1,"모가","4티어"));
         petDataList.add(new ListItem(R.drawable.fino,"피노","4티어"));
         petDataList.add(new ListItem(R.drawable.berfuce,"베르푸스","4티어"));
-        petDataList.add(new ListItem(R.drawable.ftecus,"프테쿠스","4티어"));
+        petDataList.add(new ListItem(R.drawable.ftecus,"고테쿠스","4티어"));
         petDataList.add(new ListItem(R.drawable.beron,"베론","4티어"));
 
     }
