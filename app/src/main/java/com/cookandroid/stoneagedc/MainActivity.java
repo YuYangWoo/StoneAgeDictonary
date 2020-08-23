@@ -14,6 +14,7 @@ import android.view.View;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.core.view.GravityCompat;
 
+import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -30,10 +31,12 @@ import recomendDeck.recodeck;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private AdView mAdView;
     private BackPressCloseHandler backPressCloseHandler;
+    private InterstitialAd mInterstitialAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -51,12 +54,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             public void onInitializationComplete(InitializationStatus initializationStatus) {
             }
         });
+        //배너광고 호출
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
         //아이템 선택 이벤트 호출
         navigationView.setNavigationItemSelectedListener(this);
-
+        //전면광고 호출
+        AdsFull.getInstance(this);
         backPressCloseHandler = new BackPressCloseHandler(this);
 
 
@@ -164,5 +169,4 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
        backPressCloseHandler.onBackPressed();
     }
-
 }
