@@ -70,9 +70,14 @@ public class defensiveFragment2 extends Fragment {
                     Intent intent = new Intent(getActivity(), defensive.bubi.class);
                     startActivity(intent);
                 }
-                else if(petDataList.get(position).getPetName()=="북이(고순)")
+                else if(petDataList.get(position).getPetName()=="북이(고순북이)")
                 {
                     Intent intent = new Intent(getActivity(), defensive.buke.class);
+                    startActivity(intent);
+                }
+                else if(petDataList.get(position).getPetName()=="북이(딜북이)")
+                {
+                    Intent intent = new Intent(getActivity(), defensive.attackbuke.class);
                     startActivity(intent);
                 }
                 else if(petDataList.get(position).getPetName()=="두리")
@@ -131,7 +136,8 @@ public class defensiveFragment2 extends Fragment {
         petDataList.add(new ListItem(R.drawable.manmo, "만모(탑승)","1.5티어"));
         petDataList.add(new ListItem(R.drawable.frakitos,"프라키토스","1티어"));
         petDataList.add(new ListItem(R.drawable.frakitos,"프라키토스(탑승)","3티어"));
-        petDataList.add(new ListItem(R.drawable.buke,"북이","1.5티어"));
+        petDataList.add(new ListItem(R.drawable.buke,"북이(고순북이)","1.5티어"));
+        petDataList.add(new ListItem(R.drawable.buke,"북이(딜북이)","1.5티어"));
         petDataList.add(new ListItem(R.drawable.bubi,"부비","2티어"));
         petDataList.add(new ListItem(R.drawable.duri,"두리","2티어"));
         petDataList.add(new ListItem(R.drawable.katarkas,"카타르카스","3티어"));

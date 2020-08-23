@@ -1,5 +1,6 @@
 package com.cookandroid.stoneagedc;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -19,6 +20,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
@@ -27,7 +29,7 @@ import recomendDeck.recodeck;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private AdView mAdView;
-
+    private BackPressCloseHandler backPressCloseHandler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,12 +39,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setSupportActionBar(toolbar);
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
-       //왼쪽 상단에 네비게이션바 만들기
+        //왼쪽 상단에 네비게이션바 만들기
         ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(
-                this,drawer,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close
+                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close
         );
-       drawer.addDrawerListener(actionBarDrawerToggle);
-       actionBarDrawerToggle.syncState();
+        drawer.addDrawerListener(actionBarDrawerToggle);
+        actionBarDrawerToggle.syncState();
 
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
@@ -52,23 +54,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
-     //아이템 선택 이벤트 호출
+        //아이템 선택 이벤트 호출
         navigationView.setNavigationItemSelectedListener(this);
 
+        backPressCloseHandler = new BackPressCloseHandler(this);
+
+
+    }
+    public void patchClick(View v) {
+        Uri patchuri = Uri.parse("http://forum.netmarble.com/stone_kr/view/6/35953");
+        Intent patchintent = new Intent(Intent.ACTION_VIEW, patchuri);
+        startActivity(patchintent);
     }
 
-   public void patchClick(View v){
-       Uri patchuri =Uri.parse("http://forum.netmarble.com/stone_kr/view/6/35953");
-       Intent patchintent = new Intent(Intent.ACTION_VIEW,patchuri);
-       startActivity(patchintent);
-   }
-   public void manClick(View v){
-       Uri manuri =Uri.parse("https://www.youtube.com/watch?v=Js0xHovyafg");
-       Intent manintent = new Intent(Intent.ACTION_VIEW,manuri);
-       startActivity(manintent);
-   }
-
-
+    public void manClick(View v) {
+        Uri manuri = Uri.parse("https://www.youtube.com/watch?v=Js0xHovyafg");
+        Intent manintent = new Intent(Intent.ACTION_VIEW, manuri);
+        startActivity(manintent);
+    }
 
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -77,121 +80,89 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         if (id == R.id.stoneMain) {
             Uri uri = Uri.parse("https://stone.netmarble.com/ko/");
-            Intent mainIntent = new Intent(Intent.ACTION_VIEW,uri);
+            Intent mainIntent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(mainIntent);
-        }
-        else if(id==R.id.stoneCommunity)
-        {
+        } else if (id == R.id.stoneCommunity) {
             Uri uri = Uri.parse("http://forum.netmarble.com/stone_kr");
-            Intent communityIntent = new Intent(Intent.ACTION_VIEW,uri);
+            Intent communityIntent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(communityIntent);
-        }
-        else if(id==R.id.stoneNotice)
-        {
+        } else if (id == R.id.stoneNotice) {
             Uri uri = Uri.parse("http://forum.netmarble.com/stone_kr/list/6/1");
-            Intent noticeIntent = new Intent(Intent.ACTION_VIEW,uri);
+            Intent noticeIntent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(noticeIntent);
-        }
-        else if(id==R.id.stoneEvent)
-        {
+        } else if (id == R.id.stoneEvent) {
             Uri uri = Uri.parse("http://forum.netmarble.com/stone_kr/list/8/1");
-            Intent eventIntent = new Intent(Intent.ACTION_VIEW,uri);
+            Intent eventIntent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(eventIntent);
-        }
-        else if(id==R.id.stoneFreeBoard)
-        {
+        } else if (id == R.id.stoneFreeBoard) {
             Uri uri = Uri.parse("http://forum.netmarble.com/stone_kr/list/16/1");
-            Intent boardIntent = new Intent(Intent.ACTION_VIEW,uri);
+            Intent boardIntent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(boardIntent);
-        }
-       else if(id==R.id.stoneGuide)
-        {
+        } else if (id == R.id.stoneGuide) {
             Uri uri = Uri.parse("http://forum.netmarble.com/stone_kr/list/26/1");
-            Intent guideIntent = new Intent(Intent.ACTION_VIEW,uri);
+            Intent guideIntent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(guideIntent);
-        }
-        else if(id==R.id.stoneFriend)
-        {
+        } else if (id == R.id.stoneFriend) {
             Uri uri = Uri.parse("http://forum.netmarble.com/stone_kr/list/17/1");
-            Intent friendIntent = new Intent(Intent.ACTION_VIEW,uri);
+            Intent friendIntent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(friendIntent);
-        }
-        else if(id==R.id.stoneKnowledge)
-        {
+        } else if (id == R.id.stoneKnowledge) {
             Uri uri = Uri.parse("http://forum.netmarble.com/stone_kr/list/26/1");
-            Intent knowledgeIntent = new Intent(Intent.ACTION_VIEW,uri);
+            Intent knowledgeIntent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(knowledgeIntent);
-        }
-        else if(id==R.id.stoneDeveloperInfo)
-        {
-
-            Intent developerInfoActivity = new Intent(getApplicationContext(),developerInfoActivity.class);
+        } else if (id == R.id.stoneDeveloperInfo) {
+            Intent developerInfoActivity = new Intent(getApplicationContext(), developerInfoActivity.class);
             startActivity(developerInfoActivity);
-        }
-        else if(id==R.id.stonePet)
-        {
-            Intent petActivity = new Intent(getApplicationContext(),petActivity.class);
+        } else if (id == R.id.person) {
+            Intent jorunsaActivity = new Intent(getApplicationContext(), jorunsaActivity.class);
+            startActivity(jorunsaActivity);
+        } else if (id == R.id.stonePet) {
+            Intent petActivity = new Intent(getApplicationContext(), petActivity.class);
             startActivity(petActivity);
-        }
-        else if(id==R.id.stoneLevel)
-        {
+        } else if (id == R.id.stoneLevel) {
             Intent levelActivity = new Intent(getApplicationContext(), com.cookandroid.stoneagedc.level.levelActivity.class);
             startActivity(levelActivity);
-        }
-        else if(id==R.id.recodeck)
-        {
+        } else if (id == R.id.recodeck) {
             Intent recoActivity = new Intent(getApplicationContext(), recodeck.class);
             startActivity(recoActivity);
-        }
-        else if(id==R.id.gogohakBest)
-        {
+        } else if (id == R.id.gogohakBest) {
             Uri uri = Uri.parse("http://forum.netmarble.com/stone_kr/view/44/27181");
-            Intent guideIntent = new Intent(Intent.ACTION_VIEW,uri);
+            Intent guideIntent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(guideIntent);
-        }
-        else if(id==R.id.gogohakCountry)
-        {
+        } else if (id == R.id.gogohakCountry) {
             Uri uri = Uri.parse("http:/blog.naver.com/leesi5040/222026644338");
-            Intent guideIntent = new Intent(Intent.ACTION_VIEW,uri);
+            Intent guideIntent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(guideIntent);
-        }
-        else if(id==R.id.seokkibackgwa)
-        {
+        } else if (id == R.id.seokkibackgwa) {
             Uri uri = Uri.parse("http://forum.netmarble.com/stone_kr/view/26/2792");
-            Intent guideIntent = new Intent(Intent.ACTION_VIEW,uri);
+            Intent guideIntent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(guideIntent);
-        }
-
-
-      else if(id==R.id.setPet)
-        {
-            Intent setPetActivity= new Intent(getApplicationContext(), setPetActivity.class);
+        } else if (id == R.id.setPet) {
+            Intent setPetActivity = new Intent(getApplicationContext(), setPetActivity.class);
             startActivity(setPetActivity);
-        }
-        else if(id==R.id.introduceMovie)
-        {
+        } else if (id == R.id.introduceMovie) {
             Uri uri = Uri.parse("https://www.youtube.com/watch?v=wV-_QnGJoDI");
-            Intent knowledgeIntent = new Intent(Intent.ACTION_VIEW,uri);
+            Intent knowledgeIntent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(knowledgeIntent);
-        }
-        else if(id==R.id.stoneYoutube)
-        {
+        } else if (id == R.id.stoneYoutube) {
             Uri uri = Uri.parse("https://www.youtube.com/channel/UClTxh9tyedXmKcNIQybpagQ?view_as=subscriber");
-            Intent youTubeIntent = new Intent(Intent.ACTION_VIEW,uri);
+            Intent youTubeIntent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(youTubeIntent);
         }
 
-        DrawerLayout drawer =  findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
     public void onBackPressed() {
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            //   backPressCloseHandler.onBackPressed();
         }
+       backPressCloseHandler.onBackPressed();
     }
 
 }

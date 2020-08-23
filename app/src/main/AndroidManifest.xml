@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.cookandroid.stoneagedc">
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application
         android:allowBackup="true"
         android:icon="@drawable/icon"
@@ -34,6 +35,8 @@
         <activity android:name="recomendDeck.recodeck"
             />
         <activity android:name=".level.levelActivity1"
+            />
+        <activity android:name=".jorunsaActivity"
             />
         <activity android:name=".setPetActivity"
             />
@@ -74,6 +77,7 @@
         <activity android:name=".attackPetSet.angiroRide"
             />
         <activity android:name=".attackPetSet.crabRide"/>
+        <activity android:name=".attackPetSet.Giro"/>
 
      <activity android:name="control.agoa"></activity>
         <activity android:name="control.agoaride"></activity>
@@ -95,6 +99,7 @@
 
         <activity android:name="defensive.bubi"></activity>
         <activity android:name="defensive.buke"></activity>
+        <activity android:name="defensive.attackbuke"></activity>
         <activity android:name="defensive.duri"></activity>
         <activity android:name="defensive.frakitos"></activity>
         <activity android:name="defensive.katarkas"></activity>
@@ -113,11 +118,7 @@
 
 
 
-        <activity android:name=".kindOfPet.attackFragment1" />
-        <activity android:name=".kindOfPet.defensiveFragment2" />
-        <activity android:name=".kindOfPet.controlFragment3" />
-        <activity android:name=".kindOfPet.wideFragment4" />
-        <activity android:name=".kindOfPet.cureFragment5" />
+
     </application>
 
 </manifest>

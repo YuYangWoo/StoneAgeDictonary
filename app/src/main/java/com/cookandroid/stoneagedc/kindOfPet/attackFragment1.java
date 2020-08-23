@@ -24,6 +24,7 @@ import com.cookandroid.stoneagedc.attackPetSet.Cue;
 import com.cookandroid.stoneagedc.attackPetSet.Falcaon;
 import com.cookandroid.stoneagedc.attackPetSet.Fino;
 import com.cookandroid.stoneagedc.attackPetSet.GgoMi;
+import com.cookandroid.stoneagedc.attackPetSet.Giro;
 import com.cookandroid.stoneagedc.attackPetSet.Gordon;
 import com.cookandroid.stoneagedc.attackPetSet.Gotecus;
 import com.cookandroid.stoneagedc.attackPetSet.Gurumaru;
@@ -161,6 +162,11 @@ public class attackFragment1 extends Fragment  {
                     Intent intent = new Intent(getActivity(), Babo.class);
                     startActivity(intent);
                 }
+                else if(petDataList.get(position).getPetName()=="기로")
+                {
+                    Intent intent = new Intent(getActivity(), Giro.class);
+                    startActivity(intent);
+                }
 
 
             }
@@ -174,9 +180,10 @@ public class attackFragment1 extends Fragment  {
 
         petDataList.add(new ListItem(R.drawable.angiro, "얀기로","1티어"));
         petDataList.add(new ListItem(R.drawable.angiro, "얀기로(탑승)","탑승2티어"));
-      petDataList.add(new ListItem(R.drawable.ggomi,"꼬미","1.5티어"));
-        petDataList.add(new ListItem(R.drawable.cue,"큐이","1.5티어"));
-        petDataList.add(new ListItem(R.drawable.trarofo,"트라로포","1.5티어"));
+        petDataList.add(new ListItem(R.drawable.giro, "기로","1.5티어"));
+        petDataList.add(new ListItem(R.drawable.cue,"큐이","2티어"));
+        petDataList.add(new ListItem(R.drawable.trarofo,"트라로포","2티어"));
+        petDataList.add(new ListItem(R.drawable.ggomi,"꼬미","2티어"));
         petDataList.add(new ListItem(R.drawable.berga,"베르가","2티어"));
         petDataList.add(new ListItem(R.drawable.cucuro,"쿠쿠르","2티어"));
         petDataList.add(new ListItem(R.drawable.crab,"크랩","2티어"));

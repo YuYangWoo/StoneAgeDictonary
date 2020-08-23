@@ -24,6 +24,10 @@
     <item android:title="유용한 기능">
         <menu>
             <item
+                android:id="@+id/person"
+                android:icon="@drawable/ic_menu_send"
+                android:title="조련사 육성"></item>
+            <item
                 android:id="@+id/setPet"
                 android:icon="@drawable/ic_menu_send"
                 android:title="펫 육성 정리"
