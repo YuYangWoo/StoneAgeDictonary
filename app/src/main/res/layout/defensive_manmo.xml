@@ -204,7 +204,7 @@
                 android:background="@drawable/edge_ellipse"
                 android:fontFamily="@font/maplestory_light"
                 android:gravity="center"
-                android:text="체력->순발"
+                android:text="체력A+->순발A+"
                 android:textColor="#000000"
                 android:textSize="28dp" />
 
@@ -215,9 +215,9 @@
                 android:background="@drawable/edge_ellipse"
                 android:fontFamily="@font/maplestory_light"
                 android:gravity="center"
-                android:text="여유로운, 속이검은"
+                android:text="여유로운, 속이검은,날렵한"
                 android:textColor="#000000"
-                android:textSize="30dp" />
+                android:textSize="28dp" />
 
             <TextView
                 android:layout_width="match_parent"

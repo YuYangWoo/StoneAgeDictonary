@@ -24,11 +24,13 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.UserHandle;
+import android.util.Log;
 import android.view.Display;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -37,7 +39,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class BackPressCloseHandler {
+public class BackPressCloseHandler extends AppCompatActivity {
     private long backKeyPressedTime = 0;
     private long timeInterval = 2000;
     private Toast toast;
@@ -63,4 +65,5 @@ public class BackPressCloseHandler {
         toast = Toast.makeText(activity, "\'뒤로\'버튼을 한번 더 누르시면 종료됩니다.", Toast.LENGTH_SHORT);
         toast.show();
     }
-}
+
+   }

@@ -1,10 +1,10 @@
 package com.cookandroid.stoneagedc;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
+import com.cookandroid.stoneagedc.jorunsa.JorunsaActivity;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
@@ -60,20 +60,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mAdView.loadAd(adRequest);
         //아이템 선택 이벤트 호출
         navigationView.setNavigationItemSelectedListener(this);
-        //전면광고 호출
-        AdsFull.getInstance(this);
+//        //전면광고 호출
+//        AdsFull.getInstance(this);
         backPressCloseHandler = new BackPressCloseHandler(this);
 
 
     }
     public void patchClick(View v) {
-        Uri patchuri = Uri.parse("http://forum.netmarble.com/stone_kr/view/6/35953");
+        Uri patchuri = Uri.parse("http://forum.netmarble.com/stone_kr/view/24/37256");
         Intent patchintent = new Intent(Intent.ACTION_VIEW, patchuri);
         startActivity(patchintent);
     }
 
     public void manClick(View v) {
-        Uri manuri = Uri.parse("https://www.youtube.com/watch?v=Js0xHovyafg");
+        Uri manuri = Uri.parse("https://www.youtube.com/watch?v=dHVMTjgJtE4");
         Intent manintent = new Intent(Intent.ACTION_VIEW, manuri);
         startActivity(manintent);
     }
@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent developerInfoActivity = new Intent(getApplicationContext(), developerInfoActivity.class);
             startActivity(developerInfoActivity);
         } else if (id == R.id.person) {
-            Intent jorunsaActivity = new Intent(getApplicationContext(), jorunsaActivity.class);
+            Intent jorunsaActivity = new Intent(getApplicationContext(), JorunsaActivity.class);
             startActivity(jorunsaActivity);
         } else if (id == R.id.stonePet) {
             Intent petActivity = new Intent(getApplicationContext(), petActivity.class);
@@ -167,6 +167,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else {
             //   backPressCloseHandler.onBackPressed();
         }
+        AdsFull.getInstance(this);
        backPressCloseHandler.onBackPressed();
     }
 }

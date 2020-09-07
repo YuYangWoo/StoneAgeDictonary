@@ -204,7 +204,7 @@
                 android:background="@drawable/edge_ellipse"
                 android:fontFamily="@font/maplestory_light"
                 android:gravity="center"
-                android:text="체력,순발"
+                android:text="체력A+,순발A+"
                 android:textColor="#000000"
                 android:textSize="28dp" />
 
@@ -215,7 +215,7 @@
                 android:background="@drawable/edge_ellipse"
                 android:fontFamily="@font/maplestory_light"
                 android:gravity="center"
-                android:text="인자한(추천),고귀한,여유로운"
+                android:text="여유로운(추천),고귀한,인자한"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 

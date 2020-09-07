@@ -204,7 +204,7 @@
                 android:background="@drawable/edge_ellipse"
                 android:fontFamily="@font/maplestory_light"
                 android:gravity="center"
-                android:text="순발->체력"
+                android:text="순발S->체력A+"
                 android:textColor="#000000"
                 android:textSize="28dp" />
 
@@ -226,7 +226,7 @@
                 android:background="@drawable/edge_ellipse"
                 android:fontFamily="@font/maplestory_light"
                 android:gravity="center"
-                android:text="순발(진형에서 순발1등,체력1~2개)"
+                android:text="올 순발 추천"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 

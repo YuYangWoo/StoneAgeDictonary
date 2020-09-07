@@ -204,7 +204,7 @@
                 android:background="@drawable/edge_ellipse"
                 android:fontFamily="@font/maplestory_light"
                 android:gravity="center"
-                android:text="공격->순발->체력"
+                android:text="공격S->순발A->체력A"
                 android:textColor="#000000"
                 android:textSize="30dp" />
 
@@ -248,7 +248,7 @@
                 android:background="@drawable/edge_ellipse"
                 android:fontFamily="@font/maplestory_light"
                 android:gravity="center"
-                android:text="체력-공격-공격%-순발-치명타확률-치명타효과-상태이상무시-회피"
+                android:text="체력-공격-공격%-순발-치명타확률-치명타효과-회피-상태이상무시"
                 android:textColor="#000000"
                 android:textSize="18dp" />
 

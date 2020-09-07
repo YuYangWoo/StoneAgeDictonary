@@ -204,7 +204,7 @@
                 android:background="@drawable/edge_ellipse"
                 android:fontFamily="@font/maplestory_light"
                 android:gravity="center"
-                android:text="체력,공격,방어"
+                android:text="공격A+,체력A+,방어A"
                 android:textColor="#000000"
                 android:textSize="28dp" />
 

@@ -30,11 +30,10 @@ public class AdsFull {
         return instance;
     }
 
-
     public static void setAds() {
 
         adFull = new InterstitialAd(context);
-        adFull.setAdUnitId(context.getResources().getString(R.string.test_ad_unit_id));
+        adFull.setAdUnitId(context.getResources().getString(R.string.ad_unit_id));
 
         AdRequest adRequest = new AdRequest.Builder().build(); //새 광고요청
 

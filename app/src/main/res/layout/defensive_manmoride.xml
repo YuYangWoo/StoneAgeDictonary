@@ -205,9 +205,9 @@
                 android:background="@drawable/edge_ellipse"
                 android:fontFamily="@font/maplestory_light"
                 android:gravity="center"
-                android:text="체력,방어"
+                android:text="딜무기-체공 방어무기-체방"
                 android:textColor="#000000"
-                android:textSize="30dp" />
+                android:textSize="26dp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -216,9 +216,9 @@
                 android:background="@drawable/edge_ellipse"
                 android:fontFamily="@font/maplestory_light"
                 android:gravity="center"
-                android:text="여유로운,믿을만한"
+                android:text="여유로운,믿을만한,용감한"
                 android:textColor="#000000"
-                android:textSize="30dp" />
+                android:textSize="28dp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -261,7 +261,7 @@
                 android:background="@drawable/edge_ellipse"
                 android:fontFamily="@font/maplestory_light"
                 android:gravity="center"
-                android:text="필수 : 방어(아무거나), 체력(아무거나)          서브 : 탑승술에맞게"
+                android:text="필수 : 본인의 무기에 맞게                       서브 : 탑승술에맞게"
                 android:textColor="#000000"
                 android:textSize="18dp" />
 
@@ -272,7 +272,7 @@
                 android:background="@drawable/edge_ellipse"
                 android:fontFamily="@font/maplestory_light"
                 android:gravity="center"
-                android:text="체력"
+                android:text="X"
                 android:textColor="#000000"
                 android:textSize="30dp" />
         </LinearLayout>

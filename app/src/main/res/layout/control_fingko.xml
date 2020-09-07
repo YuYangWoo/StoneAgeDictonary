@@ -215,7 +215,7 @@
                 android:background="@drawable/edge_ellipse"
                 android:fontFamily="@font/maplestory_light"
                 android:gravity="center"
-                android:text="속이검은,날렵한"
+                android:text="속이검은,날렵한(추천)"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
@@ -226,7 +226,7 @@
                 android:background="@drawable/edge_ellipse"
                 android:fontFamily="@font/maplestory_light"
                 android:gravity="center"
-                android:text="순발(체력이약하면1~2개)"
+                android:text="올 순발 추천"
                 android:textColor="#000000"
                 android:textSize="25dp" />
 
@@ -248,7 +248,7 @@
                 android:background="@drawable/edge_ellipse"
                 android:fontFamily="@font/maplestory_light"
                 android:gravity="center"
-                android:text="체력-체력%-순발-순발%-상태이상-상태이상무시-회피-명중"
+                android:text="체력-체력%-순발-순발%-상태이상-상태이상무시-회피-명중-치무"
                 android:textColor="#000000"
                 android:textSize="18dp" />
 

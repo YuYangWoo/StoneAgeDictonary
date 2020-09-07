@@ -204,7 +204,7 @@
                 android:background="@drawable/edge_ellipse"
                 android:fontFamily="@font/maplestory_light"
                 android:gravity="center"
-                android:text="공격->체력"
+                android:text="다 A이상 공높으면좋음"
                 android:textColor="#000000"
                 android:textSize="28dp" />
 
