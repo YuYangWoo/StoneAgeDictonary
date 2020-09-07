@@ -16,8 +16,8 @@
             android:value="ca-app-pub-6308948435596230~8212621303"/>
         <activity
             android:name=".SplashActivity"
+            android:label="스톤 백과사전"
             android:theme="@style/AppTheme.NoActionBar">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -26,8 +26,8 @@
         <activity android:name=".developerInfoActivity"
         />
         <activity android:name=".MainActivity"
-            android:label="스톤 백과사전"
             android:theme="@style/AppTheme.NoActionBar"
+            android:label="스톤 백과사전"
             />
         <activity android:name=".petActivity"
             />
