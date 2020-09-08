@@ -78,7 +78,7 @@ public class cureFragment5 extends Fragment {
         petDataList = new ArrayList<ListItem>();
 
         petDataList.add(new ListItem(R.drawable.dorabis, "도라비스","1티어"));
-        petDataList.add(new ListItem(R.drawable.kaku,"골드로비","1티어"));
+        petDataList.add(new ListItem(R.drawable.golfwolf,"골드로비","1티어"));
         petDataList.add(new ListItem(R.drawable.monasif,"모나시프","2티어"));
         petDataList.add(new ListItem(R.drawable.kaku,"카쿠","3티어"));
 

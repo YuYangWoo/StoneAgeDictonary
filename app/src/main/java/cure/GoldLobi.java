@@ -16,7 +16,7 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 public class GoldLobi extends AppCompatActivity { private AdView mAdView;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.cure_dorabis);
+        setContentView(R.layout.cure_goldlobi);
         setTitle("골드로비");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
