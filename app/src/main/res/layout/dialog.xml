@@ -1,0 +1,26 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"> <!--해당 액티비티 선언-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 1. 각종 육성 펫 정보 수정\n\n 2. 골드로비,문울프 계열 육성법 추가\n\n 3. 조련사 육성추가  \n\n 4. 각종 오류 수정\n\n"
+            android:textSize="17dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:fontFamily="@font/maplestory_light"
+             />
+    </LinearLayout>
+
+
+</ScrollView>

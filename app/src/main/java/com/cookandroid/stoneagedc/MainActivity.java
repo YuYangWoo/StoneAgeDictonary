@@ -1,5 +1,11 @@
 package com.cookandroid.stoneagedc;
 
+import android.app.AlertDialog;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -8,8 +14,11 @@ import com.cookandroid.stoneagedc.jorunsa.JorunsaActivity;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.core.view.GravityCompat;
@@ -42,7 +51,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setSupportActionBar(toolbar);
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
-        //왼쪽 상단에 네비게이션바 만들기
+
+        // 왼쪽 상단에 네비게이션바 만들기
         ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close
         );
@@ -63,6 +73,27 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 //        //전면광고 호출
 //        AdsFull.getInstance(this);
         backPressCloseHandler = new BackPressCloseHandler(this);
+
+        Button alert = findViewById(R.id.popUp);
+
+    }
+    public void noticeClick(View v) {
+        Context context = getApplicationContext();
+        LayoutInflater inflater = (LayoutInflater) context.getSystemService(LAYOUT_INFLATER_SERVICE);
+        View layout = inflater.inflate(R.layout.dialog, (ViewGroup) findViewById(R.id.popup));
+        AlertDialog.Builder Dialog = new AlertDialog.Builder(MainActivity.this);
+        Dialog.setTitle("공지사항");
+        Dialog.setView(layout);
+
+        Dialog.setNegativeButton("닫기", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
+        AlertDialog ad = Dialog.create();
+        ad.show();
+
 
 
     }
