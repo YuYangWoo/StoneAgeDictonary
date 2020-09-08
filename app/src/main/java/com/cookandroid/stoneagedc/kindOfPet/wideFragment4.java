@@ -73,7 +73,7 @@ public class wideFragment4 extends Fragment {
                     Intent intent = new Intent(getActivity(), wide.mogarosRide.class);
                     startActivity(intent);
                 }
-                else if(petDataList.get(position).getPetName()=="샌디자드")
+                else if(petDataList.get(position).getPetName()=="샌디쟈드")
                 {
                     Intent intent = new Intent(getActivity(), wide.sandizard.class);
                     startActivity(intent);
@@ -89,9 +89,9 @@ public class wideFragment4 extends Fragment {
 
         petDataList.add(new ListItem(R.drawable.mogaros, "모가로스","1티어"));
         petDataList.add(new ListItem(R.drawable.mogaros, "모가로스(탑승)","1티어"));
+        petDataList.add(new ListItem(R.drawable.sandizard,"샌디쟈드","1티어"));
         petDataList.add(new ListItem(R.drawable.kaki,"카키","2티어"));
         petDataList.add(new ListItem(R.drawable.gigaros,"기가로스","3티어"));
-        petDataList.add(new ListItem(R.drawable.sandizard,"샌디쟈드","3티어"));
         petDataList.add(new ListItem(R.drawable.hubo,"휴보","4티어"));
 
     }

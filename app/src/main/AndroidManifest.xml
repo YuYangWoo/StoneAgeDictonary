@@ -81,6 +81,7 @@
             />
         <activity android:name=".attackPetSet.crabRide"/>
         <activity android:name=".attackPetSet.Giro"/>
+        <activity android:name=".attackPetSet.MoonWolf"/>
 
      <activity android:name="control.agoa"></activity>
         <activity android:name="control.agoaride"></activity>
