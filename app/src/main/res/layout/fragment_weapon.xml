@@ -6,31 +6,129 @@
     android:orientation="vertical">
 
     <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity ="center"
-        android:fillViewport="true"
         android:layout_marginTop="0dp"
-        android:id="@+id/scrollView">
-        <LinearLayout
-            android:orientation="vertical"
-            android:id="@+id/layout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        android:fillViewport="true"
+        android:gravity="center"
+        android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/imageview"
-                android:layout_width="match_parent"
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+           <TextView
+               android:id="@+id/ability"
+               android:layout_marginTop="10dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/maplestory_light"
+               android:textSize="18dp"
+               android:textColor="#000000"
+               android:text="▶ 능력치 : 올 힘">
+           </TextView>
+            <TextView
+                android:id="@+id/abilityEx"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:scaleType="fitCenter"
-                android:adjustViewBounds="true"/>
+                android:fontFamily="@font/maplestory_light"
+                android:textSize="13dp"
+                android:textColor="#000000"
+                android:text="            ㄴ 투척도끼는 올힘으로 갑니다. ">
+            </TextView>
+            <TextView
+                android:id="@+id/equip"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maplestory_light"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:text="▶ 장비 : 모자, 옷, 팔찌, 투척도끼">
+            </TextView>
+            <TextView
+                android:id="@+id/equipEx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maplestory_light"
+                android:textSize="13dp"
+                android:textColor="#000000"
+                android:text="        ㄴ  모가로스 탑승으로 인해 조련사 궁을 맞으면 한방에 죽기 때문에 먼저 때리는게 중요해졌습니다. 모자, 옷을 사용해 순발을 올리고 팔찌는 그대로 갑니다. (팔찌 숙련도 = 공상승) 투척도끼는 '추격' 옵션이 달리면 좋습니다. ">
+            </TextView>
+            <TextView
+                android:id="@+id/ride"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maplestory_light"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:text="▶ 탑승 : 모가로스(추천), 만모, 아고아 ">
+            </TextView>
+            <TextView
+                android:id="@+id/rideEx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maplestory_light"
+                android:textSize="13dp"
+                android:textColor="#000000"
+                android:text="         ㄴ 공격력,치명타를 %로 올려주는 모가로스 탑승이 Best입니다. 탑승펫 까지 신경 쓸 여력이 없다면 기존에 타고있던 만모나 아고아를 타고 여유 있을 때 바꾸셔도 좋습니다 !\n ">
+            </TextView>
+            <TextView
+                android:id="@+id/rideSkill"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maplestory_light"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:text="▶ 탑승술 : 공격-방어-체력-순발-훈련-특성 ">
+            </TextView>
+            <TextView
+                android:id="@+id/rideSkillEx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maplestory_light"
+                android:textSize="13dp"
+                android:textColor="#000000"
+                android:text="                   ㄴ 개인적으로 풀개조 한 펫을 기준으로 본다면 공,방,체,순을 20%씩 가져 오는게 좋습니다.
+염원이나 분노 껍질강화 가죽강화를 1씩 올리는 포인트 보다 효율이 좋다고 생각합니다. 공,체,방,순을 찍은 후에 탑승 펫 패시브에 맞게 특성을 찍어주고 훈련을 찍어줍시다. 그 후에 염원, 분노등을 올리는게 효율이 좋아보입니다. ">
+            </TextView>
+            <TextView
+                android:id="@+id/proficiency"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maplestory_light"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:text="▶ 숙련도 : 무기-방어구-장신구-원거리-머리-몸-투척도  끼-팔찌-모자-옷 ">
+            </TextView>
+            <TextView
+                android:id="@+id/proficiencyEx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maplestory_light"
+                android:textSize="13dp"
+                android:textColor="#000000"
+                android:text="        ㄴ 숙련도는 레벨이 높아질수록 스톤의 양이 어마어마해집니다. 그래서 저는 무기-방어-장신구를 우선 100 정도 까지 찍고 원거리를 100찍습니다 투척도끼를 100정도찍어주고 팔찌를100찍어줍니다. 그리고 방어구를80 머리,몸을 80찍어주고 모자,옷을 80까지 찍어줍니다.
+그 후 무기 140 -> 원거리 140 -> 투척도끼 140 ->장신구 140 ->팔찌 140을 찍어주고 방어구 머리 몸 모자 옷을 올려줍니다. 참고로 원거리, 머리, 몸의 스킬레벨만큼 투척도끼,모자,옷(그 detail한 부분)을 맞춰서 올릴 수 있습니다.
+\n
+결론만 말씀드리면 무기100->방어구100->장신구100->원거리100->투척도끼100->팔찌100->머리80->몸80->모자81->옷81->후 스톤여유에 맞게 투척도끼 먼저 140 까지 찍어주시면 됩니다(140이 최고레벨) 딜 먼저 올리고 싶으시면 무기->원거리->투척도끼로 올리셔도 무방합니다.">
+            </TextView>
 
             <TextView
-                android:id="@+id/textview"
+                android:id="@+id/textView11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="15sp" />
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:text="현재 투척도끼 육성만 올렸습니다.\n 추후에 다른 무기들도 업로드 할 예정입니다."
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

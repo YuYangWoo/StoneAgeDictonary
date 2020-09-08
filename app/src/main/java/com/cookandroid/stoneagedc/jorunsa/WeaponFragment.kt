@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.cookandroid.stoneagedc.R
-import kotlinx.android.synthetic.main.fragment_weapon.view.*
 
 class WeaponFragment : Fragment() {
 
@@ -29,12 +28,7 @@ class WeaponFragment : Fragment() {
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         var view =  inflater.inflate(R.layout.fragment_weapon, container, false)
-        var text =""
-        for (i in 0..100) {
-            text += i
-            text += "\n"
-        }
-        view.textview.setText(text)
+
         return view
     }
 }

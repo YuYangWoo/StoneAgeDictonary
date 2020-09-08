@@ -17,7 +17,7 @@ class JorunsaActivity : AppCompatActivity() {
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
         val weaponAdapter = WeaponAdapter(supportFragmentManager, lifecycle)
-        for (i in 0..7) {
+        for (i in 0..0) {
             weaponAdapter.addFragment(WeaponFragment.newInstance())
         }
 
@@ -27,13 +27,13 @@ class JorunsaActivity : AppCompatActivity() {
         TabLayoutMediator(tabLyWeapon, weaponViewPager, TabLayoutMediator.TabConfigurationStrategy { tab, position ->
             when (position) {
                 0 -> tab.text = "투척도끼"
-                1 -> tab.text = "도끼"
-                2 -> tab.text = "활"
-                3 -> tab.text = "부메랑"
-                4 -> tab.text = "돌주머니"
-                5 -> tab.text = "활"
-                6 -> tab.text = "몽둥이"
-                7 -> tab.text = "창"
+//                1 -> tab.text = "도끼"
+//                2 -> tab.text = "활"
+//                3 -> tab.text = "부메랑"
+//                4 -> tab.text = "돌주머니"
+//                5 -> tab.text = "활"
+//                6 -> tab.text = "몽둥이"
+//                7 -> tab.text = "창"
                 else -> {
                     Log.d("Test", "Error!!")
                 }
