@@ -23,7 +23,7 @@ class SplashActivity : AppCompatActivity(), InstallStateUpdatedListener {
         AppUpdateManagerFactory.create(this)
     }
     private val MY_REQUEST_CODE = 100
-    private val splashTime:Long =2000
+    private val splashTime:Long = 1500
 
     // 업데이트를 체크하는데 사용하는 객체 반환
 
