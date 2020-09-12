@@ -17,6 +17,7 @@ public class ListDeck {
 
     private String Topic;
     private String explain;
+
      ListDeck(String Tier, String Topic, String explain){
         this.Tier = Tier;
         this.Topic = Topic;
