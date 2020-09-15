@@ -7,16 +7,12 @@
       android:icon="@drawable/ic_menu_send"
       android:title="소개영상" />
 
-<item android:title="메인 메뉴">
+<item android:title="팁 게시판">
     <menu>
-      <item
-          android:id="@+id/stoneLevel"
-          android:icon="@drawable/ic_menu_send"
-          android:title="레벨업팁" />
         <item
             android:id="@+id/stonePet"
             android:icon="@drawable/ic_menu_send"
-            android:title="펫 관련 팁" />
+            android:title="꿀팁" />
 
 
     </menu>

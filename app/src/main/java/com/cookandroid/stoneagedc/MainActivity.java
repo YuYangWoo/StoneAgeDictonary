@@ -155,9 +155,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (id == R.id.stonePet) {
             Intent petActivity = new Intent(getApplicationContext(), petActivity.class);
             startActivity(petActivity);
-        } else if (id == R.id.stoneLevel) {
-            Intent levelActivity = new Intent(getApplicationContext(), com.cookandroid.stoneagedc.level.levelActivity.class);
-            startActivity(levelActivity);
         } else if (id == R.id.recodeck) {
             Intent recoActivity = new Intent(getApplicationContext(), recodeck.class);
             startActivity(recoActivity);

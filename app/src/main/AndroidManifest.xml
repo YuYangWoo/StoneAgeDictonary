@@ -33,11 +33,7 @@
             />
         <activity android:name=".moneyActivity"
             />
-        <activity android:name=".level.levelActivity"
-            />
         <activity android:name="recomendDeck.recodeck"
-            />
-        <activity android:name=".level.levelActivity1"
             />
         <activity android:name=".jorunsa.JorunsaActivity"
             />
