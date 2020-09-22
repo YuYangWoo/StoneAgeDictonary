@@ -31,6 +31,8 @@
             />
         <activity android:name=".petActivity"
             />
+        <activity android:name=".GrowthActivity"
+            />
         <activity android:name=".moneyActivity"
             />
         <activity android:name="recomendDeck.recodeck"

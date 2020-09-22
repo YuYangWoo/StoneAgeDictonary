@@ -162,6 +162,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Uri uri = Uri.parse("http://forum.netmarble.com/stone_kr/view/44/27181");
             Intent guideIntent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(guideIntent);
+        }
+        else if (id == R.id.calculator) {
+            Intent calcIntent =new Intent(getApplicationContext(), GrowthActivity.class);
+            startActivity(calcIntent);
         } else if (id == R.id.gogohakCountry) {
             Uri uri = Uri.parse("http:/blog.naver.com/leesi5040/222026644338");
             Intent guideIntent = new Intent(Intent.ACTION_VIEW, uri);

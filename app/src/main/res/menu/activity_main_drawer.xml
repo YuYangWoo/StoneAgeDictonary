@@ -34,6 +34,10 @@
                 android:title="티어별 진형 추천덱"
                 ></item>
             <item
+                android:id="@+id/calculator"
+                android:icon="@drawable/ic_menu_send"
+                android:title="펫 성장률 계산기"></item>
+            <item
                 android:id="@+id/gogohakCountry"
                 android:icon="@drawable/ic_menu_send"
                 android:title="고고학(마을별정리)"></item>
