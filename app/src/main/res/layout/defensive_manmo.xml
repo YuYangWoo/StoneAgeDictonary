@@ -248,7 +248,7 @@
                 android:background="@drawable/edge_ellipse"
                 android:fontFamily="@font/maplestory_light"
                 android:gravity="center"
-                android:text="체력-체력%-순발-순발%-상태이상-상태이상무시-치명타확률-치명타효과"
+                android:text="체력-체력%-순발-순발%-명중-상태이상-상태이상무시-치명타확률-치명타효과-치명타무시"
                 android:textColor="#000000"
                 android:textSize="18dp" />
 

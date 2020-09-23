@@ -243,7 +243,7 @@
                 android:background="@drawable/edge_ellipse"
                 android:fontFamily="@font/maplestory_light"
                 android:gravity="center"
-                android:text="체력-공격-공격%-순발-순발%-치확-치효-회피-상태이상무시"
+                android:text="체력-공격-공격%-순발-순발%-명중-치확-치효-회피-상태이상무시"
                 android:textColor="#000000"
                 android:textSize="20dp" />
 
