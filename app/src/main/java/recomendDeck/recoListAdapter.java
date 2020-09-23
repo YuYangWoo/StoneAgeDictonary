@@ -44,8 +44,8 @@ public class recoListAdapter extends BaseAdapter {
         View view = mLayoutInflater.inflate(R.layout.recolistview, null);
 
         TextView Tier = view.findViewById(R.id.Tier);
-        TextView Topic = (TextView)view.findViewById(R.id.topic);
-        TextView Explain = (TextView)view.findViewById(R.id.explain);
+        TextView Topic = view.findViewById(R.id.topic);
+        TextView Explain = view.findViewById(R.id.explain);
 
         Tier.setText(sample.get(position).getTier());
         Topic.setText(sample.get(position).getTopic());
