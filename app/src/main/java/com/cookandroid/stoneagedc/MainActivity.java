@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void manClick(View v) {
-        Uri manuri = Uri.parse("https://www.youtube.com/watch?v=0MU4FE4ggz8");
+        Uri manuri = Uri.parse("https://youtu.be/kK3rCseb8HM");
         Intent manintent = new Intent(Intent.ACTION_VIEW, manuri);
         startActivity(manintent);
     }
