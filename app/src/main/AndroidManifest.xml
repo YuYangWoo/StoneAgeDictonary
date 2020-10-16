@@ -41,47 +41,9 @@
             />
         <activity android:name=".setPetActivity"
             />
-        <activity android:name=".attackPetSet.Angiro"
-        />
-        <activity android:name=".attackPetSet.Babo"
-            />
-        <activity android:name=".attackPetSet.Berfus"
-            />
-        <activity android:name=".attackPetSet.Berga"
-            />
-        <activity android:name=".attackPetSet.Beron"
-            />
-        <activity android:name=".attackPetSet.Crab"
-            />
-        <activity android:name=".attackPetSet.Cucuro"
-            />
-        <activity android:name=".attackPetSet.Cue"
-            />
-        <activity android:name=".attackPetSet.Falcaon"
-            />
-        <activity android:name=".attackPetSet.Fino"
-            />
-        <activity android:name=".attackPetSet.GgoMi"
-            />
-        <activity android:name=".attackPetSet.Gordon"
-            />
-        <activity android:name=".attackPetSet.Gotecus"
-            />
-        <activity android:name=".attackPetSet.Gurumaru"
-            />
-        <activity android:name=".attackPetSet.Jag"
-            />
-        <activity android:name=".attackPetSet.Moga"
-            />
-        <activity android:name=".attackPetSet.Trarofo"
-            />
-        <activity android:name=".attackPetSet.angiroRide"
-            />
-        <activity android:name=".attackPetSet.crabRide"/>
-        <activity android:name=".attackPetSet.Giro"/>
-        <activity android:name=".attackPetSet.MoonWolf"/>
+        <activity android:name=".attackPetSet.AttackPet"/>
 
-     <activity android:name="control.agoa"></activity>
+        <activity android:name="control.agoa"></activity>
         <activity android:name="control.agoaride"></activity>
         <activity android:name="control.bakseulrabbit"></activity>
         <activity android:name="control.baroroks"></activity>

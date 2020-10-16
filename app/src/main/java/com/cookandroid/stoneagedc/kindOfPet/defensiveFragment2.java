@@ -13,23 +13,6 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.cookandroid.stoneagedc.R;
-import com.cookandroid.stoneagedc.attackPetSet.Angiro;
-import com.cookandroid.stoneagedc.attackPetSet.Babo;
-import com.cookandroid.stoneagedc.attackPetSet.Berfus;
-import com.cookandroid.stoneagedc.attackPetSet.Berga;
-import com.cookandroid.stoneagedc.attackPetSet.Beron;
-import com.cookandroid.stoneagedc.attackPetSet.Crab;
-import com.cookandroid.stoneagedc.attackPetSet.Cucuro;
-import com.cookandroid.stoneagedc.attackPetSet.Cue;
-import com.cookandroid.stoneagedc.attackPetSet.Falcaon;
-import com.cookandroid.stoneagedc.attackPetSet.Fino;
-import com.cookandroid.stoneagedc.attackPetSet.GgoMi;
-import com.cookandroid.stoneagedc.attackPetSet.Gordon;
-import com.cookandroid.stoneagedc.attackPetSet.Gotecus;
-import com.cookandroid.stoneagedc.attackPetSet.Gurumaru;
-import com.cookandroid.stoneagedc.attackPetSet.Jag;
-import com.cookandroid.stoneagedc.attackPetSet.Moga;
-import com.cookandroid.stoneagedc.attackPetSet.Trarofo;
 
 import java.util.ArrayList;
 

@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.cookandroid.stoneagedc.kindOfPet.attackFragment1;
+import com.cookandroid.stoneagedc.kindOfPet.Attack;
 import com.cookandroid.stoneagedc.kindOfPet.controlFragment3;
 import com.cookandroid.stoneagedc.kindOfPet.cureFragment5;
 import com.cookandroid.stoneagedc.kindOfPet.defensiveFragment2;
@@ -20,7 +20,7 @@ public class VPAdapter extends FragmentPagerAdapter {
     public VPAdapter(@NonNull FragmentManager fm) {
         super(fm);
         items=new ArrayList<Fragment>();
-        items.add(new attackFragment1());
+        items.add(new Attack());
         items.add(new defensiveFragment2());
         items.add(new controlFragment3());
         items.add(new wideFragment4());
