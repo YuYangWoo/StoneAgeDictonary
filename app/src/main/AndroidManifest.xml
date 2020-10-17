@@ -44,19 +44,7 @@
         <activity android:name=".attackPetSet.AttackPet"/>
 
         <activity android:name="defensive.DefensivePet"/>
-        <activity android:name="control.agoa"></activity>
-        <activity android:name="control.agoaride"></activity>
-        <activity android:name="control.bakseulrabbit"></activity>
-        <activity android:name="control.baroroks"></activity>
-        <activity android:name="control.bongbong"></activity>
-        <activity android:name="control.fentas"></activity>
-        <activity android:name="control.fingki"></activity>
-        <activity android:name="control.fingko"></activity>
-        <activity android:name="control.firenosdon"></activity>
-        <activity android:name="control.kamare"></activity>
-        <activity android:name="control.mui"></activity>
-        <activity android:name="control.otutu"></activity>
-        <activity android:name="control.ragogo"></activity>
+        <activity android:name="control.ControlPet"/>
 
         <activity android:name="cure.dorabis"></activity>
         <activity android:name="cure.kaku"></activity>

@@ -52,7 +52,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@color/blue"
-            android:text="공격형"
+            android:text="제어형"
             android:textColor="#ffffff"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"

@@ -126,7 +126,8 @@
                         android:gravity="center"
                         android:text="분류"
                         android:textColor="#000000"
-                        android:textSize="30dp" />
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -143,7 +144,8 @@
                         android:gravity="center"
                         android:text="정보"
                         android:textColor="#000000"
-                        android:textSize="30dp" />
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -173,7 +175,8 @@
                         android:gravity="center"
                         android:text="성장률"
                         android:textColor="#000000"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -190,7 +193,8 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:textColor="#000000"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -220,7 +224,8 @@
                         android:gravity="center"
                         android:text="성격"
                         android:textColor="#000000"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -237,7 +242,8 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:textColor="#000000"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
             <!-- 훈련 -->
@@ -265,7 +271,8 @@
                         android:gravity="center"
                         android:text="훈련"
                         android:textColor="#000000"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -282,7 +289,8 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:textColor="#000000"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -310,7 +318,8 @@
                         android:layout_height="wrap_content"
                         android:text="스킬"
                         android:textColor="#000000"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -327,7 +336,8 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:textColor="#000000"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -357,7 +367,8 @@
                         android:layout_height="wrap_content"
                         android:text="연구"
                         android:textColor="#000000"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -373,7 +384,8 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:textColor="#000000"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -403,7 +415,8 @@
                         android:gravity="center"
                         android:text="부적"
                         android:textColor="#000000"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -419,7 +432,8 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:textColor="#000000"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -448,7 +462,8 @@
                         android:layout_height="wrap_content"
                         android:text="토템"
                         android:textColor="#000000"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -464,7 +479,8 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:textColor="#000000"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
             </LinearLayout>
