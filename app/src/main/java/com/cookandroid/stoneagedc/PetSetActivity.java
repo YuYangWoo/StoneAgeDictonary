@@ -6,9 +6,10 @@ import android.view.MenuItem;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import com.cookandroid.stoneagedc.kindOfPet.ViewPagerAdapter;
 import com.google.android.material.tabs.TabLayout;
 
-public class setPetActivity extends AppCompatActivity {
+public class PetSetActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,7 +17,7 @@ public class setPetActivity extends AppCompatActivity {
         setTitle("펫 육성법");
         //프래그먼트 어댑터
         ViewPager vp = findViewById(R.id.viewpager);
-        VPAdapter vpAdapter = new VPAdapter(getSupportFragmentManager());
+        ViewPagerAdapter vpAdapter = new ViewPagerAdapter(getSupportFragmentManager());
         vp.setAdapter(vpAdapter);
 
         //탭과 뷰페이저 연동

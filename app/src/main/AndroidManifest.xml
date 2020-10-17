@@ -23,42 +23,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".developerInfoActivity"
+        <activity android:name=".DeveloperInfoActivity"
         />
         <activity android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:label="스톤 백과사전"
             />
-        <activity android:name=".petActivity"
-            />
         <activity android:name=".GrowthActivity"
-            />
-        <activity android:name=".moneyActivity"
             />
         <activity android:name="recomendDeck.recodeck"
             />
         <activity android:name=".jorunsa.JorunsaActivity"
             />
-        <activity android:name=".setPetActivity"
+        <activity android:name=".PetSetActivity"
             />
-        <activity android:name=".attackPetSet.AttackPet"/>
+        <activity android:name=".PetSet.AttackPet"/>
 
-        <activity android:name="defensive.DefensivePet"/>
-        <activity android:name="control.ControlPet"/>
-
-        <activity android:name="cure.dorabis"></activity>
-        <activity android:name="cure.kaku"></activity>
-        <activity android:name="cure.monasif"></activity>
-        <activity android:name="cure.GoldLobi"></activity>
-
-        <activity android:name="wide.gigaros"></activity>
-        <activity android:name="wide.hubo"></activity>
-        <activity android:name="wide.kaki"></activity>
-        <activity android:name="wide.magaros"></activity>
-        <activity android:name="wide.sandizard"></activity>
-        <activity android:name="wide.mogarosRide"></activity>
-
-
+        <activity android:name=".PetSet.DefensivePet"/>
+        <activity android:name=".PetSet.ControlPet"/>
+        <activity android:name=".PetSet.WidePet"/>
+        <activity android:name=".PetSet.CurePet"/>
 
 
     </application>

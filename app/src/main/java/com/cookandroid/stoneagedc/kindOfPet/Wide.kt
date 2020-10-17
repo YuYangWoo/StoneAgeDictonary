@@ -1,58 +1,72 @@
 package com.cookandroid.stoneagedc.kindOfPet
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView.OnItemClickListener
+import android.widget.ListView
 import androidx.fragment.app.Fragment
 import com.cookandroid.stoneagedc.R
+import com.cookandroid.stoneagedc.PetSet.WidePet
+import java.util.*
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [Wide.newInstance] factory method to
- * create an instance of this fragment.
- */
 class Wide : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
-
+    var petDataList: ArrayList<ListItem>? = null
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_wide, container, false)
+        val view = inflater.inflate(R.layout.fragment_wide, container, false)
+        InitializeMovieData()
+        val listView = view.findViewById<ListView>(R.id.listView4)
+        val listAdapter = ListAdapter(activity, petDataList)
+        listView.adapter = listAdapter
+
+        // 리스트뷰 선택시 펫 액티비티로 넘어감.
+        listView.onItemClickListener = OnItemClickListener { parent, view, position, id ->
+            if (petDataList!![position].petName === "기가로스") {
+                val intent = Intent(activity, WidePet::class.java)
+                intent.putExtra("Name", "기가로스")
+                startActivity(intent)
+            } else if (petDataList!![position].petName === "휴보") {
+                val intent = Intent(activity, WidePet::class.java)
+                intent.putExtra("Name", "휴보")
+                startActivity(intent)
+            } else if (petDataList!![position].petName === "카키") {
+                val intent = Intent(activity, WidePet::class.java)
+                intent.putExtra("Name", "카키")
+                startActivity(intent)
+            } else if (petDataList!![position].petName === "모가로스") {
+                val intent = Intent(activity, WidePet::class.java)
+                intent.putExtra("Name", "모가로스")
+                startActivity(intent)
+            } else if (petDataList!![position].petName === "모가로스(탑승)") {
+                val intent = Intent(activity, WidePet::class.java)
+                intent.putExtra("Name", "모가로스(탑승)")
+                startActivity(intent)
+            } else if (petDataList!![position].petName === "샌디쟈드") {
+                val intent = Intent(activity, WidePet::class.java)
+                intent.putExtra("Name", "샌디쟈드")
+                startActivity(intent)
+            } else if (petDataList!![position].petName === "크로톤") {
+                val intent = Intent(activity, WidePet::class.java)
+                intent.putExtra("Name", "크로톤")
+                startActivity(intent)
+            }
+        }
+        return view
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment Wide.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-                Wide().apply {
-                    arguments = Bundle().apply {
-                        putString(ARG_PARAM1, param1)
-                        putString(ARG_PARAM2, param2)
-                    }
-                }
+    private fun InitializeMovieData() {
+        petDataList = ArrayList()
+        petDataList!!.add(ListItem(R.drawable.mogaros, "모가로스", "1티어"))
+        petDataList!!.add(ListItem(R.drawable.mogaros, "모가로스(탑승)", "1티어"))
+        petDataList!!.add(ListItem(R.drawable.sandizard, "샌디쟈드", "1티어"))
+        petDataList!!.add(ListItem(R.drawable.kroton, "크로톤", "1티어"))
+        petDataList!!.add(ListItem(R.drawable.kaki, "카키", "2티어"))
+        petDataList!!.add(ListItem(R.drawable.gigaros, "기가로스", "3티어"))
+        petDataList!!.add(ListItem(R.drawable.hubo, "휴보", "4티어"))
     }
 }

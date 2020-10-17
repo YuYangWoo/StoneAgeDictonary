@@ -1,9 +1,6 @@
 package com.cookandroid.stoneagedc;
 
 import android.app.AlertDialog;
-import android.app.Notification;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -93,9 +90,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         });
         AlertDialog ad = Dialog.create();
         ad.show();
-
-
-
     }
     public void patchClick(View v) {
         Uri patchuri = Uri.parse("http://forum.netmarble.com/stone_kr/view/6/41731");
@@ -147,14 +141,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent knowledgeIntent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(knowledgeIntent);
         } else if (id == R.id.stoneDeveloperInfo) {
-            Intent developerInfoActivity = new Intent(getApplicationContext(), developerInfoActivity.class);
+            Intent developerInfoActivity = new Intent(getApplicationContext(), DeveloperInfoActivity.class);
             startActivity(developerInfoActivity);
         } else if (id == R.id.person) {
             Intent jorunsaActivity = new Intent(getApplicationContext(), JorunsaActivity.class);
             startActivity(jorunsaActivity);
-        } else if (id == R.id.stonePet) {
-            Intent petActivity = new Intent(getApplicationContext(), petActivity.class);
-            startActivity(petActivity);
         } else if (id == R.id.recodeck) {
             Intent recoActivity = new Intent(getApplicationContext(), recodeck.class);
             startActivity(recoActivity);
@@ -175,7 +166,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent guideIntent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(guideIntent);
         } else if (id == R.id.setPet) {
-            Intent setPetActivity = new Intent(getApplicationContext(), setPetActivity.class);
+            Intent setPetActivity = new Intent(getApplicationContext(), PetSetActivity.class);
             startActivity(setPetActivity);
         } else if (id == R.id.introduceMovie) {
             Uri uri = Uri.parse("https://www.youtube.com/watch?v=wV-_QnGJoDI");

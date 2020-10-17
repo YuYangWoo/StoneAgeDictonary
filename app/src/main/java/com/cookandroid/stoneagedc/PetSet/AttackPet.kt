@@ -1,4 +1,4 @@
-package com.cookandroid.stoneagedc.attackPetSet
+package com.cookandroid.stoneagedc.PetSet
 
 import android.os.Bundle
 import android.view.MenuItem

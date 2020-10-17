@@ -9,7 +9,7 @@ import android.widget.AdapterView.OnItemClickListener
 import android.widget.ListView
 import androidx.fragment.app.Fragment
 import com.cookandroid.stoneagedc.R
-import control.ControlPet
+import com.cookandroid.stoneagedc.PetSet.ControlPet
 import java.util.*
 
 class Control : Fragment() {

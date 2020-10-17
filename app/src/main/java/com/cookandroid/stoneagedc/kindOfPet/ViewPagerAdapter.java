@@ -1,32 +1,25 @@
-package com.cookandroid.stoneagedc;
+package com.cookandroid.stoneagedc.kindOfPet;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
-
-import com.cookandroid.stoneagedc.kindOfPet.Attack;
-import com.cookandroid.stoneagedc.kindOfPet.Control;
-import com.cookandroid.stoneagedc.kindOfPet.Defensive;
-import com.cookandroid.stoneagedc.kindOfPet.cureFragment5;
-import com.cookandroid.stoneagedc.kindOfPet.wideFragment4;
-
 import java.util.ArrayList;
 
 // 정해져 있을 때 pager adapter 정해져있지 않을 때 statepageradapter
 // 프래그먼트 삽입
-public class VPAdapter extends FragmentPagerAdapter {
+public class ViewPagerAdapter extends FragmentPagerAdapter {
     private ArrayList<Fragment> items;
     private ArrayList<String> itext = new ArrayList<String>();
 
-    public VPAdapter(@NonNull FragmentManager fm) {
+    public ViewPagerAdapter(@NonNull FragmentManager fm) {
         super(fm);
         items = new ArrayList<Fragment>();
         items.add(new Attack());
         items.add(new Defensive());
         items.add(new Control());
-        items.add(new wideFragment4());
-        items.add(new cureFragment5());
+        items.add(new Wide());
+        items.add(new Cure());
 
         // 탭과 뷰페이저 연동시 이름이 사라짐 새로 추가해줌
         itext.add("공격형");

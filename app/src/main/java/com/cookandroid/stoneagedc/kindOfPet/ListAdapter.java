@@ -15,16 +15,16 @@ import java.util.ArrayList;
 public class ListAdapter extends BaseAdapter {
     Context mContext = null;
     LayoutInflater mLayoutInflater = null;
-    ArrayList<ListItem> sample;
+    ArrayList<ListItem> data;
 
     public ListAdapter(Context context, ArrayList<ListItem> data){
         mContext = context;
-        sample = data;
+        this.data = data;
         mLayoutInflater = LayoutInflater.from(mContext);
     }
     @Override
     public int getCount() {
-        return sample.size();
+        return data.size();
     }
 
     @Override
@@ -34,7 +34,7 @@ public class ListAdapter extends BaseAdapter {
 
     @Override
     public ListItem getItem(int position) {
-        return sample.get(position);
+        return data.get(position);
     }
 
     @Override
@@ -42,12 +42,12 @@ public class ListAdapter extends BaseAdapter {
         View view = mLayoutInflater.inflate(R.layout.listview, null);
 
         ImageView imageView = (ImageView)view.findViewById(R.id.poster);
-        TextView movieName = (TextView)view.findViewById(R.id.petName);
-        TextView grade = (TextView)view.findViewById(R.id.grade);
+        TextView petName = (TextView)view.findViewById(R.id.petName);
+        TextView tier = (TextView)view.findViewById(R.id.grade);
 
-        imageView.setImageResource(sample.get(position).getPoster());
-        movieName.setText(sample.get(position).getPetName());
-        grade.setText(sample.get(position).getGrade());
+        imageView.setImageResource(data.get(position).getPoster());
+        petName.setText(data.get(position).getPetName());
+        tier.setText(data.get(position).getGrade());
 
         return view;
     }
