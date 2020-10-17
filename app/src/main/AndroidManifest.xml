@@ -43,6 +43,7 @@
             />
         <activity android:name=".attackPetSet.AttackPet"/>
 
+        <activity android:name="defensive.DefensivePet"/>
         <activity android:name="control.agoa"></activity>
         <activity android:name="control.agoaride"></activity>
         <activity android:name="control.bakseulrabbit"></activity>
@@ -61,18 +62,6 @@
         <activity android:name="cure.kaku"></activity>
         <activity android:name="cure.monasif"></activity>
         <activity android:name="cure.GoldLobi"></activity>
-
-        <activity android:name="defensive.bubi"></activity>
-        <activity android:name="defensive.buke"></activity>
-        <activity android:name="defensive.attackbuke"></activity>
-        <activity android:name="defensive.duri"></activity>
-        <activity android:name="defensive.frakitos"></activity>
-        <activity android:name="defensive.katarkas"></activity>
-        <activity android:name="defensive.manmo"></activity>
-        <activity android:name="defensive.sillingka"></activity>
-        <activity android:name="defensive.stolarge"></activity>
-        <activity android:name="defensive.manmoRide"></activity>
-        <activity android:name="defensive.frakitosRide"></activity>
 
         <activity android:name="wide.gigaros"></activity>
         <activity android:name="wide.hubo"></activity>

@@ -15,7 +15,6 @@ class AttackPet : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-
         setContentView(R.layout.attack_pet)
 
         // ActionBar Home 버튼 Enable
@@ -26,7 +25,7 @@ class AttackPet : AppCompatActivity() {
         val adRequest = AdRequest.Builder().build()
         mAdView!!.loadAd(adRequest)
 
-        var name = intent.getStringExtra("Name")
+         name = intent.getStringExtra("Name")
         title = name
         init(name)
 
