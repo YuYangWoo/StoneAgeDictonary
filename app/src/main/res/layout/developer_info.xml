@@ -182,7 +182,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="6dp"
         android:fontFamily="@font/maplestory_bold"
-        android:text=" 후원하기 : 3333-02-3282488 카카오뱅크 유양우\n 여러분들의 후원이 저에게 큰 힘이 됩니다 :)\n 더좋은 어플리케이션으로 보답하겠습니다.. 감사합니다"
+        android:text=" "
         android:textColor="#0000ff"
         android:textSize="17dp"
         android:textStyle="bold"
