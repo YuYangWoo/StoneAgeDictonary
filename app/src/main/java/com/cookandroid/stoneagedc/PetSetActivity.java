@@ -15,15 +15,21 @@ public class PetSetActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.setpet);
         setTitle("펫 육성법");
+
         //프래그먼트 어댑터
         ViewPager vp = findViewById(R.id.viewpager);
         ViewPagerAdapter vpAdapter = new ViewPagerAdapter(getSupportFragmentManager());
         vp.setAdapter(vpAdapter);
 
+
+
         //탭과 뷰페이저 연동
         TabLayout tab = findViewById(R.id.tabLayout);
         tab.setupWithViewPager(vp);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        // 광고
+        AdsFull.getInstance(this);
 
     }
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -41,5 +47,6 @@ public class PetSetActivity extends AppCompatActivity {
     public void onBackPressed() {
         super.onBackPressed();
         AdsFull.getInstance(this);
+
     }
 }

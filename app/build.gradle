@@ -10,8 +10,8 @@ android {
         applicationId "com.cookandroid.stoneagedc"
         minSdkVersion 26
         targetSdkVersion 29
-        versionCode 9
-        versionName "1.9"
+        versionCode 10
+        versionName "1.91"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
