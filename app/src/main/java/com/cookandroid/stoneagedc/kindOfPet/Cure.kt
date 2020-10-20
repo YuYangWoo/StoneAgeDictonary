@@ -8,8 +8,8 @@ import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ListView
 import androidx.fragment.app.Fragment
-import com.cookandroid.stoneagedc.R
 import com.cookandroid.stoneagedc.PetSet.CurePet
+import com.cookandroid.stoneagedc.R
 import java.util.*
 
 class Cure : Fragment() {
@@ -18,7 +18,7 @@ class Cure : Fragment() {
                               savedInstanceState: Bundle?): View? {
 
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_wide, container, false)
+        val view = inflater.inflate(R.layout.fragment_cure, container, false)
         initialize()
         val listView = view.findViewById<ListView>(R.id.listView4)
         val listAdapter = ListAdapter(activity, petDataList)
