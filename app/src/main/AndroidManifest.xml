@@ -43,7 +43,7 @@
         <activity android:name=".PetSet.ControlPet"/>
         <activity android:name=".PetSet.WidePet"/>
         <activity android:name=".PetSet.CurePet"/>
-
+        <activity android:name="tips.TipsActivity"/>
 
     </application>
 

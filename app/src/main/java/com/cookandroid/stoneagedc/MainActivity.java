@@ -33,6 +33,7 @@ import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 import recomendDeck.recodeck;
+import tips.TipsActivity;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private AdView mAdView;
@@ -74,6 +75,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Button alert = findViewById(R.id.popUp);
 
     }
+
     public void noticeClick(View v) {
         Context context = getApplicationContext();
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(LAYOUT_INFLATER_SERVICE);
@@ -91,6 +93,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         AlertDialog ad = Dialog.create();
         ad.show();
     }
+
     public void patchClick(View v) {
         Uri patchuri = Uri.parse("http://forum.netmarble.com/stone_kr/view/6/41731");
         Intent patchintent = new Intent(Intent.ACTION_VIEW, patchuri);
@@ -153,9 +156,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Uri uri = Uri.parse("http://forum.netmarble.com/stone_kr/view/44/27181");
             Intent guideIntent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(guideIntent);
-        }
-        else if (id == R.id.calculator) {
-            Intent calcIntent =new Intent(getApplicationContext(), GrowthActivity.class);
+        } else if (id == R.id.calculator) {
+            Intent calcIntent = new Intent(getApplicationContext(), GrowthActivity.class);
             startActivity(calcIntent);
         } else if (id == R.id.gogohakCountry) {
             Uri uri = Uri.parse("http:/blog.naver.com/leesi5040/222026644338");
@@ -176,21 +178,23 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Uri uri = Uri.parse("https://www.youtube.com/channel/UClTxh9tyedXmKcNIQybpagQ?view_as=subscriber");
             Intent youTubeIntent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(youTubeIntent);
+        } else if (id == R.id.tips) {
+            Intent tips = new Intent(getApplicationContext(), TipsActivity.class);
+            startActivity(tips);
         }
-
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
-        return true;
-    }
-
-    public void onBackPressed() {
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            DrawerLayout drawer = findViewById(R.id.drawer_layout);
             drawer.closeDrawer(GravityCompat.START);
-        } else {
-            //   backPressCloseHandler.onBackPressed();
+            return true;
         }
-        AdsFull.getInstance(this);
-       backPressCloseHandler.onBackPressed();
+
+        public void onBackPressed () {
+            DrawerLayout drawer = findViewById(R.id.drawer_layout);
+            if (drawer.isDrawerOpen(GravityCompat.START)) {
+                drawer.closeDrawer(GravityCompat.START);
+            } else {
+                //   backPressCloseHandler.onBackPressed();
+            }
+            AdsFull.getInstance(this);
+            backPressCloseHandler.onBackPressed();
+        }
     }
-}

@@ -10,7 +10,7 @@
 <item android:title="팁 게시판">
     <menu>
         <item
-            android:id="@+id/stonePet"
+            android:id="@+id/tips"
             android:icon="@drawable/ic_menu_send"
             android:title="꿀팁" />
 
