@@ -17,6 +17,8 @@ class GrowthActivity : AppCompatActivity() {
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         title = "성장률 계산기"
 
+        // 광고넣기
+        AdsFull.getInstance(this)
 
         btnHealth.setOnClickListener {
             resultMethod(edtHealthBefore.text.toString().toDouble(), edtHealthAfter.text.toString().toDouble(), txtHealthResult, txtHealthGrowth)

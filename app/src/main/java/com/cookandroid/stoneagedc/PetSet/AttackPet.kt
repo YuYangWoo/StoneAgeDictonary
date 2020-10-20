@@ -44,7 +44,7 @@ class AttackPet : AppCompatActivity() {
 
    private fun init(name:String) {
         if(name == "얀기로") {
-            txtAttack.text = "얀기로(1티어)"
+            txtAttack.text = "얀기로(1.5티어)"
             imgAttack.setImageResource(R.drawable.angiro)
             txtGrowth.text = "얀기로  추천\n공격, 순발 위주 기준:A+"
             txtPersonal.text = "용감한"

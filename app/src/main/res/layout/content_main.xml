@@ -139,7 +139,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/maplestory_light"
-                android:text="고대 맹수왕 콘텐츠 추가 / 문울프 펫 포획 가능 / 크로톤 신규 펫 추가 / 추석이벤트 - 가을 대축제 / 100일 이벤트"
+                android:text="골드로비포획 / 신규 암흑의 영혼 등장 / 각종 편의 UI개선 / 대전 속도 x2업뎃 / 피노 레볼루션 / 신규 이벤트 추가"
                 android:textAlignment="center"
                 android:textColor="#E91E63"
                 android:textSize="18dp"
@@ -161,137 +161,35 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
-            <TextView
-                android:id="@+id/textView18"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/maplestory_light"
-                android:text="9월 24일 업데이트 리뷰"
-                android:textColor="#E91E63"
-                android:textSize="22dp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/patchButton" />
+<!--            <TextView-->
+<!--                android:id="@+id/textView18"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:fontFamily="@font/maplestory_light"-->
+<!--                android:text="9월 24일 업데이트 리뷰"-->
+<!--                android:textColor="#E91E63"-->
+<!--                android:textSize="22dp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/patchButton" />-->
 
-            <Button
-                android:id="@+id/manbt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="23dp"
-                android:background="@color/blue"
-                android:onClick="manClick"
-                android:text="클릭해서 확인!"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+<!--            <Button-->
+<!--                android:id="@+id/manbt"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="23dp"-->
+<!--                android:background="@color/blue"-->
+<!--                android:onClick="manClick"-->
+<!--                android:text="클릭해서 확인!"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textView18" />-->
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
-        <!--
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="31dp"
-            android:fontFamily="@font/maplestory_light"
-            android:text="스톤 백과사전 패치노트"
-            android:textColor="#000000"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-             />
-
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:fontFamily="@font/maplestory_light"
-
-            android:text="신규 콘텐츠 : 각종 펫 상향(베르가 카키 카미르), 베르가,카키,카미르포획가능   훈련,개조비용 50%할인!, 만모복권출시"
-            android:textColor="#E91E63"
-            android:textSize="18dp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView13" />
-
-        <TextView
-            android:id="@+id/textView16"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="44dp"
-            android:fontFamily="@font/maplestory_light"
-            android:text="패치 원본 ->"
-            android:textColor="#000000"
-            android:textSize="18dp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="327dp" />
-
-        <Button
-            android:id="@+id/patchButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:background="@color/blue"
-            android:onClick="patchClick"
-            android:text="!!클릭!!"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/textView16"
-            tools:layout_editor_absoluteY="312dp" />
-
-        <TextView
-            android:id="@+id/textView17"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:fontFamily="@font/maplestory_light"
-            android:text="오늘의 주제"
-            android:textColor="#000000"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/patchButton" />
-
-        <TextView
-            android:id="@+id/textView18"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="40dp"
-            android:fontFamily="@font/maplestory_light"
-            android:text="9월 10일 업데이트 리뷰"
-            android:textColor="#E91E63"
-            android:textSize="22dp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView17" />
-
-        <Button
-            android:id="@+id/manbt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="23dp"
-            android:background="@color/blue"
-            android:onClick="manClick"
-            android:text="클릭해서 확인!"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView18" />
-
-
-
-!-->
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
         android:layout_height="0dp"

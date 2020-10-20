@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.cookandroid.stoneagedc.R;
@@ -13,20 +12,20 @@ import com.cookandroid.stoneagedc.R;
 
 import java.util.ArrayList;
 
-public class recoListAdapter extends BaseAdapter {
-    Context mContext = null;
-    LayoutInflater mLayoutInflater = null;
-    ArrayList<ListDeck> sample;
+public class RecommendListAdapter extends BaseAdapter {
+    Context mContext;
+    LayoutInflater mLayoutInflater;
+    ArrayList<Recommend> data;
 
 
-    public recoListAdapter(Context context, ArrayList<ListDeck> data){
+    public RecommendListAdapter(Context context, ArrayList<Recommend> data){
         mContext = context;
-        sample = data;
+        this.data = data;
         mLayoutInflater = LayoutInflater.from(mContext);
     }
     @Override
     public int getCount() {
-        return sample.size();
+        return data.size();
     }
 
     @Override
@@ -35,8 +34,8 @@ public class recoListAdapter extends BaseAdapter {
     }
 
     @Override
-    public ListDeck getItem(int position) {
-        return sample.get(position);
+    public Recommend getItem(int position) {
+        return data.get(position);
     }
 
     @Override
@@ -47,9 +46,9 @@ public class recoListAdapter extends BaseAdapter {
         TextView Topic = view.findViewById(R.id.topic);
         TextView Explain = view.findViewById(R.id.explain);
 
-        Tier.setText(sample.get(position).getTier());
-        Topic.setText(sample.get(position).getTopic());
-        Explain.setText(sample.get(position).getExplain());
+        Tier.setText(data.get(position).getTier());
+        Topic.setText(data.get(position).getTopic());
+        Explain.setText(data.get(position).getExplain());
 
         return view;
     }

@@ -111,7 +111,7 @@ class Attack : Fragment() {
 
     private fun InitializePetData() {
         petDataList = ArrayList<ListItem>()
-        petDataList.add(ListItem(R.drawable.angiro, "얀기로", "1티어"))
+        petDataList.add(ListItem(R.drawable.angiro, "얀기로", "1.5티어"))
         petDataList.add(ListItem(R.drawable.giro, "기로", "1.5티어"))
         petDataList.add(ListItem(R.drawable.moonwolf, "문울프", "1.5티어"))
         petDataList.add(ListItem(R.drawable.crab, "크랩", "1.5티어"))

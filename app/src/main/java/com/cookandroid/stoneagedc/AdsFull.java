@@ -15,7 +15,6 @@ public class AdsFull {
     private static Context context;
 
     public AdsFull(Context context) {
-        //TODO : Application class에 추가하기
         //MobileAds.initialize(context, context.getString(R.string.admob));
         this.context = context;
     }

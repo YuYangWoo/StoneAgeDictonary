@@ -32,8 +32,8 @@ import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
-import recomendDeck.recodeck;
-import tips.TipsActivity;
+import recomendDeck.RecommendDeckActivity;
+import recomendDeck.Tips;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private AdView mAdView;
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void patchClick(View v) {
-        Uri patchuri = Uri.parse("http://forum.netmarble.com/stone_kr/view/6/41731");
+        Uri patchuri = Uri.parse("http://forum.netmarble.com/stone_kr/view/6/43789");
         Intent patchintent = new Intent(Intent.ACTION_VIEW, patchuri);
         startActivity(patchintent);
     }
@@ -150,10 +150,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent jorunsaActivity = new Intent(getApplicationContext(), JorunsaActivity.class);
             startActivity(jorunsaActivity);
         } else if (id == R.id.recodeck) {
-            Intent recoActivity = new Intent(getApplicationContext(), recodeck.class);
+            Intent recoActivity = new Intent(getApplicationContext(), RecommendDeckActivity.class);
             startActivity(recoActivity);
         } else if (id == R.id.gogohakBest) {
-            Uri uri = Uri.parse("http://forum.netmarble.com/stone_kr/view/44/27181");
+            Uri uri = Uri.parse("http://forum.netmarble.com/stone_kr/view/26/39272");
             Intent guideIntent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(guideIntent);
         } else if (id == R.id.calculator) {
@@ -179,7 +179,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent youTubeIntent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(youTubeIntent);
         } else if (id == R.id.tips) {
-            Intent tips = new Intent(getApplicationContext(), TipsActivity.class);
+            Intent tips = new Intent(getApplicationContext(), Tips.class);
             startActivity(tips);
         }
             DrawerLayout drawer = findViewById(R.id.drawer_layout);

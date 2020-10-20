@@ -11,6 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <!-- real AdMob App ID: ca-app-pub-6308948435596230~8212621303 -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-6308948435596230~8212621303"/>
@@ -31,7 +32,7 @@
             />
         <activity android:name=".GrowthActivity"
             />
-        <activity android:name="recomendDeck.recodeck"
+        <activity android:name="recomendDeck.RecommendDeckActivity"
             />
         <activity android:name=".jorunsa.JorunsaActivity"
             />
@@ -43,7 +44,7 @@
         <activity android:name=".PetSet.ControlPet"/>
         <activity android:name=".PetSet.WidePet"/>
         <activity android:name=".PetSet.CurePet"/>
-        <activity android:name="tips.TipsActivity"/>
+        <activity android:name="recomendDeck.Tips"/>
 
     </application>
 

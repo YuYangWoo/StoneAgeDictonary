@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".kindOfPet.wideFragment4"
     android:background="#ffffff">
 
     <!-- TODO: Update blank fragment layout -->

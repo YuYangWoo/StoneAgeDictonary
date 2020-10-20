@@ -1,6 +1,6 @@
 package recomendDeck;
 
-public class ListDeck {
+public class Recommend {
     private String Tier;
 
     public String getTier() {
@@ -18,7 +18,7 @@ public class ListDeck {
     private String Topic;
     private String explain;
 
-     ListDeck(String Tier, String Topic, String explain){
+     Recommend(String Tier, String Topic, String explain){
         this.Tier = Tier;
         this.Topic = Topic;
         this.explain = explain;

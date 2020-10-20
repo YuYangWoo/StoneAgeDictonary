@@ -34,7 +34,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             app:adSize="SMART_BANNER"
-            app:adUnitId="ca-app-pub-6308948435596230/6884718456"
+            app:adUnitId="@string/bottom_ad_id"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
