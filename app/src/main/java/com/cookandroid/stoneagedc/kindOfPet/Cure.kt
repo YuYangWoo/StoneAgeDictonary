@@ -35,17 +35,17 @@ class Cure : Fragment() {
                 }
                 petDataList!![position].petName === "카쿠" -> {
                     val intent = Intent(activity, CurePet::class.java)
-                    intent.putExtra("Name","도라비스")
+                    intent.putExtra("Name","카쿠")
                     startActivity(intent)
                 }
                 petDataList!![position].petName === "모나시프" -> {
                     val intent = Intent(activity, CurePet::class.java)
-                    intent.putExtra("Name","도라비스")
+                    intent.putExtra("Name","모나시프")
                     startActivity(intent)
                 }
                 petDataList!![position].petName === "골드로비" -> {
                     val intent = Intent(activity, CurePet::class.java)
-                    intent.putExtra("Name","도라비스")
+                    intent.putExtra("Name","골드로비")
                     startActivity(intent)
                 }
             }
