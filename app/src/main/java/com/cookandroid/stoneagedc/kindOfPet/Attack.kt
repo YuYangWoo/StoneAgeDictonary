@@ -8,8 +8,8 @@ import android.view.ViewGroup
 import android.widget.AdapterView.OnItemClickListener
 import android.widget.ListView
 import androidx.fragment.app.Fragment
-import com.cookandroid.stoneagedc.R
 import com.cookandroid.stoneagedc.PetSet.AttackPet
+import com.cookandroid.stoneagedc.R
 import java.util.*
 
 class Attack : Fragment() {
@@ -115,7 +115,9 @@ class Attack : Fragment() {
         petDataList.add(ListItem(R.drawable.giro, "기로", "1.5티어"))
         petDataList.add(ListItem(R.drawable.moonwolf, "문울프", "1.5티어"))
         petDataList.add(ListItem(R.drawable.crab, "크랩", "1.5티어"))
+        petDataList.add(ListItem(R.drawable.berfuce, "베르푸스", "2티어"))
         petDataList.add(ListItem(R.drawable.cue, "큐이", "2티어"))
+        petDataList.add(ListItem(R.drawable.gordon, "고르돈", "2티어"))
         petDataList.add(ListItem(R.drawable.trarofo, "트라로포", "2티어"))
         petDataList.add(ListItem(R.drawable.berga, "베르가", "2티어"))
         petDataList.add(ListItem(R.drawable.jag, "쟈그", "2티어"))
@@ -124,10 +126,10 @@ class Attack : Fragment() {
         petDataList.add(ListItem(R.drawable.cucuro, "쿠쿠르", "3티어"))
         petDataList.add(ListItem(R.drawable.baebo, "베이보", "3티어"))
         petDataList.add(ListItem(R.drawable.falteon, "팔케온", "3티어"))
-        petDataList.add(ListItem(R.drawable.gordon, "고르돈", "3티어"))
+
         petDataList.add(ListItem(R.drawable.gurumaru, "구루마루", "3티어"))
         petDataList.add(ListItem(R.drawable.moga1, "모가", "4티어"))
-        petDataList.add(ListItem(R.drawable.berfuce, "베르푸스", "4티어"))
+
         petDataList.add(ListItem(R.drawable.ftecus, "고테쿠스", "4티어"))
         petDataList.add(ListItem(R.drawable.beron, "베론", "4티어"))
     }

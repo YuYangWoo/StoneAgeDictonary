@@ -60,7 +60,7 @@ class CurePet : AppCompatActivity() {
             txtPersonal.text = "여유로운"
             txtTrain.text = "순발300 후 체력"
             txtSkill.text = "궁극기, 패시브, 액티브"
-            txtResearch.text = "효율 : 체력, 체력%, 순발, 순발%, 상태이상무시\n풀 : 체력, 체력%, 순발, 순발%, 치료효과, 상태이상무시, 회피, 방어or상태이상or치명타무시시"
+            txtResearch.text = "효율 : 체력, 체력%, 순발, 순발%, 상태이상무시\n풀 : 체력, 체력%, 순발, 순발%, 치료효과, 상태이상무시, 회피, 명중(기깎회피방지용), 방어or상태이상or치명타무시시"
            txtCharm.text = "추천 : 방어(회피), 순발(상무), 체력(치효)"
             txtTotem.text = "체력토템"
         } else if(name == "모나시프") {

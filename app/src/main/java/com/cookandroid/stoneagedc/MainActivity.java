@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -11,11 +12,13 @@ import com.cookandroid.stoneagedc.jorunsa.JorunsaActivity;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.core.view.GravityCompat;
@@ -31,6 +34,11 @@ import androidx.appcompat.widget.Toolbar;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
 
 import recomendDeck.RecommendDeckActivity;
 import recomendDeck.Tips;
@@ -74,6 +82,47 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         Button alert = findViewById(R.id.popUp);
 
+        // 석기생활 달력 시간
+        Date currentTime = Calendar.getInstance().getTime();
+
+        SimpleDateFormat weekdayFormat = new SimpleDateFormat("EE", Locale.getDefault());
+        String weekDay = weekdayFormat.format(currentTime);
+
+        TextView time = findViewById(R.id.localTime);
+        time.setText("오늘은" + weekDay + "요일");
+        TextView monday = findViewById(R.id.monday);
+        TextView tuesday = findViewById(R.id.tuesday);
+        TextView wedensday = findViewById(R.id.wedensday);
+        TextView thursday = findViewById(R.id.thursday);
+        TextView friday = findViewById(R.id.friday);
+        TextView saturday = findViewById(R.id.saturday);
+        TextView sunday = findViewById(R.id.sunday);
+
+        Log.d("test", weekDay);
+        if(weekDay == "월") {
+            monday.setTextColor(Color.RED);
+            Log.d("test","월빨간색색입혔다");
+        } else if(weekDay == "화") {
+            tuesday.setTextColor(Color.RED);
+            Log.d("test","월빨간색색입혔다");
+        } else if(weekDay == "수") {
+            wedensday.setTextColor(Color.RED);
+            Log.d("test","월빨간색색입혔다");
+        } else if(weekDay == "목") {
+            thursday.setTextColor(Color.RED);
+            Log.d("test","월빨간색색입혔다");
+        } else if(weekDay == "금") {
+            friday.setTextColor(Color.RED);
+            Log.d("test","월빨간색색입혔다");
+        } else if(weekDay == "토") {
+            saturday.setTextColor(Color.RED);
+            Log.d("test","월빨간색색입혔다");
+        } else if(weekDay == "일") {
+            sunday.setTextColor(Color.RED);
+            Log.d("test","월빨간색색입혔다");
+        }
+
+
     }
 
     public void noticeClick(View v) {
@@ -95,7 +144,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void patchClick(View v) {
-        Uri patchuri = Uri.parse("http://forum.netmarble.com/stone_kr/view/6/43789");
+        Uri patchuri = Uri.parse("https://forum.netmarble.com/stone_kr/view/6/44469");
         Intent patchintent = new Intent(Intent.ACTION_VIEW, patchuri);
         startActivity(patchintent);
     }

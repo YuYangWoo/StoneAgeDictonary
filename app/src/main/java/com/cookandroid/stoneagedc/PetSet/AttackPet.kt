@@ -220,7 +220,7 @@ class AttackPet : AppCompatActivity() {
             txtTotem.text = "딜용 : 공격(치 or 명) "
         }
         else if(name =="베르푸스") {
-            txtAttack.text = "베르푸스(4티어)"
+            txtAttack.text = "베르푸스(2티어) 기계침입용"
             imgAttack.setImageResource(R.drawable.berfuce)
             txtGrowth.text = "공격A+ 순발A이상"
             txtPersonal.text = "딜용 : 용감한"
