@@ -4,5 +4,9 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 
-    <color name="blue">#ff4169e1</color>
+
+<!--    <color name="blue">#6D99E6</color>-->
+    <!--    <color name="blue">#ff4169e1</color>-->
+    <color name="blue">#B4C8EA</color>
+<!--    <color name="brightblue">#B4C8EA</color>-->
 </resources>
