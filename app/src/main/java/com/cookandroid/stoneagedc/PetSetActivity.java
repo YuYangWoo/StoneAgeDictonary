@@ -21,8 +21,6 @@ public class PetSetActivity extends AppCompatActivity {
         ViewPagerAdapter vpAdapter = new ViewPagerAdapter(getSupportFragmentManager());
         vp.setAdapter(vpAdapter);
 
-
-
         //탭과 뷰페이저 연동
         TabLayout tab = findViewById(R.id.tabLayout);
         tab.setupWithViewPager(vp);

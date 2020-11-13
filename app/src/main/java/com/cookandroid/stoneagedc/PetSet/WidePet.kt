@@ -73,7 +73,7 @@ class WidePet : AppCompatActivity() {
             txtCharm.text = "추천 : 공격(명or치), 순발(상무), 방어(회피)\n공격, 회피, 치명 보조옵사용"
             txtTotem.text = "회피(공격), 공격토템"
         } else if(name == "크로톤") {
-            txtAttack.text = "크로톤(1티어)"
+            txtAttack.text = "크로톤(2티어)"
             imgAttack.setImageResource(R.drawable.kroton)
             txtGrowth.text = "투르톤, 콰드루스, 볼카노스 추천\n공S이상 전반적A"
             txtPersonal.text = "용감한, 속이검은"
@@ -113,6 +113,16 @@ class WidePet : AppCompatActivity() {
             txtResearch.text = "체력-체력%-공격-공격%-순발-순발%-상태이상-회피or치치"
             txtCharm.text = "필수 : 공격(치명타), 순발(상태이상)\n서브 : 방어(회피), 체력(치명타무시)"
             txtTotem.text = "공격(치명타),치명타(공격)"
+        } else if(name == "티라고스") {
+            txtAttack.text = "티라고스(1티어)"
+            imgAttack.setImageResource(R.drawable.tiragos)
+            txtGrowth.text ="탱용 : 체공 or 체방\n공격용 : 체공순"
+            txtPersonal.text = "여유로운(탱) or 용감한(공) or 불같은(공)"
+            txtTrain.text = "탱용 : 체력 5 : 공격 5\n공격용 : 올 공격"
+            txtSkill.text = "패시브,궁극기,액티브 다중요"
+            txtResearch.text = "탱용 : 체력-체력%-공격-공격%-치확-치효-명중-회피-상무-치무\n공격용 : 체력-공격-공격%-순발-순발%-치확-치효-명중-회피-상무"
+            txtCharm.text = "필수 : 공격(치명타or명중), 순발(상태이상)\n서브 : 방어(회피), 체력(치명타무시)"
+            txtTotem.text = "공격,체력토템"
         }
     }
 }

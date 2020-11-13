@@ -46,7 +46,6 @@ import recomendDeck.Tips;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private AdView mAdView;
     private BackPressCloseHandler backPressCloseHandler;
-    private InterstitialAd mInterstitialAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -144,15 +143,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void patchClick(View v) {
-        Uri patchuri = Uri.parse("https://forum.netmarble.com/stone_kr/view/6/44469");
+        Uri patchuri = Uri.parse("https://forum.netmarble.com/stone_kr/view/6/45059");
         Intent patchintent = new Intent(Intent.ACTION_VIEW, patchuri);
         startActivity(patchintent);
-    }
-
-    public void manClick(View v) {
-        Uri manuri = Uri.parse("https://youtu.be/kK3rCseb8HM");
-        Intent manintent = new Intent(Intent.ACTION_VIEW, manuri);
-        startActivity(manintent);
     }
 
     @Override

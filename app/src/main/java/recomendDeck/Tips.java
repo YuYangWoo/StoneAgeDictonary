@@ -67,7 +67,7 @@ public class Tips extends AppCompatActivity {
                 "180층 190층에서 4성 전설토템 줍니다\n" +
                 "200층은 계륵같은 돌주머니 하나 주고여\n" +
                 "그외 130 전설부적은 4-6?개 정도 주는거같네요 "," "));
-
+        DeckList.add(new Recommend("티라고스 활용 꿀팁","PVP는 PVE든 펫 교체를 활용해 티라노가 들어오면 CC면역 버프 + 첫 턴에 티라노 들고 다른 펫으로 교체해도 CC 면역 ! "," "));
 
     }
     public boolean onOptionsItemSelected(MenuItem item) {
