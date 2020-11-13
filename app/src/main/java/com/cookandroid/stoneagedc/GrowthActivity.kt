@@ -3,6 +3,7 @@ package com.cookandroid.stoneagedc
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
@@ -21,19 +22,39 @@ class GrowthActivity : AppCompatActivity() {
         AdsFull.getInstance(this)
 
         btnHealth.setOnClickListener {
-            resultMethod(edtHealthBefore.text.toString().toDouble(), edtHealthAfter.text.toString().toDouble(), txtHealthResult, txtHealthGrowth)
+            if(edtHealthBefore.text.toString()=="" || edtHealthAfter.text.toString() ==""){
+                Toast.makeText(this, "값을 입력해주세요",Toast.LENGTH_SHORT).show()
+            }
+            else {
+                resultMethod(edtHealthBefore.text.toString().toDouble(), edtHealthAfter.text.toString().toDouble(), txtHealthResult, txtHealthGrowth)
+            }
         }
 
         btnAttack.setOnClickListener {
-            resultMethod(edtAttackBefore.text.toString().toDouble(), edtAttackAfter.text.toString().toDouble(), txtAttackResult, txtAttackGrowth)
+            if(edtAttackBefore.text.toString()=="" || edtAttackAfter.text.toString() ==""){
+                Toast.makeText(this, "값을 입력해주세요",Toast.LENGTH_SHORT).show()
+            }
+            else {
+                resultMethod(edtAttackBefore.text.toString().toDouble(), edtAttackAfter.text.toString().toDouble(), txtAttackResult, txtAttackGrowth)
+            }
         }
 
         btnDefense.setOnClickListener {
-            resultMethod(edtDefenseBefore.text.toString().toDouble(), edtDefenseAfter.text.toString().toDouble(), txtDefenseResult, txtDefenseGrowth)
+            if(edtDefenseBefore.text.toString()=="" || edtDefenseAfter.text.toString() ==""){
+                Toast.makeText(this, "값을 입력해주세요",Toast.LENGTH_SHORT).show()
+            }
+            else {
+                resultMethod(edtDefenseBefore.text.toString().toDouble(), edtDefenseAfter.text.toString().toDouble(), txtDefenseResult, txtDefenseGrowth)
+            }
         }
 
         btnSpeed.setOnClickListener {
-            resultMethod(edtSpeedBefore.text.toString().toDouble(), edtSpeedAfter.text.toString().toDouble(), txtSpeedResult, txtSpeedGrowth)
+            if(edtSpeedBefore.text.toString()=="" || edtSpeedAfter.text.toString() ==""){
+                Toast.makeText(this, "값을 입력해주세요",Toast.LENGTH_SHORT).show()
+            }
+            else {
+                resultMethod(edtSpeedBefore.text.toString().toDouble(), edtSpeedAfter.text.toString().toDouble(), txtSpeedResult, txtSpeedGrowth)
+            }
         }
 
         // 배너광고
@@ -93,6 +114,7 @@ class GrowthActivity : AppCompatActivity() {
                 txtGrowth.text = "와우 완벽한 맥스S+축하드려요 !"
             }
         }
+
     }
 
     //뒤로가기
