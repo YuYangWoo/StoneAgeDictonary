@@ -86,14 +86,12 @@
                 android:id="@+id/Healthdivide"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="7dp"
                 android:layout_marginTop="12dp"
-                android:layout_marginEnd="5dp"
                 android:text="/"
                 android:textColor="#000000"
                 android:textSize="30dp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toStartOf="@+id/edtHealthAfter"
                 app:layout_constraintStart_toEndOf="@+id/edtHealthBefore"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -101,18 +99,19 @@
                 android:id="@+id/edtHealthAfter"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="130dp"
                 android:ems="10"
                 android:hint="MAX 체력성장률"
                 android:inputType="textPersonName"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/Healthdivide"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
                 android:id="@+id/btnHealth"
                 android:layout_width="30dp"
                 android:layout_height="40dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="12dp"
                 android:text="="
                 app:layout_constraintStart_toEndOf="@+id/edtHealthAfter"
@@ -183,14 +182,12 @@
                 android:id="@+id/AttackDivide"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="7dp"
                 android:layout_marginTop="12dp"
-                android:layout_marginEnd="5dp"
                 android:text="/"
                 android:textColor="#000000"
                 android:textSize="30dp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toStartOf="@+id/edtAttackAfter"
                 app:layout_constraintStart_toEndOf="@+id/edtAttackBefore"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -198,18 +195,19 @@
                 android:id="@+id/edtAttackAfter"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="130dp"
                 android:ems="10"
                 android:hint="MAX 체력성장률"
                 android:inputType="textPersonName"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/AttackDivide"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
                 android:id="@+id/btnAttack"
                 android:layout_width="30dp"
                 android:layout_height="40dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="12dp"
                 android:text="="
                 app:layout_constraintStart_toEndOf="@+id/edtAttackAfter"
@@ -281,14 +279,12 @@
                 android:id="@+id/DefenseDivide"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="7dp"
                 android:layout_marginTop="12dp"
-                android:layout_marginEnd="5dp"
                 android:text="/"
                 android:textColor="#000000"
                 android:textSize="30dp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toStartOf="@+id/edtDefenseAfter"
                 app:layout_constraintStart_toEndOf="@+id/edtDefenseBefore"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -296,18 +292,19 @@
                 android:id="@+id/edtDefenseAfter"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="130dp"
                 android:ems="10"
                 android:hint="MAX 체력성장률"
                 android:inputType="textPersonName"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/DefenseDivide"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
                 android:id="@+id/btnDefense"
                 android:layout_width="30dp"
                 android:layout_height="40dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="12dp"
                 android:text="="
                 app:layout_constraintStart_toEndOf="@+id/edtDefenseAfter"
@@ -379,14 +376,12 @@
                 android:id="@+id/speedDivide"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="7dp"
                 android:layout_marginTop="12dp"
-                android:layout_marginEnd="5dp"
                 android:text="/"
                 android:textColor="#000000"
                 android:textSize="30dp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toStartOf="@+id/edtSpeedAfter"
                 app:layout_constraintStart_toEndOf="@+id/edtSpeedBefore"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -394,18 +389,19 @@
                 android:id="@+id/edtSpeedAfter"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="130dp"
                 android:ems="10"
                 android:hint="MAX 체력성장률"
                 android:inputType="textPersonName"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/speedDivide"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
                 android:id="@+id/btnSpeed"
                 android:layout_width="30dp"
                 android:layout_height="40dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="12dp"
                 android:text="="
                 app:layout_constraintStart_toEndOf="@+id/edtSpeedAfter"
@@ -485,7 +481,7 @@
             app:adUnitId="ca-app-pub-6308948435596230/6884718456"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"></com.google.android.gms.ads.AdView>
+            app:layout_constraintHeight_percent="0.9"
+            app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
