@@ -140,7 +140,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/maplestory_light"
-                android:text="200인 도장 업데이트/ 베르푸스 리메이크와 포획 / 고르돈 리메이크 / 할로윈 이벤트"
+                android:text="모험의장(악몽)추가/티라고스 펫 출시/알찾기 개편/각종이벤트"
                 android:textAlignment="center"
                 android:textColor="#E91E63"
                 android:textSize="18dp"

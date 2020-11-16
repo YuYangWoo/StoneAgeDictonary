@@ -9,6 +9,7 @@ import android.net.Uri;
 import android.os.Bundle;
 
 import com.cookandroid.stoneagedc.jorunsa.JorunsaActivity;
+import com.cookandroid.stoneagedc.kindOfPet.PetSetActivity;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
@@ -23,7 +24,6 @@ import android.widget.TextView;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.core.view.GravityCompat;
 
-import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.drawerlayout.widget.DrawerLayout;

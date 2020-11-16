@@ -1,15 +1,21 @@
-package com.cookandroid.stoneagedc;
+package com.cookandroid.stoneagedc.kindOfPet;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
-import com.cookandroid.stoneagedc.kindOfPet.ViewPagerAdapter;
+import com.cookandroid.stoneagedc.AdsFull;
+import com.cookandroid.stoneagedc.R;
 import com.google.android.material.tabs.TabLayout;
 
+import java.util.ArrayList;
+
 public class PetSetActivity extends AppCompatActivity {
+
+    ArrayList<ArrayList<ListItem>> petData = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +51,6 @@ public class PetSetActivity extends AppCompatActivity {
     public void onBackPressed() {
         super.onBackPressed();
         AdsFull.getInstance(this);
-
     }
+
 }

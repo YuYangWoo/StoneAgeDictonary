@@ -120,7 +120,7 @@ class WidePet : AppCompatActivity() {
             txtPersonal.text = "여유로운(탱) or 용감한(공) or 불같은(공)"
             txtTrain.text = "탱용 : 체력 5 : 공격 5\n공격용 : 올 공격"
             txtSkill.text = "패시브,궁극기,액티브 다중요"
-            txtResearch.text = "탱용 : 체력-체력%-공격-공격%-치확-치효-명중-회피-상무-치무\n공격용 : 체력-공격-공격%-순발-순발%-치확-치효-명중-회피-상무"
+            txtResearch.text = "탱용 : 체력-체력%-공격-공격%-치확-치효-명중-반격-반격효과-회피\n공격용 : 체력-체력%-공격-공격%-치확-치효-명중-회피"
             txtCharm.text = "필수 : 공격(치명타or명중), 순발(상태이상)\n서브 : 방어(회피), 체력(치명타무시)"
             txtTotem.text = "공격,체력토템"
         }

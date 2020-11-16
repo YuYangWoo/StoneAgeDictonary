@@ -8,8 +8,8 @@ import android.view.ViewGroup
 import android.widget.AdapterView.OnItemClickListener
 import android.widget.ListView
 import androidx.fragment.app.Fragment
-import com.cookandroid.stoneagedc.R
 import com.cookandroid.stoneagedc.PetSet.ControlPet
+import com.cookandroid.stoneagedc.R
 import java.util.*
 
 class Control : Fragment() {
@@ -25,54 +25,67 @@ class Control : Fragment() {
 
         //리스트뷰 선택시 펫 액티비티로 넘어감.
         listview.onItemClickListener = OnItemClickListener { parent, view, position, id ->
-            if (petDataList!![position].petName === "아고아") {
-                val intent = Intent(activity, ControlPet::class.java)
-                intent.putExtra("Name", "아고아")
-                startActivity(intent)
-            } else if (petDataList!![position].petName === "아고아(탑승)") {
-                val intent = Intent(activity, ControlPet::class.java)
-                intent.putExtra("Name", "아고아(탑승)")
-                startActivity(intent)
-            } else if (petDataList!![position].petName === "백설토끼") {
-                val intent = Intent(activity, ControlPet::class.java)
-                intent.putExtra("Name", "백설토끼")
-                startActivity(intent)
-            } else if (petDataList!![position].petName === "바로로크스") {
-                val intent = Intent(activity, ControlPet::class.java)
-                intent.putExtra("Name", "바로로크스")
-                startActivity(intent)
-            } else if (petDataList!![position].petName === "펜타스") {
-                val intent = Intent(activity, ControlPet::class.java)
-                intent.putExtra("Name", "펜타스")
-                startActivity(intent)
-            } else if (petDataList!![position].petName === "핑키") {
-                val intent = Intent(activity, ControlPet::class.java)
-                intent.putExtra("Name", "핑키")
-                startActivity(intent)
-            } else if (petDataList!![position].petName === "핑코") {
-                val intent = Intent(activity, ControlPet::class.java)
-                intent.putExtra("Name", "핑코")
-                startActivity(intent)
-            } else if (petDataList!![position].petName === "파이어노스돈") {
-                val intent = Intent(activity, ControlPet::class.java)
-                intent.putExtra("Name", "파이어노스돈")
-                startActivity(intent)
-            } else if (petDataList!![position].petName === "카미르") {
-                val intent = Intent(activity, ControlPet::class.java)
-                intent.putExtra("Name", "카미르")
-                startActivity(intent)
-            } else if (petDataList!![position].petName === "무이") {
-                val intent = Intent(activity, ControlPet::class.java)
-                intent.putExtra("Name", "무이")
-                startActivity(intent)
-            } else if (petDataList!![position].petName === "오투투") {
-                val intent = Intent(activity, ControlPet::class.java)
-                intent.putExtra("Name", "오투투")
-                startActivity(intent)
-            } else if (petDataList!![position].petName === "라고고") {
-                val intent = Intent(activity, ControlPet::class.java)
-                intent.putExtra("Name", "라고고")
-                startActivity(intent)
+            when {
+                petDataList!![position].petName === "아고아" -> {
+                    val intent = Intent(activity, ControlPet::class.java)
+                    intent.putExtra("Name", "아고아")
+                    startActivity(intent)
+                }
+                petDataList!![position].petName === "아고아(탑승)" -> {
+                    val intent = Intent(activity, ControlPet::class.java)
+                    intent.putExtra("Name", "아고아(탑승)")
+                    startActivity(intent)
+                }
+                petDataList!![position].petName === "백설토끼" -> {
+                    val intent = Intent(activity, ControlPet::class.java)
+                    intent.putExtra("Name", "백설토끼")
+                    startActivity(intent)
+                }
+                petDataList!![position].petName === "바로로크스" -> {
+                    val intent = Intent(activity, ControlPet::class.java)
+                    intent.putExtra("Name", "바로로크스")
+                    startActivity(intent)
+                }
+                petDataList!![position].petName === "펜타스" -> {
+                    val intent = Intent(activity, ControlPet::class.java)
+                    intent.putExtra("Name", "펜타스")
+                    startActivity(intent)
+                }
+                petDataList!![position].petName === "핑키" -> {
+                    val intent = Intent(activity, ControlPet::class.java)
+                    intent.putExtra("Name", "핑키")
+                    startActivity(intent)
+                }
+                petDataList!![position].petName === "핑코" -> {
+                    val intent = Intent(activity, ControlPet::class.java)
+                    intent.putExtra("Name", "핑코")
+                    startActivity(intent)
+                }
+                petDataList!![position].petName === "파이어노스돈" -> {
+                    val intent = Intent(activity, ControlPet::class.java)
+                    intent.putExtra("Name", "파이어노스돈")
+                    startActivity(intent)
+                }
+                petDataList!![position].petName === "카미르" -> {
+                    val intent = Intent(activity, ControlPet::class.java)
+                    intent.putExtra("Name", "카미르")
+                    startActivity(intent)
+                }
+                petDataList!![position].petName === "무이" -> {
+                    val intent = Intent(activity, ControlPet::class.java)
+                    intent.putExtra("Name", "무이")
+                    startActivity(intent)
+                }
+                petDataList!![position].petName === "오투투" -> {
+                    val intent = Intent(activity, ControlPet::class.java)
+                    intent.putExtra("Name", "오투투")
+                    startActivity(intent)
+                }
+                petDataList!![position].petName === "라고고" -> {
+                    val intent = Intent(activity, ControlPet::class.java)
+                    intent.putExtra("Name", "라고고")
+                    startActivity(intent)
+                }
             }
         }
         return view

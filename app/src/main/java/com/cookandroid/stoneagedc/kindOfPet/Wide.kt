@@ -26,38 +26,47 @@ class Wide : Fragment() {
 
         // 리스트뷰 선택시 펫 액티비티로 넘어감.
         listView.onItemClickListener = OnItemClickListener { parent, view, position, id ->
-            if (petDataList!![position].petName === "기가로스") {
-                val intent = Intent(activity, WidePet::class.java)
-                intent.putExtra("Name", "기가로스")
-                startActivity(intent)
-            } else if (petDataList!![position].petName === "휴보") {
-                val intent = Intent(activity, WidePet::class.java)
-                intent.putExtra("Name", "휴보")
-                startActivity(intent)
-            } else if (petDataList!![position].petName === "카키") {
-                val intent = Intent(activity, WidePet::class.java)
-                intent.putExtra("Name", "카키")
-                startActivity(intent)
-            } else if (petDataList!![position].petName === "모가로스") {
-                val intent = Intent(activity, WidePet::class.java)
-                intent.putExtra("Name", "모가로스")
-                startActivity(intent)
-            } else if (petDataList!![position].petName === "모가로스(탑승)") {
-                val intent = Intent(activity, WidePet::class.java)
-                intent.putExtra("Name", "모가로스(탑승)")
-                startActivity(intent)
-            } else if (petDataList!![position].petName === "샌디쟈드") {
-                val intent = Intent(activity, WidePet::class.java)
-                intent.putExtra("Name", "샌디쟈드")
-                startActivity(intent)
-            } else if (petDataList!![position].petName === "크로톤") {
-                val intent = Intent(activity, WidePet::class.java)
-                intent.putExtra("Name", "크로톤")
-                startActivity(intent)
-            } else if (petDataList!![position].petName === "티라고스") {
-                val intent = Intent(activity, WidePet::class.java)
-                intent.putExtra("Name", "티라고스")
-                startActivity(intent)
+            when {
+                petDataList!![position].petName === "기가로스" -> {
+                    val intent = Intent(activity, WidePet::class.java)
+                    intent.putExtra("Name", "기가로스")
+                    startActivity(intent)
+                }
+                petDataList!![position].petName === "휴보" -> {
+                    val intent = Intent(activity, WidePet::class.java)
+                    intent.putExtra("Name", "휴보")
+                    startActivity(intent)
+                }
+                petDataList!![position].petName === "카키" -> {
+                    val intent = Intent(activity, WidePet::class.java)
+                    intent.putExtra("Name", "카키")
+                    startActivity(intent)
+                }
+                petDataList!![position].petName === "모가로스" -> {
+                    val intent = Intent(activity, WidePet::class.java)
+                    intent.putExtra("Name", "모가로스")
+                    startActivity(intent)
+                }
+                petDataList!![position].petName === "모가로스(탑승)" -> {
+                    val intent = Intent(activity, WidePet::class.java)
+                    intent.putExtra("Name", "모가로스(탑승)")
+                    startActivity(intent)
+                }
+                petDataList!![position].petName === "샌디쟈드" -> {
+                    val intent = Intent(activity, WidePet::class.java)
+                    intent.putExtra("Name", "샌디쟈드")
+                    startActivity(intent)
+                }
+                petDataList!![position].petName === "크로톤" -> {
+                    val intent = Intent(activity, WidePet::class.java)
+                    intent.putExtra("Name", "크로톤")
+                    startActivity(intent)
+                }
+                petDataList!![position].petName === "티라고스" -> {
+                    val intent = Intent(activity, WidePet::class.java)
+                    intent.putExtra("Name", "티라고스")
+                    startActivity(intent)
+                }
             }
         }
         return view
