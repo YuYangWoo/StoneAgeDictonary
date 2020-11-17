@@ -9,7 +9,8 @@ import android.net.Uri;
 import android.os.Bundle;
 
 import com.cookandroid.stoneagedc.jorunsa.JorunsaActivity;
-import com.cookandroid.stoneagedc.kindOfPet.PetSetActivity;
+import com.cookandroid.stoneagedc.kindOfPet.PetActivity;
+import com.cookandroid.stoneagedc.kindOfPet.PetList;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
@@ -69,6 +70,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             public void onInitializationComplete(InitializationStatus initializationStatus) {
             }
         });
+
         //배너광고 호출
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
@@ -210,7 +212,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent guideIntent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(guideIntent);
         } else if (id == R.id.setPet) {
-            Intent setPetActivity = new Intent(getApplicationContext(), PetSetActivity.class);
+            Intent setPetActivity = new Intent(getApplicationContext(), PetActivity.class);
             startActivity(setPetActivity);
         } else if (id == R.id.introduceMovie) {
             Uri uri = Uri.parse("https://www.youtube.com/watch?v=wV-_QnGJoDI");

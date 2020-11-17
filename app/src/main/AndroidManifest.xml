@@ -36,7 +36,7 @@
             />
         <activity android:name=".jorunsa.JorunsaActivity"
             />
-        <activity android:name=".kindOfPet.PetSetActivity"
+        <activity android:name=".kindOfPet.PetActivity"
             />
         <activity android:name=".PetSet.AttackPet"/>
 

@@ -485,6 +485,7 @@
             app:adUnitId="ca-app-pub-6308948435596230/6884718456"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.9"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"></com.google.android.gms.ads.AdView>
     </androidx.constraintlayout.widget.ConstraintLayout>

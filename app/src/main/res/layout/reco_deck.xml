@@ -37,6 +37,7 @@
             app:adUnitId="@string/bottom_ad_id"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.9"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"></com.google.android.gms.ads.AdView>
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,4 +15,10 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pet_all">ALL</string>
+    <string name="pet_attack">공격</string>
+    <string name="pet_defensive">방어</string>
+    <string name="pet_control">제어</string>
+    <string name="pet_cure">치료</string>
+    <string name="pet_wide">광역</string>
 </resources>
