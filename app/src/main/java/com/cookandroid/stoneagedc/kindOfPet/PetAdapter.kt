@@ -16,7 +16,7 @@ class PetAdapter(var petList: ArrayList<PetItem>) : RecyclerView.Adapter<PetAdap
 
     // 데이터
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PetAdapter.CustomViewHolder {
-        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.listview, parent, false)
+        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.pet_listview, parent, false)
         return CustomViewHolder(view)
     }
     // 데이터 대입
