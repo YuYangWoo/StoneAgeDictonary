@@ -21,4 +21,5 @@
     <string name="pet_control">제어</string>
     <string name="pet_cure">치료</string>
     <string name="pet_wide">광역</string>
+    <string name="search">Search</string>
 </resources>

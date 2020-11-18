@@ -4,7 +4,7 @@ import com.cookandroid.stoneagedc.R
 
 object PetList {
     var petDataList = ArrayList<PetItem>()
-
+    var petList = ArrayList<PetItem>()
      init {
         petDataList.add(PetItem(R.drawable.angiro, "얀기로", "1.5티어","공격"))
         petDataList.add(PetItem(R.drawable.giro, "기로", "1.5티어","공격"))
@@ -59,4 +59,5 @@ object PetList {
         petDataList.add(PetItem(R.drawable.gigaros, "기가로스", "3티어","광역"))
         petDataList.add(PetItem(R.drawable.hubo, "휴보", "4티어","광역"))
     }
+
 }

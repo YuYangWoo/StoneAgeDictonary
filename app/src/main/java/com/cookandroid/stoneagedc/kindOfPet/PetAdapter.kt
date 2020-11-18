@@ -12,8 +12,7 @@ import com.bumptech.glide.Glide
 import com.cookandroid.stoneagedc.PetSet.*
 import com.cookandroid.stoneagedc.R
 
-class PetAdapter(var petList: ArrayList<PetItem>) : RecyclerView.Adapter<PetAdapter.CustomViewHolder>() {
-
+ class PetAdapter(var petList: ArrayList<PetItem>) : RecyclerView.Adapter<PetAdapter.CustomViewHolder>() {
     // 데이터
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PetAdapter.CustomViewHolder {
         val view: View = LayoutInflater.from(parent.context).inflate(R.layout.pet_listview, parent, false)
