@@ -1,7 +1,6 @@
 package com.cookandroid.stoneagedc.kindOfPet
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -28,7 +27,6 @@ class PetListFragment(val tabTitle: Int) : Fragment() {
             R.string.pet_all -> PetAdapter(PetList.petDataList)
             else -> {
                 for (item in PetList.petDataList) {
-                    Log.d("test", item.position +"   " + getString(tabTitle))
                     if (item.position == getString(tabTitle)) {
                         list.add(item)
                     }
