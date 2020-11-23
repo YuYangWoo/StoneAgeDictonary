@@ -43,46 +43,51 @@ class CurePet : AppCompatActivity() {
 
     private fun init(name:String) {
 
-        if(name == "도라비스") {
-            txtAttack.text = "도라비스(1티어)"
-            imgAttack.setImageResource(R.drawable.dorabis)
-            txtGrowth.text = "체력, 순발 A+이상"
-            txtPersonal.text = "인자한(추천),고귀한"
-            txtTrain.text = "순발300후 체력"
-            txtSkill.text = "궁극기, 패시브"
-            txtResearch.text = "효율 : 체력, 체력%, 순발, 순발%, 치료효과\n 풀 : 체력, 체력%, 순발, 순발%, 치명타확률, 치명타효과, 치료효과, 회피, 상태이상무시, 치명타무시"
-            txtCharm.text = "추천 : 체력(치효), 방어(회피), 순발(상무)\n치료효과,체력보조옵 사용"
-            txtTotem.text = "치료효과토템"
-        } else if(name == "골드로비") {
-            txtAttack.text = "골드로비(1티어)"
-            imgAttack.setImageResource(R.drawable.golfwolf)
-            txtGrowth.text = "자신의덱 속성에 맞게 속성이 가장 중요\n체력,순발A+이상"
-            txtPersonal.text = "여유로운"
-            txtTrain.text = "순발300 후 체력"
-            txtSkill.text = "궁극기, 패시브, 액티브"
-            txtResearch.text = "효율 : 체력, 체력%, 순발, 순발%, 상태이상무시\n풀 : 체력, 체력%, 순발, 순발%, 치료효과, 상태이상무시, 회피, 명중(기깎회피방지용), 방어or상태이상or치명타무시시"
-           txtCharm.text = "추천 : 방어(회피), 순발(상무), 체력(치효)"
-            txtTotem.text = "체력토템"
-        } else if(name == "모나시프") {
-            txtAttack.text = "모나시프(2티어)"
-            imgAttack.setImageResource(R.drawable.monasif)
-            txtGrowth.text = "체력,순발A+이상"
-            txtPersonal.text = "인자한, 여유로운"
-            txtTrain.text = "순발300 후 체력"
-            txtSkill.text = "궁극기, 패시브, 액티브"
-            txtResearch.text = "효율 : 체력, 체력%, 순발, 순발%, 치료효과, 상태이상무시\n풀 : 체력, 체력%, 순발, 순발%, 치료효과, 상태이상무시, 회피, 방어or상태이상or치명타무시시"
-            txtCharm.text = "추천 : 체력(치효), 방어(회피), 순발(상무)\n치료효과,체력보조옵 사용"
-            txtTotem.text = "치료효과토템"
-        } else if(name == "카쿠") {
-            txtAttack.text = "카쿠(3티어)"
-            imgAttack.setImageResource(R.drawable.kaku)
-            txtGrowth.text = "체력,순발A+이상"
-            txtPersonal.text = "인자한, 여유로운"
-            txtTrain.text = "순발300 후 체력"
-            txtSkill.text = "궁극기, 패시브, 액티브"
-            txtResearch.text = "효율 : 체력, 체력%, 순발, 순발%, 치료효과, 상태이상무시\n풀 : 체력, 체력%, 순발, 순발%, 치료효과, 상태이상무시, 회피, 방어or상태이상or치명타무시시"
-            txtCharm.text = "추천 : 체력(치효), 방어(회피), 순발(상무)\n치료효과,체력보조옵 사용"
-            txtTotem.text = "치료효과토템"
+        when (name) {
+            "도라비스" -> {
+                txtAttack.text = "도라비스(1티어)"
+                imgAttack.setImageResource(R.drawable.dorabis)
+                txtGrowth.text = "체력, 순발 A+이상"
+                txtPersonal.text = "인자한(추천),고귀한"
+                txtTrain.text = "순발300후 체력"
+                txtSkill.text = "궁극기, 패시브"
+                txtResearch.text = "효율 : 체력, 체력%, 순발, 순발%, 치료효과\n 풀 : 체력, 체력%, 순발, 순발%, 치명타확률, 치명타효과, 치료효과, 회피, 상태이상무시, 치명타무시"
+                txtCharm.text = "추천 : 체력(치효), 방어(회피), 순발(상무)\n치료효과,체력보조옵 사용"
+                txtTotem.text = "치료효과토템"
+            }
+            "골드로비" -> {
+                txtAttack.text = "골드로비(1티어)"
+                imgAttack.setImageResource(R.drawable.golfwolf)
+                txtGrowth.text = "자신의덱 속성에 맞게 속성이 가장 중요\n체력,순발A+이상"
+                txtPersonal.text = "여유로운"
+                txtTrain.text = "순발300 후 체력"
+                txtSkill.text = "궁극기, 패시브, 액티브"
+                txtResearch.text = "효율 : 체력, 체력%, 순발, 순발%, 상태이상무시\n풀 : 체력, 체력%, 순발, 순발%, 치료효과, 상태이상무시, 회피, 명중(기깎회피방지용), 방어or상태이상or치명타무시시"
+                txtCharm.text = "추천 : 방어(회피), 순발(상무), 체력(치효)"
+                txtTotem.text = "체력토템"
+            }
+            "모나시프" -> {
+                txtAttack.text = "모나시프(2티어)"
+                imgAttack.setImageResource(R.drawable.monasif)
+                txtGrowth.text = "체력,순발A+이상"
+                txtPersonal.text = "인자한, 여유로운"
+                txtTrain.text = "순발300 후 체력"
+                txtSkill.text = "궁극기, 패시브, 액티브"
+                txtResearch.text = "효율 : 체력, 체력%, 순발, 순발%, 치료효과, 상태이상무시\n풀 : 체력, 체력%, 순발, 순발%, 치료효과, 상태이상무시, 회피, 방어or상태이상or치명타무시시"
+                txtCharm.text = "추천 : 체력(치효), 방어(회피), 순발(상무)\n치료효과,체력보조옵 사용"
+                txtTotem.text = "치료효과토템"
+            }
+            "카쿠" -> {
+                txtAttack.text = "카쿠(3티어)"
+                imgAttack.setImageResource(R.drawable.kaku)
+                txtGrowth.text = "체력,순발A+이상"
+                txtPersonal.text = "인자한, 여유로운"
+                txtTrain.text = "순발300 후 체력"
+                txtSkill.text = "궁극기, 패시브, 액티브"
+                txtResearch.text = "효율 : 체력, 체력%, 순발, 순발%, 치료효과, 상태이상무시\n풀 : 체력, 체력%, 순발, 순발%, 치료효과, 상태이상무시, 회피, 방어or상태이상or치명타무시시"
+                txtCharm.text = "추천 : 체력(치효), 방어(회피), 순발(상무)\n치료효과,체력보조옵 사용"
+                txtTotem.text = "치료효과토템"
+            }
         }
 
     }

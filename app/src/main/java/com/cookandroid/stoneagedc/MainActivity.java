@@ -145,7 +145,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void patchClick(View v) {
-        Uri patchuri = Uri.parse("https://forum.netmarble.com/stone_kr/view/6/45059");
+        Uri patchuri = Uri.parse("https://forum.netmarble.com/stone_kr/view/24/45376");
         Intent patchintent = new Intent(Intent.ACTION_VIEW, patchuri);
         startActivity(patchintent);
     }

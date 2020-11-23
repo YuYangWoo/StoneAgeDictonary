@@ -151,7 +151,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:fontFamily="@font/maplestory_bold"
-        android:text="-스톤에이지 백과사전 v1.8-"
+        android:text="-스톤에이지 백과사전 v2.0-"
         android:textColor="#000000"
         android:textSize="20dp"
         android:textStyle="bold"

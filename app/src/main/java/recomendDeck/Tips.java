@@ -68,8 +68,11 @@ public class Tips extends AppCompatActivity {
                 "200층은 계륵같은 돌주머니 하나 주고여\n" +
                 "그외 130 전설부적은 4-6?개 정도 주는거같네요 "," "));
         DeckList.add(new Recommend("티라고스 활용 꿀팁","PVP는 PVE든 펫 교체를 활용해 티라노가 들어오면 CC면역 버프 + 첫 턴에 티라노 들고 다른 펫으로 교체해도 CC 면역 ! "," "));
-
+        DeckList.add(new Recommend("보물지도, 복권 매크로","1. 컴퓨터에 LD player를 다운한 후 ctrl + f8을 눌러서 스크립트 녹화를 띄어줍니다.\n2. 보물지도 하나를 깐후 이동할 때 펫 정보를 눌러줍시다.\n3. " +
+                "그러면 보물지도 재사용 버튼이 오른쪽에 생깁니다. \n4. 그러면 스크립트 녹화 시작하기를 누르고 사용버튼 한 번 클릭 그리고 한 10~초 정도 후에 화면 클릭을하고 정지합니다." +
+                "\n5. 그러고 스크립트 설정(톱니바퀴)누르고 반복실행 - 수동종료를 클릭 후 저장 ! 하고 돌리시면 됩니다 ! 복권도 마찬가지 "," "));
     }
+
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case android.R.id.home:{ //toolbar의 back키 눌렀을 때 동작
