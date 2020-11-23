@@ -4,6 +4,8 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Filter
+import android.widget.Filterable
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.ContextCompat
@@ -12,8 +14,15 @@ import com.bumptech.glide.Glide
 import com.cookandroid.stoneagedc.PetSet.*
 import com.cookandroid.stoneagedc.R
 
- class PetAdapter(var petList: ArrayList<PetItem>) : RecyclerView.Adapter<PetAdapter.CustomViewHolder>() {
-    // 데이터
+class PetAdapter constructor() : RecyclerView.Adapter<PetAdapter.CustomViewHolder>(), Filterable {
+     var petList = ArrayList<PetItem>()
+     var filteredPetList = ArrayList<PetItem>()
+
+     constructor(petList: ArrayList<PetItem>) :this() {
+         this.petList = petList
+         this.filteredPetList = petList
+     }
+     // 데이터
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PetAdapter.CustomViewHolder {
         val view: View = LayoutInflater.from(parent.context).inflate(R.layout.pet_listview, parent, false)
         return CustomViewHolder(view)
@@ -21,15 +30,15 @@ import com.cookandroid.stoneagedc.R
     // 데이터 대입
     override fun onBindViewHolder(holder: PetAdapter.CustomViewHolder, position: Int) {
         Glide.with(holder.itemView)
-                .load(petList[position].image)
+                .load(filteredPetList[position].image)
                 .into(holder.image)
-        holder.petName.text = petList[position].petName
-        holder.tier.text = petList[position].tier
-        holder.position.text = petList[position].position
+        holder.petName.text = filteredPetList[position].petName
+        holder.tier.text = filteredPetList[position].tier
+        holder.position.text = filteredPetList[position].position
     }
     // 데이터 개수
     override fun getItemCount(): Int {
-        return petList.size
+        return filteredPetList.size
     }
 
     // ViewHolder를 만들어 list_champion.xml의 아이템들을 정의한다.
@@ -43,7 +52,7 @@ import com.cookandroid.stoneagedc.R
             itemView.setOnClickListener {
                 var pos = adapterPosition
                 if (pos != RecyclerView.NO_POSITION) {
-                    var item = petList[pos]
+                    var item = filteredPetList[pos]
                     when(item.position){
                         "공격" ->{
                             var intent = Intent(itemView.context, AttackPet::class.java)
@@ -75,4 +84,36 @@ import com.cookandroid.stoneagedc.R
             }
         }
     }
+
+    override fun getFilter(): Filter {
+        return object : Filter() {
+            override fun performFiltering(constraint: CharSequence?): FilterResults {
+                var key = constraint.toString()
+                if (key.isEmpty()) {
+                    filteredPetList = petList
+                } else {
+                    var lsFiltered = ArrayList<PetItem>()
+                    for (row in petList) {
+                        if (row.petName!!.toLowerCase().contains(key.toLowerCase())) {
+                            lsFiltered.add(row)
+                        }
+                    }
+                    filteredPetList = lsFiltered
+                }
+
+                var filterResults = FilterResults()
+                filterResults.values = filteredPetList
+
+                return filterResults
+            }
+
+            override fun publishResults(constraint: CharSequence?, results: FilterResults?) {
+                filteredPetList = results!!.values as ArrayList<PetItem>
+                notifyDataSetChanged()
+            }
+
+        }
+    }
+
+
 }
