@@ -20,8 +20,6 @@ class PetSearchDialog : AppCompatActivity(){
         layoutManager = LinearLayoutManager(this)
         recyclerView.layoutManager = layoutManager
 
-
-        adapter = PetSearchAdapter(this, PetList.petDataList)
         recyclerView.adapter = adapter
 
         input.addTextChangedListener(object: TextWatcher{
@@ -36,7 +34,7 @@ class PetSearchDialog : AppCompatActivity(){
             override fun afterTextChanged(s: Editable?) {
                 Log.d("test","afterTextChanged")
            var text = input.text.toString().toLowerCase()
-                adapter.filter(text)
+//                adapter.filter(text)
             }
 
         })
