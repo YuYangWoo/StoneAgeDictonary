@@ -7,7 +7,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
-import com.google.android.gms.ads.MobileAds
 import kotlinx.android.synthetic.main.activity_growth.*
 import kotlin.math.roundToInt
 
@@ -58,7 +57,6 @@ class GrowthActivity : AppCompatActivity() {
         }
 
         // 배너광고
-        MobileAds.initialize(this) { }
         var mAdView = findViewById<AdView>(R.id.adView)
         val adRequest = AdRequest.Builder().build()
         mAdView.loadAd(adRequest)

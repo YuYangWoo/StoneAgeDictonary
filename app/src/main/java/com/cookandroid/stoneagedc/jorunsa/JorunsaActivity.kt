@@ -6,6 +6,8 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.cookandroid.stoneagedc.AdsFull
 import com.cookandroid.stoneagedc.R
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
 import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.android.synthetic.main.jorunsa.*
 
@@ -43,6 +45,11 @@ class JorunsaActivity : AppCompatActivity() {
 
         // 광고넣기
         AdsFull.getInstance(this)
+
+        // 배너광고
+        var mAdView = findViewById<AdView>(R.id.adView)
+        val adRequest = AdRequest.Builder().build()
+        mAdView.loadAd(adRequest)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

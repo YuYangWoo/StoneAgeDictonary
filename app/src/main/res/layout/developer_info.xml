@@ -5,7 +5,6 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bababa"
     android:orientation="vertical"
     >
 
@@ -85,10 +84,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:textColor="#000000"
         android:layout_marginTop="25dp"
         android:fontFamily="@font/maplestory_bold"
         android:text="개발자 진형"
+        android:textColor="#000000"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -98,13 +97,12 @@
         android:id="@+id/imageView3"
         android:layout_width="410dp"
         android:layout_height="230dp"
+        android:layout_marginTop="5dp"
         android:src="@drawable/myposition"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/stoneTitle"
-        app:layout_constraintVertical_bias="0.48" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/textView5"
@@ -188,5 +186,5 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/web" />
-
+    <include layout="@layout/admob_bottom"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

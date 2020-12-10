@@ -3,8 +3,9 @@ package com.cookandroid.stoneagedc.kindOfPet
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import com.cookandroid.stoneagedc.R
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
 import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.android.synthetic.main.activity_pet.*
 
@@ -13,9 +14,6 @@ class PetActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pet)
         title = "펫 육성법"
-
-        val toolbar = findViewById<Toolbar>(R.id.toolbar2)
-        setSupportActionBar(toolbar)
 
         // ActionBar Home 버튼 Enable
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
@@ -28,6 +26,11 @@ class PetActivity : AppCompatActivity() {
             // 탭의 이름
             tab.text = getString(viewPager.fragmentList[position].tabTitle)
         }).attach()
+
+        // 배너광고
+        var mAdView = findViewById<AdView>(R.id.adView)
+        val adRequest = AdRequest.Builder().build()
+        mAdView.loadAd(adRequest)
     }
 
     //뒤로가기
