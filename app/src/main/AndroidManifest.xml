@@ -8,13 +8,14 @@
         android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
         <!-- real AdMob App ID: ca-app-pub-6308948435596230~8212621303 -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-6308948435596230~8212621303"/>
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
         <activity
             android:name=".SplashActivity"
             android:label="스톤 백과사전"
@@ -46,6 +47,9 @@
         <activity android:name=".PetSet.WidePet"/>
         <activity android:name=".PetSet.CurePet"/>
         <activity android:name="recomendDeck.Tips"/>
+        <activity android:name=".WebViewActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
 
     </application>
 
