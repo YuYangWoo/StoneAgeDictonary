@@ -26,7 +26,6 @@ class SplashActivity : AppCompatActivity(), InstallStateUpdatedListener {
     private val splashTime:Long = 1000
 
     // 업데이트를 체크하는데 사용하는 객체 반환
-
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == MY_REQUEST_CODE) {
@@ -59,15 +58,19 @@ class SplashActivity : AppCompatActivity(), InstallStateUpdatedListener {
 
         getInAppUpdateWithPlayStore()
     }
+
     // 업데이트 유형에 따른 업데이트 제안
     private fun getInAppUpdateWithPlayStore() {
         val appUpdateInfoTask = appUpdateManager.appUpdateInfo
+        Log.d("BBAAB", appUpdateInfoTask.toString())
+
         appUpdateInfoTask.addOnSuccessListener { appUpdateInfo ->
+            Log.d("BBAAB", appUpdateInfo.toString())
             if (appUpdateInfo.updateAvailability() == UpdateAvailability.UPDATE_AVAILABLE && appUpdateInfo.isUpdateTypeAllowed(AppUpdateType.IMMEDIATE)) {
                 try {
                     appUpdateManager.startUpdateFlowForResult(
                             appUpdateInfo,
-                            AppUpdateType.IMMEDIATE, // 유연한 업데이트 사용 시 (AppUpdateType.FLEXIBLE) 사용
+                            IMMEDIATE, // 유연한 업데이트 사용 시 (AppUpdateType.FLEXIBLE) 사용
                             this,  // 현재 Activity
                             MY_REQUEST_CODE) // 전역변수로 선언해준 Code
                 } catch (e: IntentSender.SendIntentException) {
