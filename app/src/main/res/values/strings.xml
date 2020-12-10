@@ -7,13 +7,18 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+    <!-- Admob Id !-->
+    <string name="test_admob">ca-app-pub-3940256099942544~3347511713</string>
     <string name="admob">ca-app-pub-6308948435596230~8212621303</string>
+    <!-- 전면광고 !-->
     <string name="ad_unit_id">ca-app-pub-6308948435596230/1655945061</string>
     <string name="test_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+
+    <!-- 배너광고 !-->
     <string name="test_bottom_ad_id">ca-app-pub-3940256099942544/6300978111</string>
     <string name="bottom_ad_id">ca-app-pub-6308948435596230/6884718456</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="pet_all">ALL</string>
     <string name="pet_attack">공격</string>
