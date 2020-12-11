@@ -100,9 +100,9 @@ class WidePet : AppCompatActivity() {
                 txtTotem.text = "공격(명or치), 회피(공격)"
             }
             "기가로스" -> {
-                txtAttack.text = "기가로스(3티어)"
+                txtAttack.text = "기가로스(2티어)"
                 imgAttack.setImageResource(R.drawable.gigaros)
-                txtGrowth.text ="공격->순발->체력"
+                txtGrowth.text ="공격->체력->순발"
                 txtPersonal.text = "용감한, 불같은"
                 txtTrain.text = "공격"
                 txtSkill.text = "궁극기-패시브-액티브"

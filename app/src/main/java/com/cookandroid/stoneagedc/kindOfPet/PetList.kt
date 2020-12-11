@@ -36,8 +36,9 @@ object PetList {
         petDataList.add(PetItem(R.drawable.kamare, "카미르", "2티어","제어"))
         petDataList.add(PetItem(R.drawable.fentas, "펜타스", "4티어","제어"))
         petDataList.add(PetItem(R.drawable.baroroks, "바로로크스", "4티어","제어"))
+        petDataList.add(PetItem(R.drawable.golfwolf, "골드로비", "OP","치료"))
         petDataList.add(PetItem(R.drawable.dorabis, "도라비스", "1티어","치료"))
-        petDataList.add(PetItem(R.drawable.golfwolf, "골드로비", "1티어","치료"))
+        petDataList.add(PetItem(R.drawable.bammi, "밤미", "1티어","치료"))
         petDataList.add(PetItem(R.drawable.monasif, "모나시프", "2티어","치료"))
         petDataList.add(PetItem(R.drawable.kaku, "카쿠", "3티어","치료"))
         petDataList.add(PetItem(R.drawable.manmo, "만모", "1티어","방어"))
@@ -55,7 +56,7 @@ object PetList {
         petDataList.add(PetItem(R.drawable.tiragos, "티라고스", "1티어","광역"))
         petDataList.add(PetItem(R.drawable.kroton, "크로톤", "2티어","광역"))
         petDataList.add(PetItem(R.drawable.kaki, "카키", "2티어","광역"))
-        petDataList.add(PetItem(R.drawable.gigaros, "기가로스", "3티어","광역"))
+        petDataList.add(PetItem(R.drawable.gigaros, "기가로스", "2티어","광역"))
         petDataList.add(PetItem(R.drawable.hubo, "휴보", "4티어","광역"))
     }
 

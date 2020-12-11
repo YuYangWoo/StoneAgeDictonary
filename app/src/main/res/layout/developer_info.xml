@@ -135,13 +135,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="12dp"
         android:autoLink="web"
         android:linksClickable="true"
         android:text="https://open.kakao.com/o/gPp8Clic"
         android:textColorLink="@color/colorPrimary"
         app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
         android:id="@+id/textView8"

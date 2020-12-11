@@ -8,27 +8,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar2"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     <TextView
         android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="본 공략은 참고용으로 봐주시면 감사하겠습니다 !"
         android:textColor="#E91E63"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar2"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
@@ -47,9 +39,9 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.8"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tabLayout">
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+        app:layout_constraintBottom_toTopOf="@+id/adView">
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/viewpager"

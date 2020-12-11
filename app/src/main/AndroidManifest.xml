@@ -15,7 +15,7 @@
         <!-- real AdMob App ID: ca-app-pub-6308948435596230~8212621303 -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713"/>
+            android:value="ca-app-pub-6308948435596230~8212621303"/>
         <activity
             android:name=".SplashActivity"
             android:label="스톤 백과사전"
@@ -38,7 +38,7 @@
         <activity android:name=".jorunsa.JorunsaActivity"
             />
         <activity android:name=".kindOfPet.PetActivity"
-            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustNothing"
             />
         <activity android:name=".PetSet.AttackPet"/>
 

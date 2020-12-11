@@ -13,10 +13,11 @@ class PetActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pet)
-        title = "펫 육성법"
+
 
         // ActionBar Home 버튼 Enable
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        title = "펫 육성법"
 
         var viewPager = ViewPagerAdapter(supportFragmentManager, lifecycle)
         viewpager.adapter = viewPager

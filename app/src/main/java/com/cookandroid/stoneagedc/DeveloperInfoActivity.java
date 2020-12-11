@@ -15,6 +15,7 @@ public class DeveloperInfoActivity extends AppCompatActivity {
         setContentView(R.layout.developer_info);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        setTitle("개발자 정보");
         //배너광고 호출
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
