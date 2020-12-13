@@ -238,6 +238,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (id == R.id.tips) {
             Intent tips = new Intent(getApplicationContext(), Tips.class);
             startActivity(tips);
+        } else if(id == R.id.goDC) {
+            Intent guideIntent = new Intent(this, WebViewActivity.class);
+            guideIntent.putExtra("URL", "https://gall.dcinside.com/mgallery/board/lists?id=stoneageworld");
+            startActivity(guideIntent);
+        } else if(id == R.id.goHungry) {
+            Intent guideIntent = new Intent(this, WebViewActivity.class);
+            guideIntent.putExtra("URL", "http://www.hungryapp.co.kr/bbs/list.php?bcode=stoneageworld");
+            startActivity(guideIntent);
         }
             DrawerLayout drawer = findViewById(R.id.drawer_layout);
             drawer.closeDrawer(GravityCompat.START);

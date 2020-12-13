@@ -13,8 +13,6 @@
             android:id="@+id/tips"
             android:icon="@drawable/ic_menu_send"
             android:title="꿀팁" />
-
-
     </menu>
 </item>
     <item android:title="유용한 기능">
@@ -86,6 +84,18 @@
                 android:id="@+id/stoneKnowledge"
                 android:icon="@drawable/ic_menu_send"
                 android:title="공략" />
+        </menu>
+    </item>
+    <item android:title="커뮤니티">
+        <menu>
+            <item
+                android:id="@+id/goDC"
+                android:icon="@drawable/ic_menu_send"
+                android:title="디씨인사이드" />
+            <item
+                android:id="@+id/goHungry"
+                android:icon="@drawable/ic_menu_send"
+                android:title="헝그리앱" />
         </menu>
     </item>
       <item android:title="앱 정보">

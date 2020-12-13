@@ -14,6 +14,8 @@ class WebViewActivity : AppCompatActivity() {
 
         var url = intent.getStringExtra("URL")
 
+        // 광고넣기
+        AdsFull.getInstance(this)
         webView.apply {
             webViewClient = WebViewClient()
             settings.javaScriptEnabled = true
@@ -25,6 +27,7 @@ class WebViewActivity : AppCompatActivity() {
         val adRequest = AdRequest.Builder().build()
         mAdView.loadAd(adRequest)
     }
+
     override fun onBackPressed() {
         if (webView.canGoBack()) {
             webView.goBack()
@@ -32,4 +35,5 @@ class WebViewActivity : AppCompatActivity() {
             finish()
         }
     }
+
 }

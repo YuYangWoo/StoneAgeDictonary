@@ -3,7 +3,6 @@ package com.cookandroid.stoneagedc.PetSet
 import android.app.Dialog
 import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.widget.ImageView
 import com.bumptech.glide.Glide
