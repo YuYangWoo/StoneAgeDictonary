@@ -25,10 +25,10 @@ class AttackPet : AppCompatActivity() {
         mAdView!!.loadAd(adRequest)
 
          name = intent.getStringExtra("Name")
-         var skill = intent.getIntExtra("Skill",0)
+
         title = name
         init(name)
-
+        var skill = intent.getIntExtra("Skill",0)
         btnSkill.setOnClickListener {
             SkillDialog(this, skill).show()
         }
@@ -104,7 +104,7 @@ class AttackPet : AppCompatActivity() {
            }
            "트라로포" -> {
                txtAttack.text = "트라로포(2티어)"
-               imgAttack.setImageResource(R.drawable.cue)
+               imgAttack.setImageResource(R.drawable.trarofo)
                txtGrowth.text = "케루로포, 베루로포 추천\n공격S, 체력,순발A이상"
                txtPersonal.text = "용감한"
                txtTrain.text = "올 공격 \n"

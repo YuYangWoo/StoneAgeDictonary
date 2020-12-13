@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.cookandroid.stoneagedc.R
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
-import com.google.android.gms.ads.MobileAds
 import kotlinx.android.synthetic.main.attack_pet.*
 
 class ControlPet : AppCompatActivity() {
@@ -19,8 +18,8 @@ class ControlPet : AppCompatActivity() {
 
         // ActionBar Home 버튼 Enable
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         // 광고 붙이기
-        MobileAds.initialize(this) { }
         mAdView = findViewById(R.id.adView)
         val adRequest = AdRequest.Builder().build()
         mAdView!!.loadAd(adRequest)
@@ -28,6 +27,11 @@ class ControlPet : AppCompatActivity() {
         name = intent.getStringExtra("Name")
         title = name
         init(name)
+
+        var skill = intent.getIntExtra("Skill",0)
+        btnSkill.setOnClickListener {
+            SkillDialog(this, skill).show()
+        }
 
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -172,6 +176,17 @@ class ControlPet : AppCompatActivity() {
                 txtTrain.text = "1. 올 공격 \n2. 공격3~4 : 순발1"
                 txtSkill.text = "궁극기 -> 액티브, 패시브"
                 txtResearch.text = "체력-공격-공격%-순발-순발%-상태이상-명중-회피-치명타확률-치명타효과"
+                txtCharm.text = "추천 : 공격(명), 순발(상이)\n서브: 방어(회피)"
+                txtTotem.text = "순발(공격), 공격(명or치)"
+            }
+            "봉봉" -> {
+                txtAttack.text = "봉봉(2티어)"
+                imgAttack.setImageResource(R.drawable.bongbong)
+                txtGrowth.text = "공격->체력"
+                txtPersonal.text = "용감한, 속이검은"
+                txtTrain.text = "1. 올 공격 \n2. 공격3~4 : 체력1"
+                txtSkill.text = "궁극기 -> 액티브, 패시브"
+                txtResearch.text = "체력-공격-공격%-순발-상태이상-명중-회피-치명타확률-치명타효과-치명타무시"
                 txtCharm.text = "추천 : 공격(명), 순발(상이)\n서브: 방어(회피)"
                 txtTotem.text = "순발(공격), 공격(명or치)"
             }

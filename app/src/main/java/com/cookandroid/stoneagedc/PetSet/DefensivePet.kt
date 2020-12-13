@@ -21,7 +21,6 @@ class DefensivePet : AppCompatActivity() {
         // ActionBar Home 버튼 Enable
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         // 광고 붙이기
-        MobileAds.initialize(this) { }
         mAdView = findViewById(R.id.adView)
         val adRequest = AdRequest.Builder().build()
         mAdView!!.loadAd(adRequest)
@@ -29,6 +28,10 @@ class DefensivePet : AppCompatActivity() {
         name = intent.getStringExtra("Name")
         title = name
         init(name)
+        var skill = intent.getIntExtra("Skill",0)
+        btnSkill.setOnClickListener {
+            SkillDialog(this, skill).show()
+        }
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
