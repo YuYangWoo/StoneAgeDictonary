@@ -1,6 +1,7 @@
 package com.cookandroid.stoneagedc.kindOfPet
 
 import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -32,6 +33,7 @@ class PetAdapter constructor() : RecyclerView.Adapter<PetAdapter.CustomViewHolde
         Glide.with(holder.itemView)
                 .load(filteredPetList[position].image)
                 .into(holder.image)
+        Log.d("Confirm", filteredPetList[position].image.toString())
         holder.petName.text = filteredPetList[position].petName
         holder.tier.text = filteredPetList[position].tier
         holder.position.text = filteredPetList[position].position
@@ -57,26 +59,31 @@ class PetAdapter constructor() : RecyclerView.Adapter<PetAdapter.CustomViewHolde
                         "공격" ->{
                             var intent = Intent(itemView.context, AttackPet::class.java)
                             intent.putExtra("Name", item.petName)
+                            intent.putExtra("Skill", item.skill)
                             ContextCompat.startActivity(itemView.context, intent, null)
                         }
                         "방어" ->{
                             var intent = Intent(itemView.context, DefensivePet::class.java)
                             intent.putExtra("Name", item.petName)
+                            intent.putExtra("Skill", item.skill)
                             ContextCompat.startActivity(itemView.context, intent, null)
                         }
                         "광역" ->{
                             var intent = Intent(itemView.context, WidePet::class.java)
                             intent.putExtra("Name", item.petName)
+                            intent.putExtra("Skill", item.skill)
                             ContextCompat.startActivity(itemView.context, intent, null)
                         }
                         "치료" ->{
                             var intent = Intent(itemView.context, CurePet::class.java)
                             intent.putExtra("Name", item.petName)
+                            intent.putExtra("Skill", item.skill)
                             ContextCompat.startActivity(itemView.context, intent, null)
                         }
                        "제어" ->{
                             var intent = Intent(itemView.context, ControlPet::class.java)
                             intent.putExtra("Name", item.petName)
+                           intent.putExtra("Skill", item.skill)
                             ContextCompat.startActivity(itemView.context, intent, null)
                         }
                     }
