@@ -71,6 +71,7 @@ public class Tips extends AppCompatActivity {
         DeckList.add(new Recommend("보물지도, 복권 매크로","1. 컴퓨터에 LD player를 다운한 후 ctrl + f8을 눌러서 스크립트 녹화를 띄어줍니다.\n2. 보물지도 하나를 깐후 이동할 때 펫 정보를 눌러줍시다.\n3. " +
                 "그러면 보물지도 재사용 버튼이 오른쪽에 생깁니다. \n4. 그러면 스크립트 녹화 시작하기를 누르고 사용버튼 한 번 클릭 그리고 한 10~초 정도 후에 화면 클릭을하고 정지합니다." +
                 "\n5. 그러고 스크립트 설정(톱니바퀴)누르고 반복실행 - 수동종료를 클릭 후 저장 ! 하고 돌리시면 됩니다 ! 복권도 마찬가지 "," "));
+        DeckList.add(new Recommend("회피펫 죽이기","회피펫 마음에 안들죠? 그러면 바로 밤미 사용으로 명중을 높여줍시다 밤미 순은 2500정도면 딱이예요 ! "," "));
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {
