@@ -47,6 +47,10 @@
                 android:id="@+id/seokkibackgwa"
                 android:icon="@drawable/ic_menu_send"
                 android:title="석기백과"></item>
+            <item
+                android:id="@+id/stateIdeal"
+                android:icon="@drawable/ic_menu_send"
+                android:title="상태이상/무시"></item>
         </menu>
     </item>
 
