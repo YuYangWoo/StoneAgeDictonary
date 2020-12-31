@@ -125,13 +125,13 @@ class ControlPet : AppCompatActivity() {
                 txtTotem.text = "순발(공격), 공격(명or치)"
             }
             "무이" -> {
-                txtAttack.text = "무이(2티어)"
+                txtAttack.text = "무이(1.5티어)"
                 imgAttack.setImageResource(R.drawable.mui)
-                txtGrowth.text = "무이 추천\n공격, 순발 위주 기준:A+"
+                txtGrowth.text = "슈이 추천\n공격, 순발 위주 기준:A+"
                 txtPersonal.text = "용감한, 속이검은"
-                txtTrain.text = "1. 올 공격 \n2. 공격3~4 : 순발1"
+                txtTrain.text = "1. 올 공격 \n2. 공격3~4 : 순발1\n3. 올 체력"
                 txtSkill.text = "궁극기 -> 액티브, 패시브"
-                txtResearch.text = "효율 : 공격, 공격%, 치명타확률, 치명타효과, 명중\n 풀: 체력, 공격, 공격%, 순발, 순발%, 명중, 치명타확률, 치명타효과, 회피,상태이상무시"
+                txtResearch.text = "효율 : 공격, 공격%, 치명타확률, 치명타효과, 명중\n 풀: 체력, 체력%, 공격, 공격%, 순발, 명중, 치명타확률, 치명타효과, 회피, 상태이상"
                 txtCharm.text = "추천 : 공격(명), 순발(상이)\n서브: 방어(회피)"
                 txtTotem.text = "공격(명or치), 순발(상이)"
             }

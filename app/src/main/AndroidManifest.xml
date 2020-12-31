@@ -50,6 +50,7 @@
         <activity android:name=".WebViewActivity"
             android:theme="@style/AppTheme.NoActionBar"
             />
+        <activity android:name=".StateActivity"/>
 
     </application>
 

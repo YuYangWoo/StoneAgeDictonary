@@ -42,6 +42,7 @@ class PetListFragment(val tabTitle: Int) : Fragment() {
         }
         recyclerView.adapter = recyclerViewAdapter
 
+        // Adapter에 Filter기능 활성화
         searchView.addTextChangedListener(object : TextWatcher {
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
                 recyclerViewAdapter.filter.filter(s)

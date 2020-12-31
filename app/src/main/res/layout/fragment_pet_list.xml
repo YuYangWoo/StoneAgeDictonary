@@ -24,17 +24,15 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:background="@drawable/search_bg"
-        android:drawableStart="@drawable/ic_search"
+        android:drawableLeft="@android:drawable/ic_menu_search"
         android:ems="10"
         android:hint="Search..."
+        android:imeOptions="actionSearch"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.08"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintWidth_percent="1"
-        android:imeOptions="actionSearch"
-
-    />
+        app:layout_constraintWidth_percent="1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
