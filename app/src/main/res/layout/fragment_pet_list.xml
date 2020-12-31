@@ -17,10 +17,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintWidth_percent="1" />
 
-    <EditText
+    <com.cielyang.android.clearableedittext.ClearableEditText
         android:id="@+id/search_bar"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:background="@drawable/search_bg"
         android:drawableStart="@drawable/ic_search"
         android:ems="10"
@@ -30,5 +32,9 @@
         app:layout_constraintHeight_percent="0.08"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintWidth_percent="1" />
+        app:layout_constraintWidth_percent="1"
+        android:imeOptions="actionSearch"
+
+    />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
