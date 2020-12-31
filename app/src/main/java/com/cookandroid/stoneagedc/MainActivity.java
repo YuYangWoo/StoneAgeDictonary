@@ -144,9 +144,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void patchClick(View v) {
-//        Uri patchuri = Uri.parse("https://forum.netmarble.com/stone_kr/view/6/46139");
         Intent patchIntent = new Intent(this, WebViewActivity.class);
-        patchIntent.putExtra("URL", "https://forum.netmarble.com/stone_kr/view/6/46139");
+        patchIntent.putExtra("URL", "https://forum.netmarble.com/stone_kr/view/6/48838");
         startActivity(patchIntent);
     }
 
@@ -156,44 +155,36 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         int id = item.getItemId();
 
         if (id == R.id.stoneMain) {
-//            Uri uri = Uri.parse("https://stone.netmarble.com/ko/");
 
             Intent mainIntent = new Intent(this, WebViewActivity.class);
             mainIntent.putExtra("URL", "https://stone.netmarble.com/ko/");
             startActivity(mainIntent);
         } else if (id == R.id.stoneCommunity) {
-//            Uri uri = Uri.parse("http://forum.netmarble.com/stone_kr");
             Intent communityIntent = new Intent(this, WebViewActivity.class);
             communityIntent.putExtra("URL", "http://forum.netmarble.com/stone_kr");
             startActivity(communityIntent);
         } else if (id == R.id.stoneNotice) {
-//            Uri uri = Uri.parse("http://forum.netmarble.com/stone_kr/list/6/1");
             Intent noticeIntent = new Intent(this, WebViewActivity.class);
             noticeIntent.putExtra("URL", "http://forum.netmarble.com/stone_kr/list/6/1");
             startActivity(noticeIntent);
         } else if (id == R.id.stoneEvent) {
-//            Uri uri = Uri.parse("http://forum.netmarble.com/stone_kr/list/8/1");
             Intent eventIntent = new Intent(this, WebViewActivity.class);
             eventIntent.putExtra("URL", "http://forum.netmarble.com/stone_kr/list/8/1");
 
             startActivity(eventIntent);
         } else if (id == R.id.stoneFreeBoard) {
-//            Uri uri = Uri.parse("http://forum.netmarble.com/stone_kr/list/16/1");
             Intent boardIntent = new Intent(this, WebViewActivity.class);
             boardIntent.putExtra("URL", "http://forum.netmarble.com/stone_kr/list/16/1");
             startActivity(boardIntent);
         } else if (id == R.id.stoneGuide) {
-//            Uri uri = Uri.parse("http://forum.netmarble.com/stone_kr/list/26/1");
             Intent guideIntent = new Intent(this, WebViewActivity.class);
             guideIntent.putExtra("URL", "http://forum.netmarble.com/stone_kr/list/26/1");
             startActivity(guideIntent);
         } else if (id == R.id.stoneFriend) {
-//            Uri uri = Uri.parse("http://forum.netmarble.com/stone_kr/list/17/1");
             Intent friendIntent = new Intent(this, WebViewActivity.class);
             friendIntent.putExtra("URL", "http://forum.netmarble.com/stone_kr/list/17/1");
             startActivity(friendIntent);
         } else if (id == R.id.stoneKnowledge) {
-//            Uri uri = Uri.parse("http://forum.netmarble.com/stone_kr/list/26/1");
             Intent knowledgeIntent = new Intent(this, WebViewActivity.class);
             knowledgeIntent.putExtra("URL", "http://forum.netmarble.com/stone_kr/list/26/1");
             startActivity(knowledgeIntent);
@@ -207,7 +198,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent recoActivity = new Intent(getApplicationContext(), RecommendDeckActivity.class);
             startActivity(recoActivity);
         } else if (id == R.id.gogohakBest) {
-//            Uri uri = Uri.parse("http://forum.netmarble.com/stone_kr/view/26/39272");
             Intent guideIntent = new Intent(this, WebViewActivity.class);
             guideIntent.putExtra("URL", "http://forum.netmarble.com/stone_kr/view/26/39272");
             startActivity(guideIntent);
@@ -215,12 +205,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent calcIntent = new Intent(getApplicationContext(), GrowthActivity.class);
             startActivity(calcIntent);
         } else if (id == R.id.gogohakCountry) {
-//            Uri uri = Uri.parse("http:/blog.naver.com/leesi5040/222026644338");
             Intent guideIntent = new Intent(this, WebViewActivity.class);
             guideIntent.putExtra("URL", "http:/blog.naver.com/leesi5040/222026644338");
             startActivity(guideIntent);
         } else if (id == R.id.seokkibackgwa) {
-//            Uri uri = Uri.parse("http://forum.netmarble.com/stone_kr/view/26/2792");
             Intent guideIntent = new Intent(this, WebViewActivity.class);
             guideIntent.putExtra("URL", "http://forum.netmarble.com/stone_kr/view/26/2792");
             startActivity(guideIntent);
@@ -257,7 +245,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             if (drawer.isDrawerOpen(GravityCompat.START)) {
                 drawer.closeDrawer(GravityCompat.START);
             } else {
-                //   backPressCloseHandler.onBackPressed();
             }
             AdsFull.getInstance(this);
             backPressCloseHandler.onBackPressed();

@@ -99,59 +99,65 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout2"
-            android:layout_width="0dp"
-            android:layout_height="180dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/cst2"
-            app:layout_constraintBottom_toTopOf="@+id/cstLyB"
-            app:layout_constraintWidth_percent="1">
-
-            <TextView
-                android:id="@+id/txt1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/maplestory_light"
-                android:text="스톤 에이지 패치노트"
-                android:textColor="#000000"
-                android:textSize="30dp"
-                android:textStyle="bold"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="0dp"
+                android:layout_height="220dp"
+                app:layout_constraintBottom_toTopOf="@+id/cstLyB"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@id/cst2"
+                app:layout_constraintWidth_percent="1">
 
-            <TextView
-                android:id="@+id/textView14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/maplestory_light"
-                android:text="크리마스 이벤트 / 크랩 계열 포획 / 경이로운 스톤에이지 월드 이벤트 / 신규 펫 '밤미' 추가 / 크리스마스 코스튬 추가"
-                android:textAlignment="center"
-                android:textColor="#E91E63"
-                android:textSize="18dp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txt1" />
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/maplestory_light"
+                    android:text="스톤 에이지 패치노트"
+                    android:textColor="#000000"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/textView14"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            <Button
-                android:id="@+id/patchButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:background="@color/blue"
-                android:onClick="patchClick"
-                android:text="패치원본"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView14" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="@font/maplestory_light"
+                    android:text="모험의장 6,7,8장 추가\n니스시간 06:00->08:00변경\n무이계열 밸런스 조절 및 투기장 룰 변경 \n각종이벤트\n펫코인 보상 상향, 섬OT개편,펫대작전 보상 상향 "
+                    android:textAlignment="center"
+                    android:textColor="#E91E63"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/patchButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt1" />
+
+                <Button
+                    android:id="@+id/patchButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/blue"
+                    android:onClick="patchClick"
+                    android:text="패치원본"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView14" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cstLyB"
@@ -166,8 +172,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:layout_editor_absoluteX="43dp">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
                 <TableLayout
                     android:layout_width="match_parent"
@@ -278,9 +284,9 @@
                             android:background="@drawable/border2"
                             android:gravity="center"
                             android:text="6:30 PM"
-                            android:textStyle="bold"
                             android:textColor="#000000"
-                            android:textSize="16dp" />
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -299,8 +305,8 @@
                             android:gravity="center"
                             android:text="꼬미운송  "
                             android:textColor="#000000"
-                            android:textStyle="bold"
-                            android:textSize="16dp" />
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -309,8 +315,8 @@
                             android:gravity="center"
                             android:text="모가로스 수호자  "
                             android:textColor="#000000"
-                            android:textStyle="bold"
-                            android:textSize="16dp" />
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -318,39 +324,39 @@
                             android:background="@drawable/border"
                             android:gravity="center"
                             android:text="만모 택배  "
-                            android:textStyle="bold"
                             android:textColor="#000000"
-                            android:textSize="16dp" />
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:background="@drawable/border"
                             android:gravity="center"
-                            android:textStyle="bold"
                             android:text="꼬미 운송  "
                             android:textColor="#000000"
-                            android:textSize="16dp" />
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:background="@drawable/border"
                             android:gravity="center"
-                            android:textStyle="bold"
                             android:text="모가로스 수호자  "
                             android:textColor="#000000"
-                            android:textSize="16dp" />
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:background="@drawable/border"
-                            android:textStyle="bold"
                             android:gravity="center"
                             android:text="꼬미의 습격  "
                             android:textColor="#000000"
-                            android:textSize="16dp" />
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
                     </TableRow>
 
                     <TableRow>
@@ -361,39 +367,9 @@
                             android:background="@drawable/border2"
                             android:gravity="center"
                             android:text="7:30 PM"
-                            android:textStyle="bold"
                             android:textColor="#000000"
-                            android:textSize="16dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/border"
-                            android:textStyle="bold"
-                            android:gravity="center"
-                            android:text="알 찾기"
-                            android:textColor="#000000"
-                            android:textSize="16dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/border"
-                            android:gravity="center"
-                            android:textStyle="bold"
-                            android:text="숨바꼭질"
-                            android:textColor="#000000"
-                            android:textSize="16dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/border"
-                            android:gravity="center"
-                            android:textStyle="bold"
-                            android:text="바비큐"
-                            android:textColor="#000000"
-                            android:textSize="16dp" />
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -401,39 +377,69 @@
                             android:background="@drawable/border"
                             android:gravity="center"
                             android:text="알 찾기"
-                            android:textStyle="bold"
                             android:textColor="#000000"
-                            android:textSize="16dp" />
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:background="@drawable/border"
                             android:gravity="center"
-                            android:textStyle="bold"
                             android:text="숨바꼭질"
                             android:textColor="#000000"
-                            android:textSize="16dp" />
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:background="@drawable/border"
                             android:gravity="center"
-                            android:textStyle="bold"
                             android:text="바비큐"
                             android:textColor="#000000"
-                            android:textSize="16dp" />
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:background="@drawable/border"
                             android:gravity="center"
-                            android:textStyle="bold"
+                            android:text="알 찾기"
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:gravity="center"
                             android:text="숨바꼭질"
                             android:textColor="#000000"
-                            android:textSize="16dp" />
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:gravity="center"
+                            android:text="바비큐"
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:gravity="center"
+                            android:text="숨바꼭질"
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
                     </TableRow>
 
                     <TableRow>
@@ -444,49 +450,9 @@
                             android:background="@drawable/border2"
                             android:gravity="center"
                             android:text="8:30 PM"
-                            android:textStyle="bold"
                             android:textColor="#000000"
-                            android:textSize="16dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/border"
-                            android:gravity="center"
-                            android:textStyle="bold"
-                            android:text="펫 대작전"
-                            android:textColor="#000000"
-                            android:textSize="16dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/border"
-                            android:gravity="center"
-                            android:textStyle="bold"
-                            android:text="투기장"
-                            android:textColor="#000000"
-                            android:textSize="16dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/border"
-                            android:gravity="center"
-                            android:textStyle="bold"
-                            android:text="펫 대작전"
-                            android:textColor="#000000"
-                            android:textSize="16dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/border"
-                            android:gravity="center"
-                            android:textStyle="bold"
-                            android:text="투기장"
-                            android:textColor="#000000"
-                            android:textSize="16dp" />
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -494,9 +460,9 @@
                             android:background="@drawable/border"
                             android:gravity="center"
                             android:text="펫 대작전"
-                            android:textStyle="bold"
                             android:textColor="#000000"
-                            android:textSize="16dp" />
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -504,9 +470,49 @@
                             android:background="@drawable/border"
                             android:gravity="center"
                             android:text="투기장"
-                            android:textStyle="bold"
                             android:textColor="#000000"
-                            android:textSize="16dp" />
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:gravity="center"
+                            android:text="펫 대작전"
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:gravity="center"
+                            android:text="투기장"
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:gravity="center"
+                            android:text="펫 대작전"
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:gravity="center"
+                            android:text="투기장"
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -514,9 +520,9 @@
                             android:background="@drawable/border"
                             android:gravity="center"
                             android:text=""
-                            android:textStyle="bold"
                             android:textColor="#000000"
-                            android:textSize="16dp" />
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
                     </TableRow>
 
                     <TableRow>
@@ -527,29 +533,9 @@
                             android:background="@drawable/border2"
                             android:gravity="center"
                             android:text="9:30 PM"
-                            android:textStyle="bold"
                             android:textColor="#000000"
-                            android:textSize="16dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/border"
-                            android:textStyle="bold"
-                            android:gravity="center"
-                            android:text=""
-                            android:textColor="#000000"
-                            android:textSize="16dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/border"
-                            android:textStyle="bold"
-                            android:gravity="center"
-                            android:text=""
-                            android:textColor="#000000"
-                            android:textSize="16dp" />
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -557,9 +543,29 @@
                             android:background="@drawable/border"
                             android:gravity="center"
                             android:text=""
-                            android:textStyle="bold"
                             android:textColor="#000000"
-                            android:textSize="16dp" />
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -567,39 +573,39 @@
                             android:background="@drawable/border"
                             android:gravity="center"
                             android:text="기계 침입"
-                            android:textStyle="bold"
                             android:textColor="#000000"
-                            android:textSize="16dp" />
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:background="@drawable/border"
                             android:gravity="center"
-                            android:textStyle="bold"
                             android:text="기계 침입"
                             android:textColor="#000000"
-                            android:textSize="16dp" />
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:background="@drawable/border"
                             android:gravity="center"
-                            android:textStyle="bold"
                             android:text="기계 침입"
                             android:textColor="#000000"
-                            android:textSize="16dp" />
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:background="@drawable/border"
                             android:gravity="center"
-                            android:textStyle="bold"
                             android:text="기계 침입"
                             android:textColor="#000000"
-                            android:textSize="16dp" />
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
 
                     </TableRow>
 
