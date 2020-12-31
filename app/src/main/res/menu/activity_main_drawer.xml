@@ -50,7 +50,7 @@
             <item
                 android:id="@+id/stateIdeal"
                 android:icon="@drawable/ic_menu_send"
-                android:title="상태이상/무시"></item>
+                android:title="상태이상 총정리"></item>
         </menu>
     </item>
 

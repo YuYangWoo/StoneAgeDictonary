@@ -234,6 +234,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent guideIntent = new Intent(this, WebViewActivity.class);
             guideIntent.putExtra("URL", "http://www.hungryapp.co.kr/bbs/list.php?bcode=stoneageworld");
             startActivity(guideIntent);
+        } else if(id == R.id.stateIdeal) {
+            Intent state = new Intent(getApplicationContext(), StateActivity.class);
+            startActivity(state);
         }
             DrawerLayout drawer = findViewById(R.id.drawer_layout);
             drawer.closeDrawer(GravityCompat.START);

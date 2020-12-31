@@ -15,7 +15,7 @@
         <!-- real AdMob App ID: ca-app-pub-6308948435596230~8212621303 -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713"/>
+            android:value="ca-app-pub-6308948435596230~8212621303"/>
         <activity
             android:name=".SplashActivity"
             android:label="스톤 백과사전"
@@ -26,31 +26,46 @@
             </intent-filter>
         </activity>
         <activity android:name=".DeveloperInfoActivity"
+            android:screenOrientation="portrait"
         />
         <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:label="스톤 백과사전"
             />
         <activity android:name=".GrowthActivity"
+            android:screenOrientation="portrait"
             />
         <activity android:name="recomendDeck.RecommendDeckActivity"
+            android:screenOrientation="portrait"
             />
         <activity android:name=".jorunsa.JorunsaActivity"
+            android:screenOrientation="portrait"
             />
         <activity android:name=".kindOfPet.PetActivity"
+            android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustNothing"
             />
-        <activity android:name=".PetSet.AttackPet"/>
+        <activity android:name=".PetSet.AttackPet"
+            android:screenOrientation="portrait"/>
 
-        <activity android:name=".PetSet.DefensivePet"/>
-        <activity android:name=".PetSet.ControlPet"/>
-        <activity android:name=".PetSet.WidePet"/>
-        <activity android:name=".PetSet.CurePet"/>
-        <activity android:name="recomendDeck.Tips"/>
+        <activity android:name=".PetSet.DefensivePet"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PetSet.ControlPet"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PetSet.WidePet"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PetSet.CurePet"
+            android:screenOrientation="portrait"/>
+        <activity android:name="recomendDeck.Tips"
+            android:screenOrientation="portrait"/>
         <activity android:name=".WebViewActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             />
-        <activity android:name=".StateActivity"/>
+        <activity android:name=".StateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
 
     </application>
 
