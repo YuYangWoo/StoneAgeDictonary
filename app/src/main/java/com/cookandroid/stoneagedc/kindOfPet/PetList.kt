@@ -43,6 +43,7 @@ object PetList {
         petDataList.add(PetItem(R.drawable.kaku, "카쿠", "3티어","치료",R.drawable.skill_kaku))
         petDataList.add(PetItem(R.drawable.manmo, "만모", "1티어","방어",R.drawable.skill_manmo))
         petDataList.add(PetItem(R.drawable.buke, "북이(딜북이)", "1티어","방어",R.drawable.skill_buke))
+        petDataList.add(PetItem(R.drawable.duford, "듀포드", "1티어","방어",R.drawable.skill_duford))
         petDataList.add(PetItem(R.drawable.manmo, "만모(탑승)", "1.5티어","방어",R.drawable.skill_manmo))
         petDataList.add(PetItem(R.drawable.frakitos, "프라키토스", "1.5티어","방어",R.drawable.skill_frakitos))
         petDataList.add(PetItem(R.drawable.bubi, "부비", "2티어","방어",R.drawable.skill_bubi))

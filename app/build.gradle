@@ -13,6 +13,7 @@ android {
         versionCode 16
         versionName "1.97"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
     buildTypes {
         release {

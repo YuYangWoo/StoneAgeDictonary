@@ -96,8 +96,8 @@ class PetAdapter constructor() : RecyclerView.Adapter<PetAdapter.CustomViewHolde
         return object : Filter() {
             override fun performFiltering(constraint: CharSequence?): FilterResults {
                 var key = constraint.toString()
-                if (key.isEmpty()) {
-                    filteredPetList = petList
+                filteredPetList = if (key.isEmpty()) {
+                    petList
                 } else {
                     var lsFiltered = ArrayList<PetItem>()
                     for (row in petList) {
@@ -105,7 +105,7 @@ class PetAdapter constructor() : RecyclerView.Adapter<PetAdapter.CustomViewHolde
                             lsFiltered.add(row)
                         }
                     }
-                    filteredPetList = lsFiltered
+                    lsFiltered
                 }
 
                 var filterResults = FilterResults()

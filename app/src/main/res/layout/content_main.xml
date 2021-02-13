@@ -132,7 +132,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="4dp"
                     android:fontFamily="@font/maplestory_light"
-                    android:text="모험의장 6,7,8장 추가\n니스시간 06:00->08:00변경\n무이계열 밸런스 조절 및 투기장 룰 변경 \n각종이벤트\n펫코인 보상 상향, 섬OT개편,펫대작전 보상 상향 "
+                    android:text="신규 부족전 추가\n신규 펫 듀포드 출현~! "
                     android:textAlignment="center"
                     android:textColor="#E91E63"
                     android:textSize="18dp"
@@ -479,7 +479,7 @@
                             android:layout_height="wrap_content"
                             android:background="@drawable/border"
                             android:gravity="center"
-                            android:text="펫 대작전"
+                            android:text="펫 대작전 / 부족전"
                             android:textColor="#000000"
                             android:textSize="16dp"
                             android:textStyle="bold" />
@@ -509,7 +509,7 @@
                             android:layout_height="wrap_content"
                             android:background="@drawable/border"
                             android:gravity="center"
-                            android:text="투기장"
+                            android:text="투기장 / 부족전"
                             android:textColor="#000000"
                             android:textSize="16dp"
                             android:textStyle="bold" />

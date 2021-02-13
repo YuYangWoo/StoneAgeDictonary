@@ -9,32 +9,18 @@
     >
 
     <TextView
-        android:id="@+id/stoneTitle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#000000"
-        android:fontFamily="@font/maplestory_bold"
-        android:text="스톤 백과사전"
-        android:textSize="40dp"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="35dp" />
-
-    <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="38dp"
-        android:textColor="#000000"
+        android:layout_marginTop="90dp"
         android:fontFamily="@font/maplestory_bold"
         android:text="개발자 소개"
+        android:textColor="#000000"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/stoneTitle" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -51,17 +37,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="29dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="140dp"
         android:layout_marginEnd="50dp"
+        android:fontFamily="@font/maplestory_bold"
         android:text="플레이 서버 : 해"
         android:textColor="#000000"
-        android:fontFamily="@font/maplestory_bold"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.714"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/stoneTitle" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"

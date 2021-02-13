@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.cookandroid.stoneagedc.R
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
-import com.google.android.gms.ads.MobileAds
 import kotlinx.android.synthetic.main.attack_pet.*
 
 class DefensivePet : AppCompatActivity() {
@@ -67,6 +66,17 @@ class DefensivePet : AppCompatActivity() {
                 txtResearch.text = "효율 : 체력, 공격, 공격%, 순발, 순발%, 명중, 치명타확률, 치명타효과\n 풀: 체력, 공격, 공격%, 순발, 순발%, 명중, 반격, 치명타확률, 치명타효과, 상태이상"
                 txtCharm.text = "추천 : 방어(반격), 순발(상이)\n서브: 공격(명or치)"
                 txtTotem.text = "순발(상이), 공격(명or치),치명타(치명타효과), 순발(공격)\n공격토템 추천"
+            }
+            "듀포드" -> {
+                txtAttack.text = "듀포드(1티어)"
+                imgAttack.setImageResource(R.drawable.duford)
+                txtGrowth.text = "모리포드 추천\n 체력,순발,공격 순"
+                txtPersonal.text = "우울한, 여유로운(추천)"
+                txtTrain.text = "올 체력 -> 순발(2천셋팅)"
+                txtSkill.text = "액티브,패시브,궁극기"
+                txtResearch.text = "효율 : 체력, 체력%, 순발, 순발%, 반사, 반사효과 \n 풀: 체력, 체력%, 순발, 순발%, 반사, 반사효과, 치명타무시, 방어, 방어%, 상태이상무시"
+                txtCharm.text = "추천 : 체력(치무), 순발(상무)\n서브: 방어(회피)"
+                txtTotem.text = "반사,체력 추천"
             }
             "만모(탑승)" -> {
                 txtAttack.text = "만모(탑승)(1.5티어)"
