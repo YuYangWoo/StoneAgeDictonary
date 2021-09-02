@@ -1,9 +1,4 @@
 # StoneAgeictonary
-### 🔗Link
-
-**Source**
-
-[GitHub - YuYangWoo/StoneAgeDictonary: 스톤에이지월드 플레이어들을 위한 백과사전 앱(구글스토어)](https://github.com/YuYangWoo/StoneAgeDictonary)
 
 # **✌ Topic**
 
